@@ -1,8 +1,59 @@
 *body {
   margin: 0;
   padding: 0;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 .container {
-  background-color: brown;
+  background-color: aqua;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  position: fixed;
+  display: grid;
+  grid-template-columns: 7% 40% auto 40% 7%;
+  grid-template-rows: 7% 50% auto 30% 7%;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(13, auto);
+  grid-template-rows: repeat(10, auto);
+}
+
+.player1 {
+  grid-row-start: 2;
+  grid-column-start: 2;
+}
+
+.player2 {
+  grid-row-start: 2;
+  grid-column-start: 4;
+}
+
+.player-title {
+  grid-column-start: 1;
+  grid-column-end: 13;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  margin: auto auto;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 150%;
+}
+
+.coloured-numbers {
+  grid-row-start: 2;
+  grid-row-end: 5;
+  grid-column-start: 1;
+  grid-column-end: 13;
+  display: grid;
+  grid-template-columns: repeat(13, auto);
+  grid-template-rows: repeat(4, auto);
+}
+
+.red-row {
+  display: grid;
+  grid-column: span 13;
+  grid-template-columns: repeat(13, auto);
 }
