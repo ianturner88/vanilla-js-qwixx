@@ -48,12 +48,39 @@
   grid-column-start: 1;
   grid-column-end: 13;
   display: grid;
-  grid-template-columns: repeat(13, auto);
-  grid-template-rows: repeat(4, auto);
+  grid-template-columns: repeat(11, 50px);
+  grid-template-rows: repeat(4, 50px);
+  justify-content: center;
 }
 
 .red-row {
-  display: grid;
-  grid-column: span 13;
-  grid-template-columns: repeat(13, auto);
+  background-color: red;
+  grid-row-start: 1;
+  grid-row-end: 1;
+  grid-column-start: 1;
+  grid-column-end: 12;
+}
+
+.yellow-row {
+  background-color: yellow;
+  grid-row-start: 2;
+  grid-row-end: 2;
+  grid-column-start: 1;
+  grid-column-end: 12;
+}
+
+.green-row {
+  background-color: green;
+  grid-row-start: 3;
+  grid-row-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 12;
+}
+
+.blue-row {
+  background-color: blue;
+  grid-row-start: 4;
+  grid-row-end: 4;
+  grid-column-start: 1;
+  grid-column-end: 12;
 }
