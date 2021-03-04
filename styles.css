@@ -107,6 +107,12 @@
   grid-column-start: 1;
   grid-column-end: 12;
   margin-top: 2px;
+
+  display: flex;
+  /* vertically centers items */
+  align-items: center;
+  /* horizontally centers items */
+  justify-content: center;
 }
 
 .buttons {
@@ -129,4 +135,14 @@
 
 .green-button {
   color: green;
+}
+
+.blue-button {
+  color: blue;
+}
+
+.board {
+  background: rgba(214, 214, 214, 1);
+  border: 1px solid black;
+  border-radius: 2%;
 }
