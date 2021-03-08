@@ -1,0 +1,5 @@
+.dice-sector {
+  grid-row-start: 4;
+  grid-column-start: 2;
+  background-color: blueviolet;
+}
