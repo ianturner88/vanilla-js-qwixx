@@ -1,5 +1,55 @@
 .dice-sector {
   grid-row-start: 4;
   grid-column-start: 2;
-  background-color: blueviolet;
+  background-color: wheat;
+  border: 1px solid black;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: 2;
+}
+
+.dice {
+  width: 65%;
+  height: 65%;
+  border: 1px solid black;
+  margin: auto auto;
+  border-radius: 100%;
+}
+
+.white-dice {
+  background-color: white;
+}
+
+.white-1 {
+  grid-row-start: 1;
+  grid-column-start: 1;
+}
+
+.white-2 {
+  grid-row-start: 1;
+  grid-column-start: 2;
+}
+
+.red-dice {
+  grid-row-start: 2;
+  grid-column-start: 1;
+  background-color: red;
+}
+
+.yellow-dice {
+  grid-row-start: 2;
+  grid-column-start: 2;
+  background-color: yellow;
+}
+
+.green-dice {
+  grid-row-start: 2;
+  grid-column-start: 3;
+  background-color: green;
+}
+
+.blue-dice {
+  grid-row-start: 2;
+  grid-column-start: 4;
+  background-color: blue;
 }
