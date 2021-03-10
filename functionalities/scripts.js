@@ -1,0 +1,1 @@
+const newRoll = document.querySelector('[]');

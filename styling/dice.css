@@ -1,4 +1,6 @@
 .dice-sector {
+  width: 600px;
+  height: 200px;
   grid-row-start: 4;
   grid-column-start: 2;
   background-color: wheat;
@@ -9,11 +11,11 @@
 }
 
 .dice {
-  width: 65%;
-  height: 65%;
+  width: 80px;
+  height: 80px;
   border: 1px solid black;
+  border-radius: 10%;
   margin: auto auto;
-  border-radius: 100%;
 }
 
 .white-dice {
@@ -52,4 +54,22 @@
   grid-row-start: 2;
   grid-column-start: 4;
   background-color: blue;
+}
+
+.clock-functions {
+  margin: 5% 5%;
+  grid-row-start: 1;
+  grid-column-start: 3;
+  display: grid;
+  grid-template-rows: 2;
+}
+
+.countdown-clock {
+  background-color: aqua;
+}
+
+.reset-button {
+  background-color: pink;
+  font-family: 'Courier New', Courier, monospace;
+  margin: 0 auto;
 }
