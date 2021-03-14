@@ -28,13 +28,13 @@
 }
 
 .white-2 {
-  grid-row-start: 1;
-  grid-column-start: 2;
+  grid-row-start: 2;
+  grid-column-start: 1;
 }
 
 .red-dice {
-  grid-row-start: 2;
-  grid-column-start: 1;
+  grid-row-start: 1;
+  grid-column-start: 2;
   background-color: red;
 }
 
@@ -45,31 +45,37 @@
 }
 
 .green-dice {
-  grid-row-start: 2;
+  grid-row-start: 1;
   grid-column-start: 3;
   background-color: green;
 }
 
 .blue-dice {
   grid-row-start: 2;
-  grid-column-start: 4;
+  grid-column-start: 3;
   background-color: blue;
 }
 
-.clock-functions {
-  margin: 5% 5%;
-  grid-row-start: 1;
-  grid-column-start: 3;
-  display: grid;
-  grid-template-rows: 2;
+.reset-button {
+  width: 110px;
+  height: 75px;
+  background-color: white;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+  font-weight: 500;
+  font-size: x-large;
+  border-radius: 5%;
+  border: 1px;
+  border: 1px solid #3498db;
+  color: #3498db;
+  margin: auto auto;
 }
 
 .countdown-clock {
-  background-color: aqua;
-}
-
-.reset-button {
-  background-color: pink;
-  font-family: 'Courier New', Courier, monospace;
-  margin: 0 auto;
+  width: 110px;
+  height: 75px;
+  background-color: white;
+  margin: auto auto;
+  border: 1px solid #3498db;
+  border-radius: 5%;
 }
