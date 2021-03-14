@@ -1,0 +1,86 @@
+.player1-available-numbers {
+  grid-row-start: 3;
+  grid-column-start: 2;
+  border: 1px solid black;
+  width: 602px;
+  height: 80px;
+  margin: auto auto;
+  display: grid;
+  grid-template-columns: repeat(9, auto);
+}
+
+.player-options {
+  width: 66px;
+  height: 80px;
+}
+
+.public-number {
+  grid-column-start: 1;
+  grid-row-start: 1;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.public-number-dice {
+  width: 60px;
+  height: 60px;
+  border: 1px solid black;
+}
+
+.red-number1 {
+  background: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.red-number2 {
+  background: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.yellow-number1 {
+  background: yellow;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.yellow-number2 {
+  background: yellow;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.green-number1 {
+  background: green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.green-number2 {
+  background: green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.blue-number1 {
+  background: blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.blue-number2 {
+  background: blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -18,8 +18,8 @@
 
 .board {
   display: grid;
-  grid-template-columns: repeat(13, auto);
-  grid-template-rows: repeat(10, auto);
+  grid-template-columns: 0;
+  grid-template-rows: 10% 60% 20% 10%;
   width: 600px;
   height: 400px;
 }
@@ -146,5 +146,4 @@
 .board {
   background: rgba(214, 214, 214, 1);
   border: 1px solid black;
-  border-radius: 2%;
 }
