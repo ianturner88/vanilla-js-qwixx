@@ -12,8 +12,8 @@
   left: 0;
   position: fixed;
   display: grid;
-  grid-template-columns: 7% 40% auto 40% 7%;
-  grid-template-rows: 7% 50% auto 30% 7%;
+  grid-template-columns: auto 602px auto 602px auto;
+  grid-template-rows: auto 402px 120px 202px auto;
 }
 
 .board {
