@@ -1,51 +1,35 @@
-export default class Dice {
-  // the dice used to generate the random numbers 1 through 6
+const publicNumber1 = document.querySelector('[data-white-dice-1]');
+const publicNumber2 = document.querySelector('[data-white-dice-2]');
+const redDice = document.querySelector('[red-dice]');
+const yellowDice = document.querySelector('[yellow-dice]');
+const greenDice = document.querySelector('[green-dice]');
+const blueDice = document.querySelector('[blue-dice]');
 
+export default class Dice {
   constructor() {
     // initialize all numbers to zero
     this.publicNumber1 = 0;
-    this.redNumber1 = 0;
-    this.yellowNumber1 = 0;
-    this.greenNumber1 = 0;
-    this.blueNumber1 = 0;
     this.publicNumber2 = 0;
-    this.redNumber2 = 0;
-    this.yellowNumber2 = 0;
-    this.greenNumber2 = 0;
-    this.blueNumber2 = 0;
+    this.redDice = 0;
+    this.yellowDice = 0;
+    this.greenDice = 0;
+    this.blueDice = 0;
   }
 
   rollDice() {
-    // initiated by user
-    // all numbers are given a new number between 1 & 6
-
-    let counter = 0;
-
-    while (counter < 100) {
-      // creates a nice visual effect of the dice numbers changing
-      this.publicNumber1 = Math.floor(Math.random() * 6) + 1;
-      this.redNumber1 = Math.floor(Math.random() * 6) + 1;
-      this.yellowNumber1 = Math.floor(Math.random() * 6) + 1;
-      this.greenNumber1 = Math.floor(Math.random() * 6) + 1;
-      this.blueNumber1 = Math.floor(Math.random() * 6) + 1;
-      this.publicNumber2 = Math.floor(Math.random() * 6) + 1;
-      this.redNumber2 = Math.floor(Math.random() * 6) + 1;
-      this.yellowNumber2 = Math.floor(Math.random() * 6) + 1;
-      this.greenNumber2 = Math.floor(Math.random() * 6) + 1;
-      this.blueNumber2 = Math.floor(Math.random() * 6) + 1;
-
-      counter++;
-    }
-
     this.publicNumber1 = Math.floor(Math.random() * 6) + 1;
-    this.redNumber1 = Math.floor(Math.random() * 6) + 1;
-    this.yellowNumber1 = Math.floor(Math.random() * 6) + 1;
-    this.greenNumber1 = Math.floor(Math.random() * 6) + 1;
-    this.blueNumber1 = Math.floor(Math.random() * 6) + 1;
     this.publicNumber2 = Math.floor(Math.random() * 6) + 1;
-    this.redNumber2 = Math.floor(Math.random() * 6) + 1;
-    this.yellowNumber2 = Math.floor(Math.random() * 6) + 1;
-    this.greenNumber2 = Math.floor(Math.random() * 6) + 1;
-    this.blueNumber2 = Math.floor(Math.random() * 6) + 1;
+    this.redDice = Math.floor(Math.random() * 6) + 1;
+    this.yellowDice = Math.floor(Math.random() * 6) + 1;
+    this.greenDice = Math.floor(Math.random() * 6) + 1;
+    this.blueDice = Math.floor(Math.random() * 6) + 1;
+
+    console.log('Hello');
+    publicNumber1.innerText = `${this.publicNumber1}`;
+    // publicNumber2.innerText = `${this.publicNumber2}`;
+    // redDice.innerText = `${this.redDice}`;
+    // yellowDice.innerText = `${this.yellowDice}`;
+    // greenDice.innerText = `${this.greenDice}`;
+    // blueDice.innerText = `${this.blueDice}`;
   }
 }

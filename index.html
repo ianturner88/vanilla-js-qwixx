@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./styling/qwixx-board.css" />
     <link rel="stylesheet" href="./styling/dice.css" />
     <link rel="stylesheet" href="./styling/available-numbers.css" />
-    <script type="module" src="./scripts.js"></script>
+    <script type="module" src="./main.js"></script>
   </head>
   <body>
     <div class="container">
@@ -102,17 +102,13 @@
         </div>
       </div>
       <div class="dice-sector">
-        <div class="dice white-dice white-1" data-white-dice-1>1</div>
-        <div class="dice white-dice white-2" data-white-dice-2>2</div>
+        <div class="dice white-dice white-1" data-public-dice-1>9</div>
+        <div class="dice white-dice white-2" data-public-dice-2>2</div>
         <div class="dice red-dice" data-red-dice>3</div>
         <div class="dice yellow-dice" data-yellow-dice>4</div>
         <div class="dice green-dice" data-green-dice>5</div>
         <div class="dice blue-dice" data-blue-dice>6</div>
         <button class="reset-button" data-roll-dice>Roll Dice</button>
-        <div class="countdown-clock">
-          <p id="countdown"></p>
-          <script src="countdownClock.js" defer></script>
-        </div>
       </div>
     </div>
   </body>
