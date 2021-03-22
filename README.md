@@ -1,5 +1,9 @@
 In this file, I will keep a running, live journal of my efforts to build a replica of the boardgame qwixx.
 
+# March 22:
+
+The 'Roll Dice' button has been hooked up, so the dice now are updated if a user clicks the button.
+
 # March 17:
 
 I learnt out to split a project over multiple js files. In my index.html file, I called './main' which led to an error message. To resolve this issue, I changed the file address called in the html file to './main.js'. ![error message](https://github.com/ianturner88/vanilla-js-qwixx/blob/main/images/Screen%20Shot%202021-03-18%20at%205.17.45%20PM.png).

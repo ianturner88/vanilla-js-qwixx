@@ -8,7 +8,7 @@
   height: 60px;
   margin: auto auto;
   display: grid;
-  grid-template-columns: repeat(10, auto);
+  grid-template-columns: repeat(9, auto);
   font-size: 140%;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
     'Lucida Sans', Arial, sans-serif;
