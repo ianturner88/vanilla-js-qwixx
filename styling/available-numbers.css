@@ -1,0 +1,116 @@
+/* the grid box where the players numbers are to be found */
+
+.available-numbers {
+  grid-row-start: 3;
+  grid-column-start: 2;
+  border: 1px solid black;
+  width: 600px;
+  height: 60px;
+  margin: auto auto;
+  display: grid;
+  grid-template-columns: repeat(9, auto);
+  font-size: 140%;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+}
+
+.available-numbers-little-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: repeat(9, auto);
+}
+
+.public-available-numbers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.player-options {
+  width: 66px;
+  height: 80px;
+}
+
+.public-number {
+  grid-column-start: 1;
+  grid-row-start: 1;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* the outer dice area */
+
+.public-number-dice {
+  width: 60px;
+  height: 60px;
+  border: 1px solid black;
+}
+
+.red-number-dice1 {
+  background: red;
+}
+
+.red-number-dice2 {
+  background: red;
+}
+
+.yellow-number-dice1 {
+  background: yellow;
+}
+
+.yellow-number-dice2 {
+  background: yellow;
+}
+
+.green-number-dice1 {
+  background: green;
+}
+
+.green-number-dice2 {
+  background: green;
+}
+
+.blue-number-dice1 {
+  background: blue;
+}
+
+.blue-number-dice2 {
+  background: blue;
+}
+
+/* the inner dice area */
+
+.inner-dice {
+  border: 1px solid none;
+  width: 50px;
+  height: 85%;
+  border-radius: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+}
+
+.public-number1,
+.public-number2 {
+  border: 1px solid black;
+}
+
+.red-available-numbers {
+  color: red;
+}
+
+.yellow-available-numbers {
+  color: black;
+}
+
+.green-available-numbers {
+  color: green;
+}
+
+.blue-available-numbers {
+  color: blue;
+}

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Qwixx</title>
+    <link rel="stylesheet" href="./styling/qwixx-board.css" />
+    <link rel="stylesheet" href="./styling/dice.css" />
+    <link rel="stylesheet" href="./styling/available-numbers.css" />
+    <script type="module" src="./main.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="board player1">
+        <div class="player-title">Player 1</div>
+        <div class="coloured-numbers">
+          <div class="red-row">
+            <button class="red-button buttons">2</button>
+            <button class="red-button buttons">3</button>
+            <button class="red-button buttons">4</button>
+            <button class="red-button buttons">5</button>
+            <button class="red-button buttons">6</button>
+            <button class="red-button buttons">7</button>
+            <button class="red-button buttons">8</button>
+            <button class="red-button buttons">9</button>
+            <button class="red-button buttons">10</button>
+            <button class="red-button buttons">11</button>
+            <button class="red-button buttons">12</button>
+          </div>
+          <div class="yellow-row">
+            <button class="yellow-button buttons">2</button>
+            <button class="yellow-button buttons">3</button>
+            <button class="yellow-button buttons">4</button>
+            <button class="yellow-button buttons">5</button>
+            <button class="yellow-button buttons">6</button>
+            <button class="yellow-button buttons">7</button>
+            <button class="yellow-button buttons">8</button>
+            <button class="yellow-button buttons">9</button>
+            <button class="yellow-button buttons">10</button>
+            <button class="yellow-button buttons">11</button>
+            <button class="yellow-button buttons">12</button>
+          </div>
+          <div class="green-row">
+            <button class="green-button buttons">12</button>
+            <button class="green-button buttons">11</button>
+            <button class="green-button buttons">10</button>
+            <button class="green-button buttons">9</button>
+            <button class="green-button buttons">8</button>
+            <button class="green-button buttons">7</button>
+            <button class="green-button buttons">6</button>
+            <button class="green-button buttons">5</button>
+            <button class="green-button buttons">4</button>
+            <button class="green-button buttons">3</button>
+            <button class="green-button buttons">2</button>
+          </div>
+          <div class="blue-row">
+            <button class="blue-button buttons">12</button>
+            <button class="blue-button buttons">11</button>
+            <button class="blue-button buttons">10</button>
+            <button class="blue-button buttons">9</button>
+            <button class="blue-button buttons">8</button>
+            <button class="blue-button buttons">7</button>
+            <button class="blue-button buttons">6</button>
+            <button class="blue-button buttons">5</button>
+            <button class="blue-button buttons">4</button>
+            <button class="blue-button buttons">3</button>
+            <button class="blue-button buttons">2</button>
+          </div>
+        </div>
+      </div>
+      <div class="player1-available-numbers available-numbers">
+        <div
+          class="public-number-dice1 public-available-numbers available-numbers-little-box"
+        >
+          <div class="public-number1 inner-dice" data-available-white>0</div>
+        </div>
+        <div
+          class="red-number-dice1 red-available-numbers available-numbers-little-box"
+        >
+          <div class="red-number1 inner-dice" data-available-red-1>0</div>
+        </div>
+        <div
+          class="red-number-dice2 red-available-numbers available-numbers-little-box"
+        >
+          <div class="red-number2 inner-dice" data-available-red-2>0</div>
+        </div>
+        <div
+          class="yellow-number-dice1 yellow-available-numbers available-numbers-little-box"
+        >
+          <div class="yellow-number1 inner-dice" data-available-yellow-1>0</div>
+        </div>
+        <div
+          class="yellow-number-dice2 yellow-available-numbers available-numbers-little-box"
+        >
+          <div class="yellow-number2 inner-dice" data-available-yellow-2>0</div>
+        </div>
+        <div
+          class="green-number-dice1 green-available-numbers available-numbers-little-box"
+        >
+          <div class="green-number1 inner-dice" data-available-green-1>0</div>
+        </div>
+        <div
+          class="green-number-dice2 green-available-numbers available-numbers-little-box"
+        >
+          <div class="green-number2 inner-dice" data-available-green-2>0</div>
+        </div>
+        <div
+          class="blue-number-dice1 blue-available-numbers available-numbers-little-box"
+        >
+          <div class="blue-number1 inner-dice" data-available-blue-1>0</div>
+        </div>
+        <div
+          class="blue-number-dice2 blue-available-numbers available-numbers-little-box"
+        >
+          <div class="blue-number2 inner-dice" data-available-blue-2>0</div>
+        </div>
+      </div>
+      <div class="dice-sector">
+        <div class="dice white-dice white-1" data-public-dice-1>1</div>
+        <div class="dice white-dice white-2" data-public-dice-2>2</div>
+        <div class="dice red-dice" data-red-dice>3</div>
+        <div class="dice yellow-dice" data-yellow-dice>4</div>
+        <div class="dice green-dice" data-green-dice>5</div>
+        <div class="dice blue-dice" data-blue-dice>6</div>
+        <button class="reset-button" data-roll-dice>Roll Dice</button>
+      </div>
+    </div>
+  </body>
+</html>
