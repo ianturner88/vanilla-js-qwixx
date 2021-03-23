@@ -14,6 +14,13 @@
     'Lucida Sans', Arial, sans-serif;
 }
 
+.available-numbers-little-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: repeat(9, auto);
+}
+
 .public-available-numbers {
   display: flex;
   justify-content: center;
@@ -44,58 +51,34 @@
 
 .red-number-dice1 {
   background: red;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .red-number-dice2 {
   background: red;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .yellow-number-dice1 {
   background: yellow;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .yellow-number-dice2 {
   background: yellow;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .green-number-dice1 {
   background: green;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .green-number-dice2 {
   background: green;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .blue-number-dice1 {
   background: blue;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .blue-number-dice2 {
   background: blue;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 /* the inner dice area */
@@ -121,7 +104,7 @@
 }
 
 .yellow-available-numbers {
-  color: yellow;
+  color: black;
 }
 
 .green-available-numbers {
