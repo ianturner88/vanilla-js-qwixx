@@ -13,11 +13,10 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "homepages": "https://ianturner88.github.io/qwixx",
+  "homepage": "https://ianturner88.github.io/qwixx",
   "bugs": {
     "url": "https://github.com/ianturner88/vanilla-js-qwixx/issues"
   },
-  "homepage": "https://github.com/ianturner88/vanilla-js-qwixx#readme",
   "dependencies": {
     "gh-pages": "^3.1.0"
   }
