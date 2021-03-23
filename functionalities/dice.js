@@ -52,7 +52,7 @@ export default class Dice {
     availableYellow1.innerHTML = this.publicNumber1 + this.yellowDice;
     availableYellow2.innerHTML = this.publicNumber2 + this.yellowDice;
     availableGreen1.innerHTML = this.publicNumber1 + this.greenDice;
-    availableGreen2.innerHTML = this.publicNumber2 + this.yellowDice;
+    availableGreen2.innerHTML = this.publicNumber2 + this.greenDice;
     availableBlue1.innerHTML = this.publicNumber1 + this.blueDice;
     availableBlue2.innerHTML = this.publicNumber2 + this.blueDice;
   }
