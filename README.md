@@ -2,7 +2,7 @@ In this file, I will keep a running, live journal of my efforts to build a repli
 
 # March 23:
 
-A 'Github Pages' sit was made where my boardgame may live.
+A 'Github Pages' site was made where my boardgame may live.
 
 # March 22:
 
