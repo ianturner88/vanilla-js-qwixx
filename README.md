@@ -2,7 +2,9 @@ In this file, I will keep a running, live journal of my efforts to build a repli
 
 # March 29:
 
-I have an unresolved issue I plan to ask friends for help with. The X class, used to indicate a player has selected a button, does not display. I am unsure how to resolve the issue ![x-class](https://github.com/ianturner88/vanilla-js-qwixx/blob/main/images/Screen%20Shot%202021-03-29%20at%207.21.40%20PM.png).
+Turns out, the issue was minor: the background colour had to be set to black so that the X would display. ![x-class](https://github.com/ianturner88/vanilla-js-qwixx/blob/main/images/Screen%20Shot%202021-03-29%20at%207.36.40%20PM.png)
+
+I have an unresolved issue I plan to ask friends for help with. The X class, used to indicate a player has selected a button, does not display. I am unsure how to resolve the issue. ![x-class](https://github.com/ianturner88/vanilla-js-qwixx/blob/main/images/Screen%20Shot%202021-03-29%20at%207.21.40%20PM.png).
 
 # March 23:
 
