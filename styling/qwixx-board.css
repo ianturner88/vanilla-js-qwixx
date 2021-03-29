@@ -158,7 +158,7 @@
   position: absolute;
   width: 6px;
   height: 36px;
-  color: black;
+  background-color: black;
 }
 
 .red-button.buttons.x::before {

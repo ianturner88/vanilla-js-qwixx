@@ -1,5 +1,9 @@
 In this file, I will keep a running, live journal of my efforts to build a replica of the boardgame qwixx.
 
+# March 29:
+
+I have an unresolved issue I plan to ask friends for help with. The X class, used to indicate a player has selected a button, does not display. I am unsure how to resolve the issue ![x-class](https://github.com/ianturner88/vanilla-js-qwixx/blob/main/images/Screen%20Shot%202021-03-29%20at%207.21.40%20PM.png).
+
 # March 23:
 
 A 'Github Pages' site was made where my boardgame may live.
