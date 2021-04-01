@@ -7,15 +7,29 @@ const greenDice = document.querySelector('[data-green-dice]');
 const blueDice = document.querySelector('[data-blue-dice]');
 
 // the 9 available numbers
-const availablePublicNumber = document.querySelector('[data-available-white]');
-const availableRed1 = document.querySelector('[data-available-red-1]');
-const availableRed2 = document.querySelector('[data-available-red-2]');
-const availableYellow1 = document.querySelector('[data-available-yellow-1]');
-const availableYellow2 = document.querySelector('[data-available-yellow-2]');
-const availableGreen1 = document.querySelector('[data-available-green-1]');
-const availableGreen2 = document.querySelector('[data-available-green-2]');
-const availableBlue1 = document.querySelector('[data-available-blue-1]');
-const availableBlue2 = document.querySelector('[data-available-blue-2]');
+const availablePublicNumber = document.querySelector(
+  '[data-player-1-available-white]'
+);
+const availableRed1 = document.querySelector('[data-player-1-available-red-1]');
+const availableRed2 = document.querySelector('[data-player-1-available-red-2]');
+const availableYellow1 = document.querySelector(
+  '[data-player-1-available-yellow-1]'
+);
+const availableYellow2 = document.querySelector(
+  '[data-player-1-available-yellow-2]'
+);
+const availableGreen1 = document.querySelector(
+  '[data-player-1-available-green-1]'
+);
+const availableGreen2 = document.querySelector(
+  '[data-player-1-available-green-2]'
+);
+const availableBlue1 = document.querySelector(
+  '[data-player-1-available-blue-1]'
+);
+const availableBlue2 = document.querySelector(
+  '[data-player-1-available-blue-2]'
+);
 
 export default class Dice {
   constructor() {

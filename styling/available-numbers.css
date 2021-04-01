@@ -1,8 +1,6 @@
 /* the grid box where the players numbers are to be found */
 
 .available-numbers {
-  grid-row-start: 3;
-  grid-column-start: 2;
   border: 1px solid black;
   width: 600px;
   height: 60px;
@@ -12,6 +10,16 @@
   font-size: 140%;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
     'Lucida Sans', Arial, sans-serif;
+}
+
+.player1-available-numbers {
+  grid-row-start: 3;
+  grid-column-start: 2;
+}
+
+.player2-available-numbers {
+  grid-row-start: 3;
+  grid-column-start: 4;
 }
 
 .available-numbers-little-box {
