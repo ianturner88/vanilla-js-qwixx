@@ -1,4 +1,8 @@
-In this file, I will keep a running, live journal of my efforts to build a replica of the boardgame qwixx.
+In this file, I will keep a running, live journal of my [efforts](https://ianturner88.github.io/vanilla-js-qwixx/) to build a replica of the boardgame qwixx.
+
+# April 1:
+
+Multiple different 'NO' options were explored. The em dash was selected. ![No](https://github.com/ianturner88/vanilla-js-qwixx/blob/main/images/Screen%20Shot%202021-04-01%20at%2011.40.00%20AM.png)
 
 # March 29:
 
