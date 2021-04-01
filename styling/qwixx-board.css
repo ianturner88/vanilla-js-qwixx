@@ -168,3 +168,11 @@
 .red-button.buttons.x::after {
   transform: rotate(-45deg);
 }
+
+.available {
+  cursor: pointer;
+}
+
+.notAvailable {
+  cursor: not-allowed;
+}

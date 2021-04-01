@@ -64,6 +64,8 @@ const player2AvailableBlue2 = document.querySelector(
   '[data-player-2-available-blue-2]'
 );
 
+let player1RedNumbers = ['p1r2', 'p1r3', 'p1r4', 'p1r5'];
+
 export default class Dice {
   constructor() {
     // initialize all numbers to zero
@@ -94,6 +96,18 @@ export default class Dice {
   }
 
   player1sTurn() {
+    // update Player 2's numbers
+    player2AvailablePublicNumber.innerHTML =
+      this.publicNumber1 + this.publicNumber2;
+    player2AvailableRed1.innerHTML = '—';
+    player2AvailableRed2.innerHTML = '—';
+    player2AvailableYellow1.innerHTML = '—';
+    player2AvailableYellow2.innerHTML = '—';
+    player2AvailableGreen1.innerHTML = '—';
+    player2AvailableGreen2.innerHTML = '—';
+    player2AvailableBlue1.innerHTML = '—';
+    player2AvailableBlue2.innerHTML = '—';
+
     //Player 1 update the available number display
     player1AvailablePublicNumber.innerHTML =
       this.publicNumber1 + this.publicNumber2;
@@ -106,33 +120,31 @@ export default class Dice {
     player1AvailableBlue1.innerHTML = this.publicNumber1 + this.blueDice;
     player1AvailableBlue2.innerHTML = this.publicNumber2 + this.blueDice;
 
-    // update Player 2's numbers
-    player2AvailablePublicNumber.innerHTML =
-      this.publicNumber1 + this.publicNumber2;
-    player2AvailableRed1.innerHTML = '';
-    player2AvailableRed2.innerHTML = '';
-    player2AvailableYellow1.innerHTML = '';
-    player2AvailableYellow2.innerHTML = '';
-    player2AvailableGreen1.innerHTML = '';
-    player2AvailableGreen2.innerHTML = '';
-    player2AvailableBlue1.innerHTML = '';
-    player2AvailableBlue2.innerHTML = '';
+    if (this.publicNumber1 == this.publicNumber2) {
+      console.log('Is Equal');
+      player1AvailableRed1.innerHTML = '—';
+      player1AvailableYellow1.innerHTML = '—';
+      player1AvailableGreen1.innerHTML = '—';
+      player1AvailableBlue1.innerHTML = '—';
 
-    // update Player 2's numbers
-    player2AvailablePublicNumber.innerHTML =
-      this.publicNumber1 + this.publicNumber2;
-    player2AvailableRed1.innerHTML = '—';
-    player2AvailableRed2.innerHTML = '—';
-    player2AvailableYellow1.innerHTML = '—';
-    player2AvailableYellow2.innerHTML = '—';
-    player2AvailableGreen1.innerHTML = '—';
-    player2AvailableGreen2.innerHTML = '—';
-    player2AvailableBlue1.innerHTML = '—';
-    player2AvailableBlue2.innerHTML = '—';
+      return;
+    }
   }
 
   player2sTurn() {
-    //Player 2 update the available number display
+    // update Player 2's numbers
+    player1AvailablePublicNumber.innerHTML =
+      this.publicNumber1 + this.publicNumber2;
+    player1AvailableRed1.innerHTML = '—';
+    player1AvailableRed2.innerHTML = '—';
+    player1AvailableYellow1.innerHTML = '—';
+    player1AvailableYellow2.innerHTML = '—';
+    player1AvailableGreen1.innerHTML = '—';
+    player1AvailableGreen2.innerHTML = '—';
+    player1AvailableBlue1.innerHTML = '—';
+    player1AvailableBlue2.innerHTML = '—';
+
+    //Player 1 update the available number display
     player2AvailablePublicNumber.innerHTML =
       this.publicNumber1 + this.publicNumber2;
     player2AvailableRed1.innerHTML = this.publicNumber1 + this.redDice;
@@ -144,13 +156,23 @@ export default class Dice {
     player2AvailableBlue1.innerHTML = this.publicNumber1 + this.blueDice;
     player2AvailableBlue2.innerHTML = this.publicNumber2 + this.blueDice;
 
-    player1AvailableRed1.innerHTML = '—';
-    player1AvailableRed2.innerHTML = '—';
-    player1AvailableYellow1.innerHTML = '—';
-    player1AvailableYellow2.innerHTML = '—';
-    player1AvailableGreen1.innerHTML = '—';
-    player1AvailableGreen2.innerHTML = '—';
-    player1AvailableBlue1.innerHTML = '—';
-    player1AvailableBlue2.innerHTML = '—';
+    if (this.publicNumber1 == this.publicNumber2) {
+      console.log('Is Equal');
+      player2AvailableRed1.innerHTML = '—';
+      player2AvailableYellow1.innerHTML = '—';
+      player2AvailableGreen1.innerHTML = '—';
+      player2AvailableBlue1.innerHTML = '—';
+
+      return;
+    }
+  }
+
+  updateBoard() {
+    for (let i = 0; i < 5; i++) {
+      let elementID = player1RedNumbers[i];
+      var element = document.getElementById(elementID);
+      element.classList.add('available');
+      element.classList.remove('notAvailable');
+    }
   }
 }

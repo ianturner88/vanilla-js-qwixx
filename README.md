@@ -2,7 +2,7 @@ In this file, I will keep a running, live journal of my [efforts](https://iantur
 
 # April 1:
 
-Multiple different 'NO' options were explored. The em dash was selected. ![No](https://github.com/ianturner88/vanilla-js-qwixx/blob/main/images/Screen%20Shot%202021-04-01%20at%2011.40.00%20AM.png)
+Multiple different 'NO' options were explored. The em dash was selected (the left green option). Hat tip to my friend J for proposing the em dash. ![No](https://github.com/ianturner88/vanilla-js-qwixx/blob/main/images/Screen%20Shot%202021-04-01%20at%2011.40.00%20AM.png)
 
 # March 29:
 
