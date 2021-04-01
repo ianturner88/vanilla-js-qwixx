@@ -121,14 +121,14 @@ export default class Dice {
     // update Player 2's numbers
     player2AvailablePublicNumber.innerHTML =
       this.publicNumber1 + this.publicNumber2;
-    player2AvailableRed1.innerHTML = 'X';
-    player2AvailableRed2.innerHTML = '-';
-    player2AvailableYellow1.innerHTML = '--';
-    player2AvailableYellow2.innerHTML = '–';
+    player2AvailableRed1.innerHTML = '—';
+    player2AvailableRed2.innerHTML = '—';
+    player2AvailableYellow1.innerHTML = '—';
+    player2AvailableYellow2.innerHTML = '—';
     player2AvailableGreen1.innerHTML = '—';
-    player2AvailableGreen2.innerHTML = '——';
-    player2AvailableBlue1.innerHTML = '———';
-    player2AvailableBlue2.innerHTML = '---';
+    player2AvailableGreen2.innerHTML = '—';
+    player2AvailableBlue1.innerHTML = '—';
+    player2AvailableBlue2.innerHTML = '—';
   }
 
   player2sTurn() {
@@ -144,13 +144,13 @@ export default class Dice {
     player2AvailableBlue1.innerHTML = this.publicNumber1 + this.blueDice;
     player2AvailableBlue2.innerHTML = this.publicNumber2 + this.blueDice;
 
-    player1AvailableRed1.innerHTML = '';
-    player1AvailableRed2.innerHTML = '';
-    player1AvailableYellow1.innerHTML = '';
-    player1AvailableYellow2.innerHTML = '';
-    player1AvailableGreen1.innerHTML = '';
-    player1AvailableGreen2.innerHTML = '';
-    player1AvailableBlue1.innerHTML = '';
-    player1AvailableBlue2.innerHTML = '';
+    player1AvailableRed1.innerHTML = '—';
+    player1AvailableRed2.innerHTML = '—';
+    player1AvailableYellow1.innerHTML = '—';
+    player1AvailableYellow2.innerHTML = '—';
+    player1AvailableGreen1.innerHTML = '—';
+    player1AvailableGreen2.innerHTML = '—';
+    player1AvailableBlue1.innerHTML = '—';
+    player1AvailableBlue2.innerHTML = '—';
   }
 }
