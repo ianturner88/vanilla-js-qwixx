@@ -6,29 +6,62 @@ const yellowDice = document.querySelector('[data-yellow-dice]');
 const greenDice = document.querySelector('[data-green-dice]');
 const blueDice = document.querySelector('[data-blue-dice]');
 
-// the 9 available numbers
-const availablePublicNumber = document.querySelector(
+// player 1's 9 available numbers
+const player1AvailablePublicNumber = document.querySelector(
   '[data-player-1-available-white]'
 );
-const availableRed1 = document.querySelector('[data-player-1-available-red-1]');
-const availableRed2 = document.querySelector('[data-player-1-available-red-2]');
-const availableYellow1 = document.querySelector(
+const player1AvailableRed1 = document.querySelector(
+  '[data-player-1-available-red-1]'
+);
+const player1AvailableRed2 = document.querySelector(
+  '[data-player-1-available-red-2]'
+);
+const player1AvailableYellow1 = document.querySelector(
   '[data-player-1-available-yellow-1]'
 );
-const availableYellow2 = document.querySelector(
+const player1AvailableYellow2 = document.querySelector(
   '[data-player-1-available-yellow-2]'
 );
-const availableGreen1 = document.querySelector(
+const player1AvailableGreen1 = document.querySelector(
   '[data-player-1-available-green-1]'
 );
-const availableGreen2 = document.querySelector(
+const player1AvailableGreen2 = document.querySelector(
   '[data-player-1-available-green-2]'
 );
-const availableBlue1 = document.querySelector(
+const player1AvailableBlue1 = document.querySelector(
   '[data-player-1-available-blue-1]'
 );
-const availableBlue2 = document.querySelector(
+const player1AvailableBlue2 = document.querySelector(
   '[data-player-1-available-blue-2]'
+);
+
+// player 2's 9 available numbers
+const player2AvailablePublicNumber = document.querySelector(
+  '[data-player-2-available-white]'
+);
+const player2AvailableRed1 = document.querySelector(
+  '[data-player-2-available-red-1]'
+);
+const player2AvailableRed2 = document.querySelector(
+  '[data-player-2-available-red-2]'
+);
+const player2AvailableYellow1 = document.querySelector(
+  '[data-player-2-available-yellow-1]'
+);
+const player2AvailableYellow2 = document.querySelector(
+  '[data-player-2-available-yellow-2]'
+);
+const player2AvailableGreen1 = document.querySelector(
+  '[data-player-2-available-green-1]'
+);
+const player2AvailableGreen2 = document.querySelector(
+  '[data-player-2-available-green-2]'
+);
+const player2AvailableBlue1 = document.querySelector(
+  '[data-player-2-available-blue-1]'
+);
+const player2AvailableBlue2 = document.querySelector(
+  '[data-player-2-available-blue-2]'
 );
 
 export default class Dice {
@@ -59,15 +92,28 @@ export default class Dice {
     greenDice.innerText = `${this.greenDice}`;
     blueDice.innerText = `${this.blueDice}`;
 
-    //update the available number display
-    availablePublicNumber.innerHTML = this.publicNumber1 + this.publicNumber2;
-    availableRed1.innerHTML = this.publicNumber1 + this.redDice;
-    availableRed2.innerHTML = this.publicNumber2 + this.redDice;
-    availableYellow1.innerHTML = this.publicNumber1 + this.yellowDice;
-    availableYellow2.innerHTML = this.publicNumber2 + this.yellowDice;
-    availableGreen1.innerHTML = this.publicNumber1 + this.greenDice;
-    availableGreen2.innerHTML = this.publicNumber2 + this.greenDice;
-    availableBlue1.innerHTML = this.publicNumber1 + this.blueDice;
-    availableBlue2.innerHTML = this.publicNumber2 + this.blueDice;
+    //Player 1 update the available number display
+    player1AvailablePublicNumber.innerHTML =
+      this.publicNumber1 + this.publicNumber2;
+    player1AvailableRed1.innerHTML = this.publicNumber1 + this.redDice;
+    player1AvailableRed2.innerHTML = this.publicNumber2 + this.redDice;
+    player1AvailableYellow1.innerHTML = this.publicNumber1 + this.yellowDice;
+    player1AvailableYellow2.innerHTML = this.publicNumber2 + this.yellowDice;
+    player1AvailableGreen1.innerHTML = this.publicNumber1 + this.greenDice;
+    player1AvailableGreen2.innerHTML = this.publicNumber2 + this.greenDice;
+    player1AvailableBlue1.innerHTML = this.publicNumber1 + this.blueDice;
+    player1AvailableBlue2.innerHTML = this.publicNumber2 + this.blueDice;
+
+    //Player 2 update the available number display
+    player2AvailablePublicNumber.innerHTML =
+      this.publicNumber1 + this.publicNumber2;
+    player2AvailableRed1.innerHTML = this.publicNumber1 + this.redDice;
+    player2AvailableRed2.innerHTML = this.publicNumber2 + this.redDice;
+    player2AvailableYellow1.innerHTML = this.publicNumber1 + this.yellowDice;
+    player2AvailableYellow2.innerHTML = this.publicNumber2 + this.yellowDice;
+    player2AvailableGreen1.innerHTML = this.publicNumber1 + this.greenDice;
+    player2AvailableGreen2.innerHTML = this.publicNumber2 + this.greenDice;
+    player2AvailableBlue1.innerHTML = this.publicNumber1 + this.blueDice;
+    player2AvailableBlue2.innerHTML = this.publicNumber2 + this.blueDice;
   }
 }
