@@ -2,6 +2,10 @@ In this file, I will keep a running, live journal of my [efforts](https://iantur
 
 # April 1:
 
+A display was implemented to show whose turn it is. ![Player's turn display](https://github.com/ianturner88/vanilla-js-qwixx/blob/main/images/Screen%20Shot%202021-04-01%20at%208.15.17%20PM.png)
+
+The avaiable numbers are updated, so that if the public dice are the same, the colour die do not display duplicates. ![Duplicates eliminated](https://github.com/ianturner88/vanilla-js-qwixx/blob/main/images/Screen%20Shot%202021-04-01%20at%207.29.39%20PM.png)
+
 Multiple different 'NO' options were explored. The em dash was selected (the left green option). Hat tip to my friend J for proposing the em dash. ![No](https://github.com/ianturner88/vanilla-js-qwixx/blob/main/images/Screen%20Shot%202021-04-01%20at%2011.40.00%20AM.png)
 
 # March 29:
