@@ -77,11 +77,20 @@
   margin: auto auto;
 }
 
-.countdown-clock {
+.turn-keeper {
   width: 110px;
   height: 75px;
-  background-color: white;
+  border: 1px solid black;
   margin: auto auto;
-  border: 1px solid #3498db;
-  border-radius: 5%;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+  grid-template-columns: 50% 50%;
+}
+
+.turn-keeper-display {
+  font-weight: 500;
+  font-size: 290%;
 }

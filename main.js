@@ -1,6 +1,7 @@
 import Dice from './functionalities/dice.js';
 
 const newRoll = document.querySelector('[data-roll-dice]');
+const playerTurnDisplay = document.querySelector('[data-turn-keeper-display]');
 
 const dice = new Dice();
 
@@ -11,11 +12,14 @@ newRoll.addEventListener('click', (e) => {
   isPlayer1sTurn =
     isPlayer1sTurn == 1 ? (isPlayer1sTurn = 0) : (isPlayer1sTurn = 1);
 
+  playerTurnDisplay.innerHTML = isPlayer1sTurn == 1 ? '1' : '2';
+
   // roll the dice & generate available numbers
   dice.rollDice();
   if (isPlayer1sTurn == 1) {
     // player 1's turn
     dice.player1sTurn();
+    dice.updateBoard();
     return;
   }
 
