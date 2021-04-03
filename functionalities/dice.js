@@ -64,8 +64,6 @@ const player2AvailableBlue2 = document.querySelector(
   '[data-player-2-available-blue-2]'
 );
 
-let player1RedNumbers = ['p1r2', 'p1r3', 'p1r4', 'p1r5'];
-
 export default class Dice {
   constructor() {
     // initialize all numbers to zero
@@ -121,6 +119,7 @@ export default class Dice {
     player1AvailableBlue2.innerHTML = this.publicNumber2 + this.blueDice;
 
     if (this.publicNumber1 == this.publicNumber2) {
+      // the 2 public numbers are the same
       console.log('Is Equal');
       player1AvailableRed1.innerHTML = '—';
       player1AvailableYellow1.innerHTML = '—';
@@ -157,6 +156,7 @@ export default class Dice {
     player2AvailableBlue2.innerHTML = this.publicNumber2 + this.blueDice;
 
     if (this.publicNumber1 == this.publicNumber2) {
+      // the 2 public numbers are the same
       console.log('Is Equal');
       player2AvailableRed1.innerHTML = '—';
       player2AvailableYellow1.innerHTML = '—';
@@ -164,6 +164,15 @@ export default class Dice {
       player2AvailableBlue1.innerHTML = '—';
 
       return;
+    }
+  }
+
+  setAllButtonsToUnavailable(arrButtonsIDs) {
+    for (let i = 0; i < 11; i++) {
+      let elementID = arrButtonsIDs[i];
+      var element = document.getElementById(elementID);
+      element.classList.add('available');
+      element.classList.remove('notAvailable');
     }
   }
 

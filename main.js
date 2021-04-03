@@ -1,4 +1,10 @@
 import Dice from './functionalities/dice.js';
+import {
+  player1RedNumbers,
+  player1YellowNumbers,
+  player1GreenNumbers,
+  player1BlueNumbers,
+} from './functionalities/buttonIDs.js';
 
 const newRoll = document.querySelector('[data-roll-dice]');
 const playerTurnDisplay = document.querySelector('[data-turn-keeper-display]');
@@ -19,7 +25,11 @@ newRoll.addEventListener('click', (e) => {
   if (isPlayer1sTurn == 1) {
     // player 1's turn
     dice.player1sTurn();
-    dice.updateBoard();
+    dice.setAllButtonsToUnavailable(player1RedNumbers);
+    dice.setAllButtonsToUnavailable(player1YellowNumbers);
+    dice.setAllButtonsToUnavailable(player1GreenNumbers);
+    dice.setAllButtonsToUnavailable(player1BlueNumbers);
+
     return;
   }
 

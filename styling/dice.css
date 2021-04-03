@@ -80,7 +80,7 @@
 .turn-keeper {
   width: 110px;
   height: 75px;
-  border: 1px solid black;
+  border: 3px solid black;
   margin: auto auto;
   display: grid;
   align-items: center;
