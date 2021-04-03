@@ -73,6 +73,8 @@ export default class Dice {
     this.yellowDice = 0;
     this.greenDice = 0;
     this.blueDice = 0;
+    this.player1AvailableNumbers = [];
+    this.player2AvailableNumbers = [];
   }
 
   rollDice() {
@@ -97,6 +99,13 @@ export default class Dice {
     // update Player 2's numbers
     player2AvailablePublicNumber.innerHTML =
       this.publicNumber1 + this.publicNumber2;
+    // store public number available to player 2
+    this.storeAvailableNumbers(
+      this.player2AvailableNumbers,
+      'public',
+      this.publicNumber1 + this.publicNumber2
+    );
+
     player2AvailableRed1.innerHTML = '—';
     player2AvailableRed2.innerHTML = '—';
     player2AvailableYellow1.innerHTML = '—';
@@ -118,14 +127,70 @@ export default class Dice {
     player1AvailableBlue1.innerHTML = this.publicNumber1 + this.blueDice;
     player1AvailableBlue2.innerHTML = this.publicNumber2 + this.blueDice;
 
+    // store numbers available to player 1
+    // public number
+    this.storeAvailableNumbers(
+      this.player1AvailableNumbers,
+      'public',
+      this.publicNumber1 + this.publicNumber2
+    );
+    // RED numbers
+    this.storeAvailableNumbers(
+      this.player1AvailableNumbers,
+      'red',
+      this.publicNumber1 + this.redDice
+    );
+    this.storeAvailableNumbers(
+      this.player1AvailableNumbers,
+      'red',
+      this.publicNumber2 + this.redDice
+    );
+
+    // YELLOW numbers
+    this.storeAvailableNumbers(
+      this.player1AvailableNumbers,
+      'yellow',
+      this.publicNumber1 + this.yellowDice
+    );
+    this.storeAvailableNumbers(
+      this.player1AvailableNumbers,
+      'yellow',
+      this.publicNumber2 + this.yellowDice
+    );
+
+    // GREEN numbers
+    this.storeAvailableNumbers(
+      this.player1AvailableNumbers,
+      'green',
+      this.publicNumber1 + this.greenDice
+    );
+    this.storeAvailableNumbers(
+      this.player1AvailableNumbers,
+      'green',
+      this.publicNumber2 + this.greenDice
+    );
+
+    // BLUE numbers
+    this.storeAvailableNumbers(
+      this.player1AvailableNumbers,
+      'blue',
+      this.publicNumber1 + this.blueDice
+    );
+    this.storeAvailableNumbers(
+      this.player1AvailableNumbers,
+      'blue',
+      this.publicNumber2 + this.blueDice
+    );
+
     if (this.publicNumber1 == this.publicNumber2) {
       // the 2 public numbers are the same
-      console.log('Is Equal');
       player1AvailableRed1.innerHTML = '—';
       player1AvailableYellow1.innerHTML = '—';
       player1AvailableGreen1.innerHTML = '—';
       player1AvailableBlue1.innerHTML = '—';
 
+      console.log(this.player1AvailableNumbers);
+      console.log(this.player2AvailableNumbers);
       return;
     }
   }
@@ -157,7 +222,6 @@ export default class Dice {
 
     if (this.publicNumber1 == this.publicNumber2) {
       // the 2 public numbers are the same
-      console.log('Is Equal');
       player2AvailableRed1.innerHTML = '—';
       player2AvailableYellow1.innerHTML = '—';
       player2AvailableGreen1.innerHTML = '—';
@@ -168,11 +232,18 @@ export default class Dice {
   }
 
   setAllButtonsToUnavailable(arrButtonsIDs) {
+    // initialize all the buttons on the board to unavailable
     for (let i = 0; i < 11; i++) {
       let elementID = arrButtonsIDs[i];
       var element = document.getElementById(elementID);
       element.classList.remove('available');
       element.classList.add('notAvailable');
     }
+  }
+
+  storeAvailableNumbers(arrPlayer, colour, buttonNumber) {
+    // store the available numbers in an array
+    arrPlayer.push(colour);
+    arrPlayer.push(buttonNumber);
   }
 }

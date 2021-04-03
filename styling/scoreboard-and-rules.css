@@ -6,6 +6,6 @@
   background-color: wheat;
   border: 1px solid black;
   display: grid;
-  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-columns: 30% 70%;
   grid-template-rows: 2;
 }
