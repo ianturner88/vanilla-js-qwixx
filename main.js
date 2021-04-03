@@ -26,6 +26,12 @@ newRoll.addEventListener('click', (e) => {
 
   // roll the dice & generate available numbers
   dice.rollDice();
+
+  console.log('Player 1:');
+  console.log(dice.player1AvailableNumbers);
+  console.log('Player 2:');
+  console.log(dice.player2AvailableNumbers);
+
   if (isPlayer1sTurn == 1) {
     // player 1's turn
     dice.player1sTurn();
@@ -33,6 +39,12 @@ newRoll.addEventListener('click', (e) => {
     dice.setAllButtonsToUnavailable(player1YellowNumbers);
     dice.setAllButtonsToUnavailable(player1GreenNumbers);
     dice.setAllButtonsToUnavailable(player1BlueNumbers);
+
+    // TEST
+    console.log('Player 1:');
+    console.log(dice.player1AvailableNumbers);
+    console.log('Player 2:');
+    console.log(dice.player2AvailableNumbers);
     return;
   }
 
@@ -42,4 +54,10 @@ newRoll.addEventListener('click', (e) => {
   dice.setAllButtonsToUnavailable(player2YellowNumbers);
   dice.setAllButtonsToUnavailable(player2GreenNumbers);
   dice.setAllButtonsToUnavailable(player2BlueNumbers);
+
+  // TEST
+  console.log('Player 1:');
+  console.log(dice.player1AvailableNumbers);
+  console.log('Player 2:');
+  console.log(dice.player2AvailableNumbers);
 });

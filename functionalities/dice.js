@@ -78,6 +78,10 @@ export default class Dice {
   }
 
   rollDice() {
+    // wipe available numbers for BOTH players away
+    this.player1AvailableNumbers = [];
+    this.player2AvailableNumbers = [];
+
     // generate the random numbers for the dice
     this.publicNumber1 = Math.floor(Math.random() * 6) + 1;
     this.publicNumber2 = Math.floor(Math.random() * 6) + 1;
@@ -134,6 +138,7 @@ export default class Dice {
       'public',
       this.publicNumber1 + this.publicNumber2
     );
+
     // RED numbers
     this.storeAvailableNumbers(
       this.player1AvailableNumbers,
@@ -189,8 +194,6 @@ export default class Dice {
       player1AvailableGreen1.innerHTML = '—';
       player1AvailableBlue1.innerHTML = '—';
 
-      console.log(this.player1AvailableNumbers);
-      console.log(this.player2AvailableNumbers);
       return;
     }
   }
@@ -219,6 +222,70 @@ export default class Dice {
     player2AvailableGreen2.innerHTML = this.publicNumber2 + this.greenDice;
     player2AvailableBlue1.innerHTML = this.publicNumber1 + this.blueDice;
     player2AvailableBlue2.innerHTML = this.publicNumber2 + this.blueDice;
+
+    // store numbers available to player 1
+    // public number
+    this.storeAvailableNumbers(
+      this.player1AvailableNumbers,
+      'public',
+      this.publicNumber1 + this.publicNumber2
+    );
+
+    // store numbers available to player 2
+    // public number
+    this.storeAvailableNumbers(
+      this.player2AvailableNumbers,
+      'public',
+      this.publicNumber1 + this.publicNumber2
+    );
+
+    // RED numbers
+    this.storeAvailableNumbers(
+      this.player2AvailableNumbers,
+      'red',
+      this.publicNumber1 + this.redDice
+    );
+    this.storeAvailableNumbers(
+      this.player2AvailableNumbers,
+      'red',
+      this.publicNumber2 + this.redDice
+    );
+
+    // YELLOW numbers
+    this.storeAvailableNumbers(
+      this.player2AvailableNumbers,
+      'yellow',
+      this.publicNumber1 + this.yellowDice
+    );
+    this.storeAvailableNumbers(
+      this.player2AvailableNumbers,
+      'yellow',
+      this.publicNumber2 + this.yellowDice
+    );
+
+    // GREEN numbers
+    this.storeAvailableNumbers(
+      this.player2AvailableNumbers,
+      'green',
+      this.publicNumber1 + this.greenDice
+    );
+    this.storeAvailableNumbers(
+      this.player2AvailableNumbers,
+      'green',
+      this.publicNumber2 + this.greenDice
+    );
+
+    // BLUE numbers
+    this.storeAvailableNumbers(
+      this.player2AvailableNumbers,
+      'blue',
+      this.publicNumber1 + this.blueDice
+    );
+    this.storeAvailableNumbers(
+      this.player2AvailableNumbers,
+      'blue',
+      this.publicNumber2 + this.blueDice
+    );
 
     if (this.publicNumber1 == this.publicNumber2) {
       // the 2 public numbers are the same
