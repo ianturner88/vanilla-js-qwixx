@@ -171,17 +171,8 @@ export default class Dice {
     for (let i = 0; i < 11; i++) {
       let elementID = arrButtonsIDs[i];
       var element = document.getElementById(elementID);
-      element.classList.add('available');
-      element.classList.remove('notAvailable');
-    }
-  }
-
-  updateBoard() {
-    for (let i = 0; i < 5; i++) {
-      let elementID = player1RedNumbers[i];
-      var element = document.getElementById(elementID);
-      element.classList.add('available');
-      element.classList.remove('notAvailable');
+      element.classList.remove('available');
+      element.classList.add('notAvailable');
     }
   }
 }

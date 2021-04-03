@@ -4,6 +4,10 @@ import {
   player1YellowNumbers,
   player1GreenNumbers,
   player1BlueNumbers,
+  player2RedNumbers,
+  player2YellowNumbers,
+  player2GreenNumbers,
+  player2BlueNumbers,
 } from './functionalities/buttonIDs.js';
 
 const newRoll = document.querySelector('[data-roll-dice]');
@@ -29,7 +33,6 @@ newRoll.addEventListener('click', (e) => {
     dice.setAllButtonsToUnavailable(player1YellowNumbers);
     dice.setAllButtonsToUnavailable(player1GreenNumbers);
     dice.setAllButtonsToUnavailable(player1BlueNumbers);
-
     return;
   }
 
