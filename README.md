@@ -4,6 +4,8 @@ In this file, I will keep a running, live journal of my [efforts](https://iantur
 
 A method - setAllButtonsToUnavailable(arrButtonsIDs) - was written to block the user from using any of the buttons immediately after the dice is rolled.
 
+The board for player 2 and the scoreboard / rules area was inserted.
+
 # April 1:
 
 A display was implemented to show whose turn it is. ![Player's turn display](https://github.com/ianturner88/vanilla-js-qwixx/blob/main/images/Screen%20Shot%202021-04-01%20at%208.15.17%20PM.png)

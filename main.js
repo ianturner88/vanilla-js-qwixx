@@ -38,4 +38,8 @@ newRoll.addEventListener('click', (e) => {
 
   // player 2's turn
   dice.player2sTurn();
+  dice.setAllButtonsToUnavailable(player2RedNumbers);
+  dice.setAllButtonsToUnavailable(player2YellowNumbers);
+  dice.setAllButtonsToUnavailable(player2GreenNumbers);
+  dice.setAllButtonsToUnavailable(player2BlueNumbers);
 });

@@ -1,0 +1,11 @@
+.scoreboard-and-rules {
+  width: 600px;
+  height: 200px;
+  grid-row-start: 4;
+  grid-column-start: 4;
+  background-color: wheat;
+  border: 1px solid black;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: 2;
+}
