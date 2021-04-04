@@ -313,4 +313,43 @@ export default class Dice {
     arrPlayer.push(colour);
     arrPlayer.push(buttonNumber);
   }
+
+  enableValidButtons(playerIDNumber, arrPlayer) {
+    // enable all allowable numbers
+    let id = '';
+    for (let i = 0; i < arrPlayer.length; i += 2) {
+      //test
+      const test = arrPlayer[i];
+      const test1 = typeof test;
+      const test2 = arrPlayer[i + 1];
+      const test3 = typeof test2;
+      const test4 = playerIDNumber;
+      const test5 = typeof test4;
+
+      switch (arrPlayer[i]) {
+        case 'public':
+          id = 'p' + playerIDNumber + 'r' + arrPlayer[i + 1];
+          id = 'p' + playerIDNumber + 'y' + arrPlayer[i + 1];
+          id = 'p' + playerIDNumber + 'g' + arrPlayer[i + 1];
+          id = 'p' + playerIDNumber + 'b' + arrPlayer[i + 1];
+          break;
+
+        case 'red':
+          id = 'p' + playerIDNumber + 'r' + arrPlayer[i + 1];
+          break;
+
+        case 'yellow':
+          id = 'p' + playerIDNumber + 'y' + arrPlayer[i + 1];
+          break;
+
+        case 'green':
+          id = 'p' + playerIDNumber + 'g' + arrPlayer[i + 1];
+          break;
+
+        case 'blue':
+          id = 'p' + playerIDNumber + 'b' + arrPlayer[i + 1];
+          break;
+      }
+    }
+  }
 }
