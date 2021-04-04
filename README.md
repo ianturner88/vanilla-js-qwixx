@@ -4,7 +4,9 @@ In this file, I will keep a running, live journal of my [efforts](https://iantur
 
 A method - setAllButtonsToUnavailable(arrButtonsIDs) - was written to block the user from using any of the buttons immediately after the dice is rolled.
 
-The board for player 2 and the scoreboard / rules area was inserted.
+The board for player 2 and the scoreboard / rules area was inserted. ![Scoreboard Area](https://github.com/ianturner88/vanilla-js-qwixx/blob/main/images/Screen%20Shot%202021-04-03%20at%205.26.42%20PM.png)
+
+Both players' board correctly show the numbers (aka buttons) a user may click on their turn.
 
 Dice areas to refactor:
 
