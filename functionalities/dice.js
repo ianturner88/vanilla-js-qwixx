@@ -317,39 +317,50 @@ export default class Dice {
   enableValidButtons(playerIDNumber, arrPlayer) {
     // enable all allowable numbers
     let id = '';
+    let arrID = [];
     for (let i = 0; i < arrPlayer.length; i += 2) {
-      //test
-      const test = arrPlayer[i];
-      const test1 = typeof test;
-      const test2 = arrPlayer[i + 1];
-      const test3 = typeof test2;
-      const test4 = playerIDNumber;
-      const test5 = typeof test4;
-
+      // construct the html IDs of available numbers
       switch (arrPlayer[i]) {
         case 'public':
           id = 'p' + playerIDNumber + 'r' + arrPlayer[i + 1];
+          arrID.push(id);
           id = 'p' + playerIDNumber + 'y' + arrPlayer[i + 1];
+          arrID.push(id);
           id = 'p' + playerIDNumber + 'g' + arrPlayer[i + 1];
+          arrID.push(id);
           id = 'p' + playerIDNumber + 'b' + arrPlayer[i + 1];
+          arrID.push(id);
           break;
 
         case 'red':
           id = 'p' + playerIDNumber + 'r' + arrPlayer[i + 1];
+          arrID.push(id);
           break;
 
         case 'yellow':
           id = 'p' + playerIDNumber + 'y' + arrPlayer[i + 1];
+          arrID.push(id);
           break;
 
         case 'green':
           id = 'p' + playerIDNumber + 'g' + arrPlayer[i + 1];
+          arrID.push(id);
           break;
 
         case 'blue':
           id = 'p' + playerIDNumber + 'b' + arrPlayer[i + 1];
+          arrID.push(id);
           break;
       }
+    }
+
+    for (let i = 0; i < arrID.length; i++) {
+      // enable all available buttons
+      let elementID = arrID[i];
+      console.log(elementID);
+      var element = document.getElementById(elementID);
+      element.classList.remove('notAvailable');
+      element.classList.add('available');
     }
   }
 }

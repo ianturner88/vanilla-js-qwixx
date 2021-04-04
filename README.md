@@ -6,6 +6,11 @@ A method - setAllButtonsToUnavailable(arrButtonsIDs) - was written to block the 
 
 The board for player 2 and the scoreboard / rules area was inserted.
 
+Dice areas to refactor:
+
+1. the way the available buttons are recorded could be shifted to one method
+2. if the 2 public numbers match, there's a check. This check could be moved to the front of the player#sTurn method.
+
 # April 1:
 
 A display was implemented to show whose turn it is. ![Player's turn display](https://github.com/ianturner88/vanilla-js-qwixx/blob/main/images/Screen%20Shot%202021-04-01%20at%208.15.17%20PM.png)

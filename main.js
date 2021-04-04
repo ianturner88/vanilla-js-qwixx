@@ -35,6 +35,7 @@ newRoll.addEventListener('click', (e) => {
     dice.setAllButtonsToUnavailable(player1GreenNumbers);
     dice.setAllButtonsToUnavailable(player1BlueNumbers);
     dice.enableValidButtons('1', dice.player1AvailableNumbers);
+    dice.enableValidButtons('2', dice.player2AvailableNumbers);
     return;
   }
 
@@ -44,5 +45,6 @@ newRoll.addEventListener('click', (e) => {
   dice.setAllButtonsToUnavailable(player2YellowNumbers);
   dice.setAllButtonsToUnavailable(player2GreenNumbers);
   dice.setAllButtonsToUnavailable(player2BlueNumbers);
-  dice.enableValidButtons('2', dice.player1AvailableNumbers);
+  dice.enableValidButtons('1', dice.player1AvailableNumbers);
+  dice.enableValidButtons('2', dice.player2AvailableNumbers);
 });
