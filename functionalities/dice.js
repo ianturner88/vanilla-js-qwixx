@@ -357,7 +357,6 @@ export default class Dice {
     for (let i = 0; i < arrID.length; i++) {
       // enable all available buttons
       let elementID = arrID[i];
-      console.log(elementID);
       var element = document.getElementById(elementID);
       element.classList.remove('notAvailable');
       element.classList.add('available');

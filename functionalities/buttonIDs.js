@@ -1,5 +1,6 @@
 // player 1's buttons
-let player1RedNumbers = [
+
+let player1Buttons = [
   'p1r2',
   'p1r3',
   'p1r4',
@@ -11,9 +12,6 @@ let player1RedNumbers = [
   'p1r10',
   'p1r11',
   'p1r12',
-];
-
-let player1YellowNumbers = [
   'p1y2',
   'p1y3',
   'p1y4',
@@ -25,9 +23,6 @@ let player1YellowNumbers = [
   'p1y10',
   'p1y11',
   'p1y12',
-];
-
-let player1GreenNumbers = [
   'p1g2',
   'p1g3',
   'p1g4',
@@ -39,9 +34,6 @@ let player1GreenNumbers = [
   'p1g10',
   'p1g11',
   'p1g12',
-];
-
-let player1BlueNumbers = [
   'p1b2',
   'p1b3',
   'p1b4',
@@ -56,7 +48,7 @@ let player1BlueNumbers = [
 ];
 
 // player 2's buttons
-let player2RedNumbers = [
+let player2Buttons = [
   'p2r2',
   'p2r3',
   'p2r4',
@@ -68,9 +60,6 @@ let player2RedNumbers = [
   'p2r10',
   'p2r11',
   'p2r12',
-];
-
-let player2YellowNumbers = [
   'p2y2',
   'p2y3',
   'p2y4',
@@ -82,9 +71,6 @@ let player2YellowNumbers = [
   'p2y10',
   'p2y11',
   'p2y12',
-];
-
-let player2GreenNumbers = [
   'p2g2',
   'p2g3',
   'p2g4',
@@ -96,9 +82,6 @@ let player2GreenNumbers = [
   'p2g10',
   'p2g11',
   'p2g12',
-];
-
-let player2BlueNumbers = [
   'p2b2',
   'p2b3',
   'p2b4',
@@ -112,13 +95,4 @@ let player2BlueNumbers = [
   'p2b12',
 ];
 
-export {
-  player1RedNumbers,
-  player1YellowNumbers,
-  player1GreenNumbers,
-  player1BlueNumbers,
-  player2RedNumbers,
-  player2YellowNumbers,
-  player2GreenNumbers,
-  player2BlueNumbers,
-};
+export { player1Buttons, player2Buttons };

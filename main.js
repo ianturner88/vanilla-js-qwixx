@@ -1,30 +1,9 @@
 import Dice from './functionalities/dice.js';
 import Player from './functionalities/players.js';
 
-import {
-  p1Red2Selected,
-  p1Red3Selected,
-  p1Red4Selected,
-  p1Red5Selected,
-  p1Red6Selected,
-  p1Red7Selected,
-  p1Red8Selected,
-  p1Red9Selected,
-  p1Red10Selected,
-  p1Red11Selected,
-  p1Red12Selected,
-} from './functionalities/boardButtons.js';
+import { p1RedNumberSelected } from './functionalities/boardButtons.js';
 
-import {
-  player1RedNumbers,
-  player1YellowNumbers,
-  player1GreenNumbers,
-  player1BlueNumbers,
-  player2RedNumbers,
-  player2YellowNumbers,
-  player2GreenNumbers,
-  player2BlueNumbers,
-} from './functionalities/buttonIDs.js';
+import { player1Buttons, player2Buttons } from './functionalities/buttonIDs.js';
 
 const newRoll = document.querySelector('[data-roll-dice]');
 const playerTurnDisplay = document.querySelector('[data-turn-keeper-display]');
@@ -48,10 +27,7 @@ newRoll.addEventListener('click', (e) => {
   if (isPlayer1sTurn == 1) {
     // player 1's turn
     dice.player1sTurn();
-    dice.setAllButtonsToUnavailable(player1RedNumbers);
-    dice.setAllButtonsToUnavailable(player1YellowNumbers);
-    dice.setAllButtonsToUnavailable(player1GreenNumbers);
-    dice.setAllButtonsToUnavailable(player1BlueNumbers);
+    dice.setAllButtonsToUnavailable(player1Buttons);
     dice.enableValidButtons('1', dice.player1AvailableNumbers);
     dice.enableValidButtons('2', dice.player2AvailableNumbers);
     return;
@@ -59,14 +35,9 @@ newRoll.addEventListener('click', (e) => {
 
   // player 2's turn
   dice.player2sTurn();
-  dice.setAllButtonsToUnavailable(player2RedNumbers);
-  dice.setAllButtonsToUnavailable(player2YellowNumbers);
-  dice.setAllButtonsToUnavailable(player2GreenNumbers);
-  dice.setAllButtonsToUnavailable(player2BlueNumbers);
+  dice.setAllButtonsToUnavailable(player2Buttons);
   dice.enableValidButtons('1', dice.player1AvailableNumbers);
   dice.enableValidButtons('2', dice.player2AvailableNumbers);
 });
 
-p1Red2Selected.addEventListener('click', (e) => {});
-
-p1Red3Selected.addEventListener('click', (e) => {});
+p1RedNumberSelected.addEventListener('click', (e) => {});

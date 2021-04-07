@@ -7,5 +7,5 @@ export default class Player {
     this.blueSum = 0;
   }
 
-  addXClass() {}
+  addXClass(arrValidNumbers) {}
 }
