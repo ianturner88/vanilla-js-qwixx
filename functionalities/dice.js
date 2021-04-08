@@ -19,6 +19,7 @@ import {
   player1AvailableGreen2,
   player1AvailableBlue1,
   player1AvailableBlue2,
+  player1AvailableNumbers,
 } from './availableNumberIDs.js';
 
 import {
@@ -32,6 +33,7 @@ import {
   player2AvailableGreen2,
   player2AvailableBlue1,
   player2AvailableBlue2,
+  player2AvailableNumbers,
 } from './availableNumberIDs.js';
 
 export default class Dice {
@@ -80,14 +82,19 @@ export default class Dice {
       this.publicNumber1 + this.publicNumber2
     );
 
-    player2AvailableRed1.innerHTML = '—';
-    player2AvailableRed2.innerHTML = '—';
-    player2AvailableYellow1.innerHTML = '—';
-    player2AvailableYellow2.innerHTML = '—';
-    player2AvailableGreen1.innerHTML = '—';
-    player2AvailableGreen2.innerHTML = '—';
-    player2AvailableBlue1.innerHTML = '—';
-    player2AvailableBlue2.innerHTML = '—';
+    for (let i = 0; i < player1AvailableNumbers.length; i++) {
+      // console.log(player1AvailableNumbers[i]);
+      player1AvailableNumbers[i].innerHTML = '—';
+    }
+
+    // player2AvailableRed1.innerHTML = '—';
+    // player2AvailableRed2.innerHTML = '—';
+    // player2AvailableYellow1.innerHTML = '—';
+    // player2AvailableYellow2.innerHTML = '—';
+    // player2AvailableGreen1.innerHTML = '—';
+    // player2AvailableGreen2.innerHTML = '—';
+    // player2AvailableBlue1.innerHTML = '—';
+    // player2AvailableBlue2.innerHTML = '—';
 
     //Player 1 update the available number display
     player1AvailablePublicNumber.innerHTML =
@@ -172,14 +179,20 @@ export default class Dice {
     // update Player 2's numbers
     player1AvailablePublicNumber.innerHTML =
       this.publicNumber1 + this.publicNumber2;
-    player1AvailableRed1.innerHTML = '—';
-    player1AvailableRed2.innerHTML = '—';
-    player1AvailableYellow1.innerHTML = '—';
-    player1AvailableYellow2.innerHTML = '—';
-    player1AvailableGreen1.innerHTML = '—';
-    player1AvailableGreen2.innerHTML = '—';
-    player1AvailableBlue1.innerHTML = '—';
-    player1AvailableBlue2.innerHTML = '—';
+
+    for (let i = 0; i < player2AvailableNumbers.length; i++) {
+      // console.log(player1AvailableNumbers[i]);
+      player2AvailableNumbers[i].innerHTML = '—';
+    }
+
+    // player1AvailableRed1.innerHTML = '—';
+    // player1AvailableRed2.innerHTML = '—';
+    // player1AvailableYellow1.innerHTML = '—';
+    // player1AvailableYellow2.innerHTML = '—';
+    // player1AvailableGreen1.innerHTML = '—';
+    // player1AvailableGreen2.innerHTML = '—';
+    // player1AvailableBlue1.innerHTML = '—';
+    // player1AvailableBlue2.innerHTML = '—';
 
     //Player 1 update the available number display
     player2AvailablePublicNumber.innerHTML =

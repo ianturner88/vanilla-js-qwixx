@@ -35,6 +35,18 @@ const player1AvailableBlue2 = document.querySelector(
   '[data-player-1-available-blue-2]'
 );
 
+let player1AvailableNumbers = [
+  player1AvailablePublicNumber,
+  player1AvailableRed1,
+  player1AvailableRed2,
+  player1AvailableYellow1,
+  player1AvailableYellow2,
+  player1AvailableGreen1,
+  player1AvailableGreen2,
+  player1AvailableBlue1,
+  player1AvailableBlue2,
+];
+
 // player 2's 9 available numbers
 const player2AvailablePublicNumber = document.querySelector(
   '[data-player-2-available-white]'
@@ -64,6 +76,18 @@ const player2AvailableBlue2 = document.querySelector(
   '[data-player-2-available-blue-2]'
 );
 
+let player2AvailableNumbers = [
+  player2AvailablePublicNumber,
+  player2AvailableRed1,
+  player2AvailableRed2,
+  player2AvailableYellow1,
+  player2AvailableYellow2,
+  player2AvailableGreen1,
+  player2AvailableGreen2,
+  player2AvailableBlue1,
+  player2AvailableBlue2,
+];
+
 export {
   // the dice numbers
   publicNumber1,
@@ -76,6 +100,7 @@ export {
 
 export {
   // the available numbers for player 1
+  player1AvailableNumbers,
   player1AvailablePublicNumber,
   player1AvailableRed1,
   player1AvailableRed2,
@@ -89,6 +114,7 @@ export {
 
 export {
   // the available numbers for player 2
+  player2AvailableNumbers,
   player2AvailablePublicNumber,
   player2AvailableRed1,
   player2AvailableRed2,
