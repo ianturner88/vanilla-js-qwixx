@@ -24,6 +24,7 @@ newRoll.addEventListener('click', (e) => {
   // roll the dice & generate available numbers
   dice.rollDice();
   dice.updateAvailableNumbers(isPlayer1sTurn);
+  dice.setAllButtonsToUnavailable();
 });
 
 p1RedNumberSelected.addEventListener('click', (e) => {});

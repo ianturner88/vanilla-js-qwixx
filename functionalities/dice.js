@@ -4,6 +4,8 @@ import {
   player2AvailableNumbers,
 } from './availableNumberIDs.js';
 
+import { player1Buttons, player2Buttons } from './buttonIDs.js';
+
 export default class Dice {
   constructor() {
     this.diceNumbers = [];
@@ -68,6 +70,23 @@ export default class Dice {
       }
       // player 1 has access to the public number
       player1AvailableNumbers[0].innerHTML = this.availableNumbers[0];
+    }
+  }
+
+  setAllButtonsToUnavailable() {
+    // initialize all the buttons on the board to unavailable
+    for (let i = 0; i < player1Buttons.length; i++) {
+      const elementID = player1Buttons[i];
+      const element = document.getElementById(elementID);
+      element.classList.remove('available');
+      element.classList.add('notAvailable');
+    }
+
+    for (let i = 0; i < player2Buttons.length; i++) {
+      const elementID = player2Buttons[i];
+      const element = document.getElementById(elementID);
+      element.classList.remove('available');
+      element.classList.add('notAvailable');
     }
   }
 }
