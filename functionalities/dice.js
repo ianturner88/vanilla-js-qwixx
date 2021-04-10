@@ -39,6 +39,12 @@ export default class Dice {
 
       this.counter += 2;
     }
+
+    if (this.diceNumbers[0] === this.diceNumbers[1]) {
+      for (let i = 1; i < 8; i += 2) {
+        this.availableNumbers[i] = '—';
+      }
+    }
   }
 
   updateAvailableNumbers(isPlayer1sTurn) {
