@@ -172,4 +172,14 @@ export default class Dice {
       }
     }
   }
+
+  enableValidButtons() {
+    //turn on all buttons the user may access for the given turn
+    for (let i = 0; i < this.validButtonIDs.length; i++) {
+      let elementID = this.validButtonIDs[i];
+      let element = document.getElementById(elementID);
+      element.classList.remove('notAvailable');
+      element.classList.add('available');
+    }
+  }
 }
