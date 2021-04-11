@@ -11,6 +11,7 @@ export default class Dice {
     this.diceNumbers = [];
     this.availableNumbers = [];
     this.counter = 1;
+    this.validButtonIDs = [];
   }
 
   rollDice() {
@@ -19,8 +20,8 @@ export default class Dice {
     this.availableNumbers = [];
     this.counter = 1;
 
-    // generate the 6 numbers to be used for the player's turn
     for (let i = 0; i < 6; i++) {
+      // generate the 6 numbers to be used for the player's turn
       this.diceNumbers.push(Math.floor(Math.random() * 6) + 1);
     }
 
@@ -34,8 +35,10 @@ export default class Dice {
 
     for (let i = 2; i < 6; i++) {
       // construct & store the turn's available numbers
+      // use public dice 1
       this.availableNumbers[this.counter] =
         this.diceNumbers[0] + this.diceNumbers[i];
+      // use public dice 2
       this.availableNumbers[this.counter + 1] =
         this.diceNumbers[1] + this.diceNumbers[i];
 
@@ -43,6 +46,8 @@ export default class Dice {
     }
 
     if (this.diceNumbers[0] === this.diceNumbers[1]) {
+      // the 2 public dice are the same
+      // eliminate the duplicate coloured available numbers
       for (let i = 1; i < 8; i += 2) {
         this.availableNumbers[i] = '—';
       }
@@ -76,6 +81,7 @@ export default class Dice {
   setAllButtonsToUnavailable() {
     // initialize all the buttons on the board to unavailable
     for (let i = 0; i < player1Buttons.length; i++) {
+      // player 1's buttons
       const elementID = player1Buttons[i];
       const element = document.getElementById(elementID);
       element.classList.remove('available');
@@ -83,10 +89,87 @@ export default class Dice {
     }
 
     for (let i = 0; i < player2Buttons.length; i++) {
+      // player 2's buttons
       const elementID = player2Buttons[i];
       const element = document.getElementById(elementID);
       element.classList.remove('available');
       element.classList.add('notAvailable');
+    }
+  }
+
+  constructValidIDButtons(playerID) {
+    // construct all the appropriate valid button ids
+
+    this.counter = 0;
+    let id = '';
+    this.validButtonIDs = [];
+
+    for (let i = 0; i < 9; i++) {
+      switch (this.counter) {
+        case 0:
+          //the public number is available in all colours
+          id = 'p' + playerID + 'r' + this.availableNumbers[0];
+          this.validButtonIDs.push(id);
+          id = 'p' + playerID + 'y' + this.availableNumbers[0];
+          this.validButtonIDs.push(id);
+          id = 'p' + playerID + 'g' + this.availableNumbers[0];
+          this.validButtonIDs.push(id);
+          id = 'p' + playerID + 'b' + this.availableNumbers[0];
+          this.validButtonIDs.push(id);
+
+          //move to red
+          this.counter++;
+          break;
+
+        case 1:
+        case 2:
+          // construct the RED id numbers
+          id = 'p' + playerID + 'r' + this.availableNumbers[1];
+          this.validButtonIDs.push(id);
+          id = 'p' + playerID + 'r' + this.availableNumbers[2];
+          this.validButtonIDs.push(id);
+          //move to yellow
+          this.counter += 2;
+          break;
+
+        case 3:
+        case 4:
+          // construct the YELLOW id numbers
+          id = 'p' + playerID + 'y' + this.availableNumbers[3];
+          this.validButtonIDs.push(id);
+          id = 'p' + playerID + 'y' + this.availableNumbers[4];
+          this.validButtonIDs.push(id);
+          //move to green
+          this.counter += 2;
+          break;
+
+        case 5:
+        case 6:
+          // construct the GREEN id numbers
+          id = 'p' + playerID + 'g' + this.availableNumbers[5];
+          this.validButtonIDs.push(id);
+          id = 'p' + playerID + 'g' + this.availableNumbers[6];
+          this.validButtonIDs.push(id);
+          //move to blue
+          this.counter += 2;
+          break;
+
+        case 7:
+        case 8:
+          // construct the BLUE id numbers
+          id = 'p' + playerID + 'b' + this.availableNumbers[7];
+          this.validButtonIDs.push(id);
+          id = 'p' + playerID + 'b' + this.availableNumbers[8];
+          this.validButtonIDs.push(id);
+          //terminate loop
+          this.counter += 2;
+
+          console.log('Available Numbers');
+          console.log(this.availableNumbers);
+          console.log('Button IDs Numbers');
+          console.log(this.validButtonIDs);
+          break;
+      }
     }
   }
 }
