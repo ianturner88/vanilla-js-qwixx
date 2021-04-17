@@ -110,6 +110,10 @@ export default class Dice {
   constructValidIDButtons(playerID) {
     // construct all the appropriate valid button ids
 
+    // the playerID is 0 if it's player 2's turn
+    // the ternary operator ensures the correct ID's are constructed
+    playerID === 0 ? (playerID = 2) : (playerID = 1);
+
     this.counter = 0;
     let id = '';
     this.validButtonIDs = [];
@@ -176,16 +180,17 @@ export default class Dice {
           break;
       }
     }
-
-    console.log(this.validButtonIDs);
-    console.log(this.diceNumbers);
   }
 
   enableValidButtons() {
+    console.log(this.availableNumbers);
+    console.log(this.validButtonIDs);
+
     //turn on all buttons the user may access for the given turn
     for (let i = 0; i < this.validButtonIDs.length; i++) {
       let elementID = this.validButtonIDs[i];
       let element = document.getElementById(elementID);
+      element.classList.add('notAvailable');
       element.classList.remove('notAvailable');
       element.classList.add('available');
     }

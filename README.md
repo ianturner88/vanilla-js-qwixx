@@ -2,7 +2,9 @@ In this file, I will keep a running, live journal of my [efforts](https://iantur
 
 # April 10:
 
-The dice object has been re-factored for both simplicity and readability. The number of lines attributed to the dice object has been halved. The querySelectors were moved to a different page.
+The dice object has been re-factored for both simplicity, readability, and maintainability. The number of lines attributed to the dice object has been halved. Previously, there were two separate functions for when each player rolled the dice. Now, a single more general function has been constructed for when either player rolls the dice.
+
+Also, the querySelectors were moved to a different page and stored in arrays. The arrays with the querySelectors are exported.
 
 # April 4:
 
