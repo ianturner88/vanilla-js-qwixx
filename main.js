@@ -26,8 +26,8 @@ newRoll.addEventListener('click', (e) => {
   dice.updateAvailableNumbers(isPlayer1sTurn);
   dice.setAllButtonsToUnavailable();
   dice.constructValidIDButtons(isPlayer1sTurn);
-  dice.enableValidButtons();
   dice.constructValidPublicIDButtons();
+  dice.enableValidButtons();
 });
 
 p1RedNumberSelected.addEventListener('click', (e) => {});

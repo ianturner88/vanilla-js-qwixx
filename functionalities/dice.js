@@ -200,9 +200,6 @@ export default class Dice {
       publicID = publicIDStart + playerIDNumber + publicIDEnd;
       this.validButtonIDs.push(publicID);
     }
-
-    console.log(this.availableNumbers);
-    console.log(this.validButtonIDs);
   }
 
   enableValidButtons() {

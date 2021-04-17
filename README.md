@@ -8,6 +8,8 @@ When the dice are rolled, a number of html button IDs need to be generated. Toda
 
 2. A ternary operator was added to the top of the constructValidIDButtons function. When player 2 is 'at bat', the value of playerID is 0. Previously, the button IDs generated would look like 'p0g11'. However, the correct button ID for player two is 'p2g11'.
 
+3. Previously, the public number was generated only for the player whose turn it is. To rectify this, a function constructValidPublicIDButtons() was written to generate the public IDs for the 'other' player as well.
+
 # April 10:
 
 The dice object has been re-factored for both simplicity, readability, and maintainability. The number of lines attributed to the dice object has been halved. Previously, there were two separate functions for when each player rolled the dice. Now, a single more general function has been constructed for when either player rolls the dice.
