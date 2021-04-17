@@ -76,6 +76,16 @@ export default class Dice {
       // player 1 has access to the public number
       player1AvailableNumbers[0].innerHTML = this.availableNumbers[0];
     }
+
+    if (this.diceNumbers[0] === this.diceNumbers[1]) {
+      /* when the public numbers are duplicates, the first ID of every number
+      ends with an emdash. The emdash IDs are not valid cause problems with
+      other methods */
+
+      for (let i = 1; i < this.availableNumbers.length; i += 2) {
+        this.availableNumbers[i] = this.availableNumbers[i + 1];
+      }
+    }
   }
 
   setAllButtonsToUnavailable() {
@@ -163,14 +173,12 @@ export default class Dice {
           this.validButtonIDs.push(id);
           //terminate loop
           this.counter += 2;
-
-          console.log('Available Numbers');
-          console.log(this.availableNumbers);
-          console.log('Button IDs Numbers');
-          console.log(this.validButtonIDs);
           break;
       }
     }
+
+    console.log(this.validButtonIDs);
+    console.log(this.diceNumbers);
   }
 
   enableValidButtons() {
