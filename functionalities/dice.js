@@ -182,15 +182,34 @@ export default class Dice {
     }
   }
 
-  enableValidButtons() {
+  constructValidPublicIDButtons() {
+    // the public button IDs of the player who's turn it is not must be constructed
+    let publicID = '';
+    let publicIDStart = '';
+    let publicIDEnd = '';
+    // identify who's turn it is not
+    const playerIDNumber = this.validButtonIDs[0][1] === '2' ? '1' : '2';
+
+    for (let i = 0; i < 4; i++) {
+      //the first 4 ID codes are the public numbers for the player who's turn it is
+      // extract the 'p' from the ID
+      publicIDStart = this.validButtonIDs[i].substring(0, 1);
+      // extract the colour & button number
+      publicIDEnd = this.validButtonIDs[i].substring(2);
+      // reconstruct the button ID for 'other' player
+      publicID = publicIDStart + playerIDNumber + publicIDEnd;
+      this.validButtonIDs.push(publicID);
+    }
+
     console.log(this.availableNumbers);
     console.log(this.validButtonIDs);
+  }
 
+  enableValidButtons() {
     //turn on all buttons the user may access for the given turn
     for (let i = 0; i < this.validButtonIDs.length; i++) {
       let elementID = this.validButtonIDs[i];
       let element = document.getElementById(elementID);
-      element.classList.add('notAvailable');
       element.classList.remove('notAvailable');
       element.classList.add('available');
     }

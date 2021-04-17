@@ -1,5 +1,13 @@
 In this file, I will keep a running, live journal of my [efforts](https://ianturner88.github.io/vanilla-js-qwixx/) to build a replica of the boardgame qwixx.
 
+# April 17:
+
+When the dice are rolled, a number of html button IDs need to be generated. Today, bugs or missing features associated with the generation of valid html button IDs were fixed.
+
+1. Previously, when the public numbers were the same, the first ID in the availableNumbers array would conclude with an emdash for user display purposes. This created issues, however, when certain buttons would be enabled or disabled. Now, after the non-duplicate numbers are shown, the ID's of the first duplicates are reconstructed to reflect the button IDs they actually represent.
+
+2. A ternary operator was added to the top of the constructValidIDButtons function. When player 2 is 'at bat', the value of playerID is 0. Previously, the button IDs generated would look like 'p0g11'. However, the correct button ID for player two is 'p2g11'.
+
 # April 10:
 
 The dice object has been re-factored for both simplicity, readability, and maintainability. The number of lines attributed to the dice object has been halved. Previously, there were two separate functions for when each player rolled the dice. Now, a single more general function has been constructed for when either player rolls the dice.
