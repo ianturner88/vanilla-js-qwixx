@@ -4,11 +4,11 @@ In this file, I will keep a running, live journal of my [efforts](https://iantur
 
 The box in the bottom right of the bottom left box was touched up. Left padding was added to the question "Which player's turn is it?". A small clean up job.
 
-|                                                     No left padding                                                      |                                            1% padding added to the left-side                                             |
+|                                                     No left padding                                                      |                                                     1% left padding                                                      |
 | :----------------------------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------------------------: |
 | ![](https://github.com/ianturner88/vanilla-js-qwixx/blob/main/images/Screen%20Shot%202021-04-17%20at%205.00.10%20PM.png) | ![](https://github.com/ianturner88/vanilla-js-qwixx/blob/main/images/Screen%20Shot%202021-04-17%20at%205.07.12%20PM.png) |
 
-When the dice are rolled, a number of html button IDs need to be generated. Today, bugs or missing features associated with the generation of valid html button IDs were fixed.
+When the dice are rolled, a number of html button IDs need to be generated. Bugs or missing features associated with the generation of valid html button IDs were fixed.
 
 1. Previously, when the public numbers were the same, the first ID in the availableNumbers array would conclude with an emdash for user display purposes. This created issues, however, when certain buttons would be enabled or disabled. Now, after the non-duplicate numbers are shown, the ID's of the first duplicates are reconstructed to reflect the button IDs they actually represent.
 
