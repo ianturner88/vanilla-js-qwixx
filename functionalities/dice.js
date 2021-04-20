@@ -210,5 +210,43 @@ export default class Dice {
       element.classList.remove('notAvailable');
       element.classList.add('available');
     }
+
+    let arr = [
+      'p1r7',
+      'p1y7',
+      'p1g7',
+      'p1b7',
+      'p1r4',
+      'p1r9',
+      'p1y4',
+      'p1y9',
+      'p1g5',
+      'p1g10',
+      'p1b5',
+      'p1b10',
+    ];
+    let arr1 = [
+      'p1r7',
+      'p1y7',
+      'p1g7',
+      'p1b7',
+      'p1r4',
+      'p1r9',
+      'p1y4',
+      'p1y9',
+      'p1g5',
+      'p1g10',
+      'p1b5',
+      'p1b10',
+      'p2r7',
+      'p2y7',
+      'p2g7',
+      'p2b7',
+    ];
+
+    console.log(arr);
+    console.log(arr1);
+
+    console.log(this.validButtonIDs);
   }
 }
