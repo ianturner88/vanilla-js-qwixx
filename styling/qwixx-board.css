@@ -111,3 +111,54 @@
 .blue-button {
   color: blue;
 }
+
+.scoring-system {
+  margin: auto auto;
+  display: grid;
+  grid-template-columns: 40px repeat(12, 38px);
+  grid-template-rows: repeat(1, 48px);
+}
+
+.point-worth {
+  margin: auto;
+  border: 1px solid black;
+  border-radius: 10px;
+  width: 30px;
+  height: 42px;
+  display: grid;
+  grid-template-columns: repeat(1, 30px);
+  grid-template-rows: 21px 21px;
+}
+
+.total-buttons-selected {
+  margin: auto;
+  grid-row-start: 1;
+  border-bottom: 1px solid black;
+}
+
+.total-buttons-worth {
+  margin: auto;
+  grid-row-start: 2;
+}
+
+.point-worth-start {
+  display: grid;
+  grid-template-columns: repeat(1, 35px);
+  grid-template-rows: 21px 21px;
+  border: none;
+  margin-right: 2px;
+  padding-right: 2px;
+}
+
+.sample-selected-box {
+  margin: auto;
+  border-radius: 3px;
+  border: 1px solid black;
+  width: 20px;
+  height: 18px;
+  margin-top: 3px;
+}
+
+.sample-points-total {
+  margin: auto;
+}
