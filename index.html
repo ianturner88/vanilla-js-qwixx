@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./styling/qwixx-board.css" />
     <link rel="stylesheet" href="./styling/dice.css" />
     <link rel="stylesheet" href="./styling/available-numbers.css" />
-    <link rel="stylesheet" href="./styling/scoreboard-and-rules.css" />
+    <link rel="stylesheet" href="./styling/toggles-and-rules.css" />
     <script type="module" src="./main.js"></script>
   </head>
   <body>
@@ -260,6 +260,20 @@
             </div>
           </div>
         </div>
+        <div class="bottom-band">
+          <div class="strikeouts">
+            <div class="strikeout-title">Strikeouts</div>
+            <div class="strikeout-boxes">
+              <div class="strikeout-box1 strikeout-box" id="p1strikeout1"></div>
+              <div class="strikeout-box2 strikeout-box" id="p1strikeout2"></div>
+              <div class="strikeout-box3 strikeout-box" id="p1strikeout3"></div>
+              <div class="strikeout-box4 strikeout-box" id="p1strikeout4"></div>
+            </div>
+          </div>
+          <div class="colour-sums"></div>
+          <div class="player-total-sum"></div>
+          <div class="void-pick-button"></div>
+        </div>
       </div>
       <!-- Player 2's board -->
       <div class="board player2">
@@ -448,6 +462,20 @@
             </div>
           </div>
         </div>
+        <div class="bottom-band">
+          <div class="strikeouts">
+            <div class="strikeout-title">Strikeouts</div>
+            <div class="strikeout-boxes">
+              <div class="strikeout-box1 strikeout-box" id="p1strikeout1"></div>
+              <div class="strikeout-box2 strikeout-box" id="p1strikeout2"></div>
+              <div class="strikeout-box3 strikeout-box" id="p1strikeout3"></div>
+              <div class="strikeout-box4 strikeout-box" id="p1strikeout4"></div>
+            </div>
+          </div>
+          <div class="colour-sums"></div>
+          <div class="player-total-sum"></div>
+          <div class="void-pick-button"></div>
+        </div>
       </div>
       <!-- the available numbers for player 1 -->
       <div class="player1-available-numbers available-numbers">
@@ -607,7 +635,7 @@
           <div class="turn-keeper-display" data-turn-keeper-display>—</div>
         </div>
       </div>
-      <div class="scoreboard-and-rules">
+      <div class="toggles-and-rules">
         <div class="scoreboard"></div>
         <div class="rules"></div>
       </div>

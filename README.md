@@ -75,7 +75,9 @@ A 'Github Pages' site was made where my boardgame may live.
 
 # March 22:
 
-The 'Roll Dice' button has been hooked up, so the dice now are updated if a user clicks the button. I elimated the second white block in the available numbers block, because I noticed a mistake in how I understood the rules.
+The 'Roll Dice' button has been hooked up, so the dice now are updated if a user clicks the button.
+
+I elimated the second white block in the available numbers block, because I noticed a mistake in how I understood the rules.
 
 # March 17:
 

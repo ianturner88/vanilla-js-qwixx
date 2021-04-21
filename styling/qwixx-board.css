@@ -67,6 +67,8 @@
   margin: auto auto;
 }
 
+/* colour the numbers within the buttons */
+
 .red-row {
   grid-row-start: 1;
   background: red;
@@ -94,7 +96,10 @@
   border: none;
   font-family: 'Courier New', Courier, monospace;
   font-size: 75%;
+  border: 1px solid black;
 }
+
+/* colour the number button bands */
 
 .red-button {
   color: red;
@@ -112,10 +117,13 @@
   color: blue;
 }
 
+/* The point scoring system
+The band immediately below the coloured bands  */
+
 .scoring-system {
   margin: auto auto;
   display: grid;
-  grid-template-columns: 40px repeat(12, 38px);
+  grid-template-columns: 42px repeat(12, 38px);
   grid-template-rows: repeat(1, 48px);
 }
 
@@ -157,9 +165,47 @@
   width: 20px;
   height: 18px;
   margin-top: 3px;
+  margin-left: 8px;
 }
 
 .sample-points-total {
   margin: auto;
   padding-top: 4px;
+}
+
+/* the bottom band contains the strikeout zone,
+coloured sums, total sum, and the 'void pick' button */
+
+.bottom-band {
+  grid-row-start: 4;
+  display: grid;
+  grid-template-columns: repeat(4, 150px);
+  grid-template-rows: 1;
+}
+
+.strikeouts {
+  display: grid;
+  grid-template-columns: 1;
+  grid-template-rows: 20px 75px;
+  margin: auto;
+}
+
+.strikeout-title {
+  margin: auto;
+  font-size: medium;
+}
+
+.strikeout-boxes {
+  margin: auto auto;
+  display: grid;
+  grid-template-columns: 45px 45px;
+  grid-template-rows: 35px 35px;
+}
+
+.strikeout-box {
+  margin: auto auto;
+  border: 1px solid black;
+  width: 30px;
+  height: 30px;
+  border-radius: 6px;
 }
