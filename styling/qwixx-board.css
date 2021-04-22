@@ -183,6 +183,8 @@ coloured sums, total sum, and the 'void pick' button */
   grid-template-rows: 1;
 }
 
+/* Strikeout related */
+
 .strikeouts {
   display: grid;
   grid-template-columns: 1;
@@ -208,4 +210,56 @@ coloured sums, total sum, and the 'void pick' button */
   width: 30px;
   height: 30px;
   border-radius: 6px;
+}
+
+/* Colour sums related */
+.colour-sums-area {
+  justify-items: center;
+  align-items: center;
+  display: grid;
+  grid-template-columns: 1;
+  grid-template-rows: 16px 75px;
+}
+
+.colour-sums-value {
+  margin: auto auto;
+  display: grid;
+  grid-template-columns: 50px 50px;
+  grid-template-rows: 39px 39px;
+}
+
+.red-sum {
+  margin: auto auto;
+  grid-row-start: 1;
+  grid-column-start: 1;
+  background: red;
+  width: 50px;
+  height: 39px;
+}
+
+.yellow-sum {
+  background: yellow;
+  margin: auto auto;
+  grid-row-start: 2;
+  grid-column-start: 1;
+  width: 50px;
+  height: 39px;
+}
+
+.green-sum {
+  background: green;
+  margin: auto auto;
+  grid-row-start: 1;
+  grid-column-start: 2;
+  width: 50px;
+  height: 39px;
+}
+
+.blue-sum {
+  background: blue;
+  margin: auto;
+  grid-row-start: 2;
+  grid-column-start: 2;
+  width: 50px;
+  height: 39px;
 }
