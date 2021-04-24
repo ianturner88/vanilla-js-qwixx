@@ -1,10 +1,11 @@
 export default class Player {
   constructor() {
+    // [Colour, Numerical Value]
     this.mostRecentPick = [];
-    this.redSum = 0;
-    this.yellowSum = 0;
-    this.greenSum = 0;
-    this.blueSum = 0;
+    // [RED, YELLOW, GREEN, BLUE]
+    this.colourSums = [];
+    // all colours start as unlocked
+    this.isLocked = [false, false, false, false];
   }
 
   addXClass(arrValidNumbers) {}

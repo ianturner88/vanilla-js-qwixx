@@ -2,7 +2,7 @@ In this file, I will keep a running, live journal of my [efforts](https://iantur
 
 # April 24:
 
-The scoreboard area has been laid out. The display will show a player's point total in each row, and will be made to update whenever a new button is selected or deselected.
+The scoreboard area has been laid out (78 and 320 are the largest possible scores for each category). The display will show a player's point total in each row, and will be made to update whenever a new button is selected or deselected.
 
 ![Scoreboards](https://github.com/ianturner88/vanilla-js-qwixx/blob/main/images/April%2024.1.png)
 
