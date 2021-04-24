@@ -2,11 +2,15 @@ In this file, I will keep a running, live journal of my [efforts](https://iantur
 
 # April 24:
 
-The colour sums area has been built out. The display will show a player's point total in each row, and will be made to update whenever a new button is selected or deselected.
+The scoreboard area has been laid out. The display will show a player's point total in each row, and will be made to update whenever a new button is selected or deselected.
+
+![Scoreboards](https://github.com/ianturner88/vanilla-js-qwixx/blob/main/images/April%2024.1.png)
 
 # April 21:
 
-The strikeout zone has been built for when a player does not check off a box on their turn ![Strikeout Zone](https://github.com/ianturner88/vanilla-js-qwixx/blob/main/images/April%2021.1.png)
+The strikeout zone has been built for when a player does not check off a box on their turn.
+
+![Strikeout Zone](https://github.com/ianturner88/vanilla-js-qwixx/blob/main/images/April%2021.1.png)
 
 # April 20:
 
@@ -69,7 +73,8 @@ A display was implemented to show whose turn it is. ![Player's turn display](htt
 
 The avaiable numbers are updated, so that if the public dice are the same, the colour die do not display duplicates. ![Duplicates eliminated](https://github.com/ianturner88/vanilla-js-qwixx/blob/main/images/April%201.2.png)
 
-Multiple different 'NO' options were explored. The em dash was selected (the left green option). Hat tip to my friend J for proposing the em dash. ![No](https://github.com/ianturner88/vanilla-js-qwixx/blob/main/images/April%201.1.png)
+Multiple different 'NO' options were explored. The em dash was selected (the left green option). Hat tip to my friend J for proposing the em dash.
+![No](https://github.com/ianturner88/vanilla-js-qwixx/blob/main/images/April%201.1.png)
 
 # March 29:
 
