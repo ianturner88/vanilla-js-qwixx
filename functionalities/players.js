@@ -3,7 +3,7 @@ export default class Player {
     // [Colour, Numerical Value]
     this.mostRecentPick = [];
     // [RED, YELLOW, GREEN, BLUE]
-    this.colourSums = [];
+    this.numberPicked = [];
     // all colours start as unlocked
     this.isLocked = [false, false, false, false];
   }
