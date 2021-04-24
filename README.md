@@ -74,6 +74,7 @@ A display was implemented to show whose turn it is. ![Player's turn display](htt
 The avaiable numbers are updated, so that if the public dice are the same, the colour die do not display duplicates. ![Duplicates eliminated](https://github.com/ianturner88/vanilla-js-qwixx/blob/main/images/April%201.2.png)
 
 Multiple different 'NO' options were explored. The em dash was selected (the left green option). Hat tip to my friend J for proposing the em dash.
+
 ![No](https://github.com/ianturner88/vanilla-js-qwixx/blob/main/images/April%201.1.png)
 
 # March 29:

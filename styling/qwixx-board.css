@@ -285,3 +285,20 @@ coloured sums, total sum, and the 'void pick' button */
   align-items: center;
   font-size: 60px;
 }
+
+/* VOID PICK BUTTON */
+
+.void-pick-button {
+  width: 110px;
+  height: 75px;
+  background-color: white;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+  font-weight: 500;
+  font-size: x-large;
+  border-radius: 5%;
+  border: 1px;
+  border: 1px solid #3498db;
+  color: #3498db;
+  margin: auto auto;
+}
