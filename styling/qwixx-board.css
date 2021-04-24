@@ -60,11 +60,21 @@
   font-weight: bold;
   height: 48px;
   display: grid;
-  grid-template-columns: repeat(11, 48px);
+  grid-template-columns: repeat(12, 48px);
   grid-template-rows: repeat(1, 48px);
   align-items: center;
   justify-items: center;
   margin: auto auto;
+}
+
+.lock {
+  width: 38px;
+  height: 38px;
+  background: rgb(239, 239, 239);
+  /* border-radius: 50%; */
+  display: grid;
+  align-items: center;
+  justify-items: center;
 }
 
 /* colour the numbers within the buttons */
