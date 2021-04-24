@@ -1,8 +1,12 @@
 In this file, I will keep a running, live journal of my [efforts](https://ianturner88.github.io/vanilla-js-qwixx/) to build a replica of the boardgame qwixx.
 
+# April 24:
+
+The colour sums area has been built out. The display will show a player's point total in each row, and will be made to update whenever a new button is selected or deselected.
+
 # April 21:
 
-The strikeout zone has been built for when a player does not check off a box on their turn ![Strikeout Zone](https://github.com/ianturner88/vanilla-js-qwixx/blob/main/images/April%2020.7.png)
+The strikeout zone has been built for when a player does not check off a box on their turn ![Strikeout Zone](https://github.com/ianturner88/vanilla-js-qwixx/blob/main/images/April%2021.1.png)
 
 # April 20:
 
