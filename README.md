@@ -1,10 +1,22 @@
 In this file, I will keep a running, live journal of my [efforts](https://ianturner88.github.io/vanilla-js-qwixx/) to build a replica of the boardgame qwixx.
 
+# April 30:
+
+The last row of the players' boards underwent a number of small touch-ups:
+
+1. The gap vertically between the boxes under 'Strikeouts' has been adjusted to match the gap horizontally between the boxes.
+2. The 'Void Pick' button has been aligned horizontally with the other row's other content.
+3. The blue in the bottom right corner underneath 'Colour Sums' has been changed from #0000ff (blue) to #1e90ff (dodger blue). This colour change was made every else also. The change came about because the black font was hard to read with a dark blue background, so a lighter hue of blue was chosen. In general, I want to stay true to the boardgame's design, but here, for good reason, I've deviated from the original design.
+
+|                                         Before                                         |                                         After                                          |
+| :------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------: |
+| ![](https://github.com/ianturner88/vanilla-js-qwixx/blob/main/images/April%2030.2.png) | ![](https://github.com/ianturner88/vanilla-js-qwixx/blob/main/images/April%2030.3.png) |
+
 # April 24:
 
 The scoreboard area has been laid out (78 and 320 are the largest possible scores for each category). The display will show a player's point total in each row, and will be made to update whenever a new button is selected or deselected. Also, a 'Void Pick' button has been built. This button will allow a player to deselect their current pick, so long as the dice as not yet been rolled.
 
-![Scoreboards](https://github.com/ianturner88/vanilla-js-qwixx/blob/main/images/April%2024.1.png)
+![Scoreboards](https://github.com/ianturner88/vanilla-js-qwixx/blob/main/images/April%2030.1.png)
 
 In my initial design, I forgot to include the lock column. This error has now been rectified. When a player 'locks' a row, the same colour row will be locked for the opposing player.
 

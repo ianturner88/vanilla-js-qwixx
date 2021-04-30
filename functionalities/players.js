@@ -6,6 +6,10 @@ export default class Player {
     this.numberPicked = [];
     // all colours start as unlocked
     this.isLocked = [false, false, false, false];
+    // all colours' numbers are initialized to available
+    this.upperlimit = [13, 13, 13, 13];
+    // indicates whose turn it is
+    this.isTheirTurn = 0;
   }
 
   addXClass(arrValidNumbers) {}
