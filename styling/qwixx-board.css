@@ -233,6 +233,22 @@ coloured sums, total sum, and the 'void pick' button */
   border-radius: 6px;
 }
 
+.strikeout-box1 {
+  margin-left: 11px;
+}
+
+.strikeout-box2 {
+  margin-right: 11px;
+}
+
+.strikeout-box3 {
+  margin-left: 11px;
+}
+
+.strikeout-box4 {
+  margin-right: 11px;
+}
+
 /* Colour sums related */
 .colour-sums-area {
   justify-items: center;
