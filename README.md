@@ -12,6 +12,12 @@ The last row of the players' boards underwent a number of small touch-ups:
 | :------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------: |
 | ![](https://github.com/ianturner88/vanilla-js-qwixx/blob/main/images/April%2030.2.png) | ![](https://github.com/ianturner88/vanilla-js-qwixx/blob/main/images/April%2030.3.png) |
 
+Additionally, the lock images were rotated to adhere to the boardgame's design.
+
+In a previous version, in the html file, I referenced the images as 'src=/images/dice.png'. This led to an error where the images where displayed when I ran the files locally but not when I deployed the code to github pages. The remedy? I needed to make the image source paths relative: 'src=./images/dice.png'. The '.' before the first '/' makes all the difference.
+
+A black border was added to the yellow available numbers' display. Personally, I find this visually easier on the eyes, since the yellow and the white blur together.
+
 # April 24:
 
 The scoreboard area has been laid out (78 and 320 are the largest possible scores for each category). The display will show a player's point total in each row, and will be made to update whenever a new button is selected or deselected. Also, a 'Void Pick' button has been built. This button will allow a player to deselect their current pick, so long as the dice as not yet been rolled.
