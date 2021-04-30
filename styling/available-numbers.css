@@ -82,11 +82,11 @@
 }
 
 .blue-number-dice1 {
-  background: blue;
+  background: #1e90ff;
 }
 
 .blue-number-dice2 {
-  background: blue;
+  background: #1e90ff;
 }
 
 /* the inner dice area */
@@ -120,5 +120,5 @@
 }
 
 .blue-available-numbers {
-  color: blue;
+  color: #1e90ff;
 }

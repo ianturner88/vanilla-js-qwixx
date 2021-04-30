@@ -103,7 +103,7 @@
 
 .blue-row {
   grid-row-start: 4;
-  background: blue;
+  background: #1e90ff;
 }
 
 .buttons {
@@ -134,7 +134,7 @@
 }
 
 .blue-button {
-  color: blue;
+  color: #1e90ff;
   border: none;
 }
 
@@ -268,7 +268,7 @@ coloured sums, total sum, and the 'void pick' button */
 }
 
 .blue-sum {
-  background: blue;
+  background: #1e90ff;
   grid-row-start: 2;
   grid-column-start: 2;
 }
@@ -318,4 +318,5 @@ coloured sums, total sum, and the 'void pick' button */
   border: 1px solid #3498db;
   color: #3498db;
   margin: auto auto;
+  margin-top: 18px;
 }

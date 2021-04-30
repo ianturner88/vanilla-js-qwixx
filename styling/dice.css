@@ -59,7 +59,7 @@
 .blue-dice {
   grid-row-start: 2;
   grid-column-start: 3;
-  background-color: blue;
+  background-color: #1e90ff;
 }
 
 .reset-button {
