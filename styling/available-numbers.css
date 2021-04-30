@@ -122,3 +122,12 @@
 .blue-available-numbers {
   color: #1e90ff;
 }
+
+/* yellow lock border */
+.yellow-number1.inner-dice {
+  border: 1px solid black;
+}
+
+.yellow-number2.inner-dice {
+  border: 1px solid black;
+}
