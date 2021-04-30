@@ -6,7 +6,7 @@ The scoreboard area has been laid out (78 and 320 are the largest possible score
 
 ![Scoreboards](https://github.com/ianturner88/vanilla-js-qwixx/blob/main/images/April%2024.1.png)
 
-In my initial design, I forgot to include the lock. This error has now been rectified. When a player 'locks' a row, the same colour row will be locked for the opposing player.
+In my initial design, I forgot to include the lock column. This error has now been rectified. When a player 'locks' a row, the same colour row will be locked for the opposing player.
 
 ![Scoreboards](https://github.com/ianturner88/vanilla-js-qwixx/blob/main/images/April%2024.2.png)
 
@@ -15,7 +15,6 @@ The initial draft of the player object has been designed. There are 3 properitie
 ![Scoreboards](https://github.com/ianturner88/vanilla-js-qwixx/blob/main/images/April%2024.3.png)
 
 Note to self:
-
 One (tedious) case I need to consider with locking a row is that if a user locks a row, the other users on that turn may only select the rightmost option in that row. I will need to build a method that removes a players most recent pick if the pick was not the rightmost number if another player locked a row when the 'roll dice' button is selected.
 
 # April 21:

@@ -71,10 +71,17 @@
   width: 38px;
   height: 38px;
   background: rgb(239, 239, 239);
+  transform: rotate(60deg);
+  border-radius: 50%;
   /* border-radius: 50%; */
   display: grid;
   align-items: center;
   justify-items: center;
+}
+
+.yellow-lock {
+  border: 1px solid black;
+  border-radius: 50%;
 }
 
 /* colour the numbers within the buttons */
