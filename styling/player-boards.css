@@ -110,3 +110,32 @@
 .blue-inner-number-container {
   background-color: var(--dark-blue);
 }
+
+/* ROWS */
+.rows {
+  display: grid;
+  grid-template-columns: auto repeat(11, 38px 5px) 38px auto;
+  grid-template-rows: 36px;
+  margin: auto auto;
+  margin-top: 2px;
+}
+
+.row-numbers {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+  border: none;
+  border-radius: 10px;
+  font-size: x-large;
+}
+
+/* LOCK */
+.lock {
+  width: 38px;
+  height: 36px;
+  transform: rotate(45deg);
+  border-radius: 50%;
+}
+
+.red-button {
+  background-color: var(--light-red);
+}
