@@ -19,7 +19,7 @@
 .board {
   display: grid;
   grid-template-columns: 1;
-  grid-template-rows: 7% 55% 15% 23%;
+  grid-template-rows: 27px 212px 55px 54px;
 }
 
 .player1 {
