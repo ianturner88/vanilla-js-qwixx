@@ -139,7 +139,7 @@
 /* SCORING SYSTEM */
 .scoring-system {
   display: grid;
-  grid-template-columns: 15px repeat(12, 40px) 88px 15px;
+  grid-template-columns: 2px repeat(12, 40px) 105px 2px;
   grid-template-rows: 55px;
   margin: auto auto;
   justify-items: center;
@@ -168,4 +168,35 @@
   width: 25px;
   height: 2px;
   background-color: var(--dark-grey);
+}
+
+.penaltyBox {
+  /* where the player's 4 strikeouts are recorded */
+  display: grid;
+  margin: auto auto;
+  justify-items: center;
+  align-items: center;
+  grid-template-columns: 1;
+  grid-template-rows: 25px 30px;
+  width: 105px;
+  height: 55px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+}
+
+.penaltyBox4 {
+  display: grid;
+  grid-template-rows: 1;
+  grid-template-columns: auto 25px 25px 25px 25px auto;
+}
+
+.penaltyBoxLittle {
+  display: flex;
+  margin: auto auto;
+  justify-content: center;
+  align-content: center;
+  width: 20px;
+  height: 20px;
+  border: 2px solid var(--dark-grey);
+  border-radius: 5px;
 }
