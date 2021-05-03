@@ -49,7 +49,7 @@
   margin: auto auto;
   border-radius: 10px;
   display: flex;
-  justify-content: center;
+  justify-items: center;
   align-items: center;
 }
 
@@ -96,7 +96,6 @@
   grid-template-columns: auto repeat(11, 38px 5px) 38px auto;
   grid-template-rows: 36px;
   margin: auto auto;
-  margin-top: 2px;
 }
 
 .row-numbers {
@@ -114,6 +113,8 @@
   transform: rotate(45deg);
   border-radius: 50%;
 }
+
+/* BUTTONS */
 
 .red-button {
   background-color: var(--light-red);
@@ -133,4 +134,38 @@
 .blue-button {
   background-color: var(--light-blue);
   color: var(--medium-blue);
+}
+
+/* SCORING SYSTEM */
+.scoring-system {
+  display: grid;
+  grid-template-columns: 15px repeat(12, 40px) 88px 15px;
+  grid-template-rows: 55px;
+  margin: auto auto;
+  justify-items: center;
+  align-items: center;
+}
+
+/* scoring system container */
+.scoring-container {
+  width: 30px;
+  height: 45px;
+  border: 3px solid var(--dark-grey);
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: 1;
+  grid-template-rows: 22px 3px 22px;
+  margin: auto auto;
+  justify-items: center;
+  align-items: center;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+}
+
+/* the divider between the points and the number of numbers selected */
+.dividingLine {
+  content: '';
+  width: 25px;
+  height: 2px;
+  background-color: var(--dark-grey);
 }
