@@ -62,7 +62,7 @@
 
 /* DEFINE THE SIZE OF EVERY BUTTON ROW */
 .outer-number-container {
-  width: 576px;
+  width: 540px;
   height: 48px;
   margin: auto auto;
   display: flex;
@@ -143,4 +143,19 @@
 .red-button {
   background-color: var(--light-red);
   color: var(--medium-red);
+}
+
+.yellow-button {
+  background-color: var(--light-yellow);
+  color: black;
+}
+
+.green-button {
+  background-color: var(--light-green);
+  color: var(--medium-green);
+}
+
+.blue-button {
+  background-color: var(--light-blue);
+  color: var(--medium-blue);
 }
