@@ -1,29 +1,4 @@
-:root {
-  /* Red */
-  --light-red: rgba(249, 224, 229, 255);
-  --medium-red: rgba(215, 63, 76, 255);
-  --dark-red: rgba(148, 48, 55, 255);
-
-  /* Yellow */
-  --light-yellow: rgba(253, 249, 241, 255);
-  --medium-yellow: rgba(254, 228, 74, 255);
-  --dark-yellow: rgba(216, 163, 82, 255);
-
-  /* Green */
-  --light-green: rgba(235, 243, 241, 255);
-  --medium-green: rgba(65, 159, 91, 255);
-  --dark-green: rgba(63, 124, 82, 255);
-
-  /* Blue */
-  --light-blue: rgba(228, 224, 242, 25);
-  --medium-blue: rgba(57, 74, 139, 255);
-  --dark-blue: rgba(45, 46, 75, 255);
-
-  /* Grey */
-  --light-grey: rgba(227, 227, 227, 255);
-  --medium-grey: rgba(189, 189, 189, 255);
-  --dark-grey: rgba(153, 153, 153, 255);
-}
+@import url(./colours.css);
 
 /* OUTER MOST BOARD */
 .board {
