@@ -1,0 +1,24 @@
+.row-numbers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.xClass::before,
+.xClass::after {
+  content: '';
+  position: absolute;
+  width: 7px;
+  height: 38px;
+  background-color: black;
+}
+
+.xClass::before {
+  background-color: black;
+  transform: rotate(45deg);
+}
+
+.xClass::after {
+  background-color: black;
+  transform: rotate(-45deg);
+}

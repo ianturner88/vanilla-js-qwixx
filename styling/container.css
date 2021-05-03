@@ -13,15 +13,13 @@
   position: fixed;
   display: grid;
   grid-template-columns: auto 600px auto 600px auto;
-  grid-template-rows: auto 400px 120px 202px auto;
+  grid-template-rows: auto 350px 120px 202px auto;
 }
 
 .board {
   display: grid;
   grid-template-columns: 1;
-  grid-template-rows: 7% 55% 14% 23%;
-  width: 600px;
-  height: 400px;
+  grid-template-rows: 7% 55% 15% 23%;
 }
 
 .player1 {

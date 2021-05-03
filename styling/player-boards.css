@@ -69,9 +69,13 @@
 }
 
 .inner-number-container {
-  width: 540px;
-  height: 40px;
+  width: 520px;
+  height: 41px;
   margin: auto auto;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* COLOUR BUTTON ROWS */
