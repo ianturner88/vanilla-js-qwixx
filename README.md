@@ -8,9 +8,9 @@ The x-class for the buttons was rebuilt, since I accidentally deleted the x-clas
 
 One area I would explore if I were to do something like this again is how to make the website more user-friendly for colour-blind people. At the start, I intentionally wrote the site in a way that minimized the use of words. In hindsight, this approach does not account for those who struggle or can not differentiate colours.
 
-|                                         Before                                         |                                         After                                          |
-| :------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------: |
-| ![](https://github.com/ianturner88/vanilla-js-qwixx/blob/main/images/April%2030.2.png) | ![](https://github.com/ianturner88/vanilla-js-qwixx/blob/main/images/April%2030.3.png) |
+|                                       Before                                        |                                        After                                        |
+| :---------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------: |
+| ![](https://github.com/ianturner88/vanilla-js-qwixx/blob/main/images/May%204.2.png) | ![](https://github.com/ianturner88/vanilla-js-qwixx/blob/main/images/May%204.1.png) |
 
 # April 30:
 
