@@ -1,5 +1,17 @@
 In this file, I will keep a running, live journal of my [efforts](https://ianturner88.github.io/vanilla-js-qwixx/) to build a replica of the boardgame qwixx.
 
+# May 4:
+
+The color palette has been updated to better reflect the board's true design. I used this [website](https://imagecolorpicker.com/en) to identify the colour codes used by qwixx. I did not know such a site existed until last week.
+
+The x-class for the buttons was rebuilt, since I accidentally deleted the x-class a few weeks ago.
+
+One area I would explore if I were to do something like this again is how to make the website more user-friendly for colour-blind people. At the start, I intentionally wrote the site in a way that minimized the use of words. In hindsight, this approach does not account for those who struggle or can not differentiate colours.
+
+|                                         Before                                         |                                         After                                          |
+| :------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------: |
+| ![](https://github.com/ianturner88/vanilla-js-qwixx/blob/main/images/April%2030.2.png) | ![](https://github.com/ianturner88/vanilla-js-qwixx/blob/main/images/April%2030.3.png) |
+
 # April 30:
 
 The last row of the players' boards underwent a number of small touch-ups:
