@@ -1,5 +1,6 @@
-/* the grid box where the players numbers are to be found */
+@import url(./colours.css);
 
+/* the grid box where the players numbers are to be found */
 .available-numbers {
   border: 1px solid black;
   width: 600px;
@@ -58,35 +59,35 @@
 }
 
 .red-number-dice1 {
-  background: red;
+  background: var(--dark-red);
 }
 
 .red-number-dice2 {
-  background: red;
+  background: var(--dark-red);
 }
 
 .yellow-number-dice1 {
-  background: yellow;
+  background: var(--dark-yellow);
 }
 
 .yellow-number-dice2 {
-  background: yellow;
+  background: var(--dark-yellow);
 }
 
 .green-number-dice1 {
-  background: green;
+  background: var(--dark-green);
 }
 
 .green-number-dice2 {
-  background: green;
+  background: var(--dark-green);
 }
 
 .blue-number-dice1 {
-  background: #1e90ff;
+  background: var(--dark-blue);
 }
 
 .blue-number-dice2 {
-  background: #1e90ff;
+  background: var(--dark-blue);
 }
 
 /* the inner dice area */
@@ -108,7 +109,7 @@
 }
 
 .red-available-numbers {
-  color: red;
+  color: var(--medium-red);
 }
 
 .yellow-available-numbers {
@@ -116,18 +117,42 @@
 }
 
 .green-available-numbers {
-  color: green;
+  color: var(--medium-green);
 }
 
 .blue-available-numbers {
-  color: #1e90ff;
+  color: var(--medium-blue);
 }
 
-/* yellow lock border */
-.yellow-number1.inner-dice {
-  border: 1px solid black;
+/* Shade background of numbers */
+.red-number1 {
+  background-color: var(--light-red);
 }
 
-.yellow-number2.inner-dice {
-  border: 1px solid black;
+.red-number2 {
+  background-color: var(--light-red);
+}
+
+.yellow-number1 {
+  background-color: var(--light-yellow);
+}
+
+.yellow-number2 {
+  background-color: var(--light-yellow);
+}
+
+.green-number1 {
+  background-color: var(--light-green);
+}
+
+.green-number2 {
+  background-color: var(--light-green);
+}
+
+.blue-number1 {
+  background-color: var(--light-blue);
+}
+
+.blue-number2 {
+  background-color: var(--light-blue);
 }
