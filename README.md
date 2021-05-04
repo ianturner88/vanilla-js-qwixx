@@ -14,6 +14,10 @@ One area I would explore if I were to do something like this again is how to mak
 
 Note: There are 3 shades of red, yellow, green, blue, and grey. The numerical values corresponding to each colour are written in the middle hue of the 3 shades, with the exception of yellow. The yellow numbers, I write in black, since the medium hue of yellow is too hard to read.
 
+I have a created a closed and open lock image. This looks much nicer than the previous lock images I was using. Also, the blue and green numbers were displayed in the wrong order. This has been fixed.
+
+![Scoreboards](https://github.com/ianturner88/vanilla-js-qwixx/blob/main/images/May%204.3.png)
+
 # April 30: Touch-ups
 
 The last row of the players' boards underwent a number of small touch-ups:
