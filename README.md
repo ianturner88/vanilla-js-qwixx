@@ -1,6 +1,6 @@
 In this file, I will keep a running, live journal of my [efforts](https://ianturner88.github.io/vanilla-js-qwixx/) to build a replica of the boardgame qwixx.
 
-# May 4:
+# May 4: Colour Palette Overhaul
 
 The color palette has been updated to better reflect the board's true design. I used this [website](https://imagecolorpicker.com/en) to identify the colour codes used by qwixx. I did not know such a site existed until last week.
 
@@ -12,7 +12,9 @@ One area I would explore if I were to do something like this again is how to mak
 | :---------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------: |
 | ![](https://github.com/ianturner88/vanilla-js-qwixx/blob/main/images/May%204.2.png) | ![](https://github.com/ianturner88/vanilla-js-qwixx/blob/main/images/May%204.1.png) |
 
-# April 30:
+Note: There are 3 shades of red, yellow, green, blue, and grey. The numerical values corresponding to each colour are written in the middle hue of the 3 shades, with the exception of yellow. The yellow numbers, I write in black, since the medium hue of yellow is too hard to read.
+
+# April 30: Touch-ups
 
 The last row of the players' boards underwent a number of small touch-ups:
 
@@ -30,7 +32,7 @@ In a previous version, in the html file, I referenced the images as 'src=/images
 
 A black border was added to the yellow available numbers' display. Personally, I find this visually easier on the eyes, since the yellow and the white blur together.
 
-# April 24:
+# April 24: Player Objects, Locks, & Scoreboard
 
 The scoreboard area has been laid out (78 and 320 are the largest possible scores for each category). The display will show a player's point total in each row, and will be made to update whenever a new button is selected or deselected. Also, a 'Void Pick' button has been built. This button will allow a player to deselect their current pick, so long as the dice as not yet been rolled.
 
@@ -47,17 +49,17 @@ The initial draft of the player object has been designed. There are 3 properitie
 Note to self:
 One (tedious) case I need to consider with locking a row is that if a user locks a row, the other users on that turn may only select the rightmost option in that row. I will need to build a method that removes a players most recent pick if the pick was not the rightmost number if another player locked a row when the 'roll dice' button is selected.
 
-# April 21:
+# April 21: Strikeout Zone
 
 The strikeout zone has been built for when a player does not check off a box on their turn.
 
 ![Strikeout Zone](https://github.com/ianturner88/vanilla-js-qwixx/blob/main/images/April%2021.1.png)
 
-# April 20:
+# April 20: Scoring System
 
 The bar that displays the points per number of boxes ticked was built out.![Point Totals](https://github.com/ianturner88/vanilla-js-qwixx/blob/main/images/April%2020.7.png)
 
-# April 17:
+# April 17: ID Tages & Left-Padding
 
 The box in the bottom right of the bottom left box was touched up. Left padding was added to the question "Which player's turn is it?". A small clean up job.
 
@@ -85,17 +87,17 @@ When the dice are rolled, a number of html button IDs need to be generated. Bugs
 | :------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------: |
 | ![](https://github.com/ianturner88/vanilla-js-qwixx/blob/main/images/April%2020.5.png) | ![](https://github.com/ianturner88/vanilla-js-qwixx/blob/main/images/April%2020.6.png) |
 
-# April 10:
+# April 10: Importing Definitions from Other Files
 
 The dice object has been re-factored for both simplicity, readability, and maintainability. The number of lines attributed to the dice object has been halved. Previously, there were two separate functions for when each player rolled the dice. Now, a single more general function has been constructed for when either player rolls the dice.
 
 Also, the querySelectors were moved to a different page and stored in arrays. The arrays with the querySelectors are exported.
 
-# April 4:
+# April 4: Refactoring the Dice
 
 The dice object largely consists of duplicate, but functional, code, so I will refactor this code on a new branch come Tuesday. Also, many of the variable definitions, like the querySelectors, will be shuffled over to a different file and imported, so the dice.js file is cleaner.
 
-# April 3:
+# April 3: Available & Unavailable
 
 A method - setAllButtonsToUnavailable(arrButtonsIDs) - was written to block the user from using any of the buttons immediately after the dice is rolled.
 
@@ -108,7 +110,7 @@ Dice areas to refactor:
 1. the way the available buttons are recorded could be shifted to one method
 2. if the 2 public numbers match, there's a check. This check could be moved to the front of the player#sTurn method.
 
-# April 1:
+# April 1: Em-Dash
 
 A display was implemented to show whose turn it is. ![Player's turn display](https://github.com/ianturner88/vanilla-js-qwixx/blob/main/images/April%201.3.png)
 
@@ -118,34 +120,34 @@ Multiple different 'NO' options were explored. The em dash was selected (the lef
 
 ![No](https://github.com/ianturner88/vanilla-js-qwixx/blob/main/images/April%201.1.png)
 
-# March 29:
+# March 29: X-Class
 
 Turns out, the issue was minor: the background colour had to be set to black so that the X would display. ![x-class](https://github.com/ianturner88/vanilla-js-qwixx/blob/main/images/March%2029.2.png)
 
 I have an unresolved issue I plan to ask friends for help with. The X class, used to indicate a player has selected a button, does not display. I am unsure how to resolve the issue. ![x-class](https://github.com/ianturner88/vanilla-js-qwixx/blob/main/images/March%2029.1.png).
 
-# March 23:
+# March 23: Github Pages
 
 A 'Github Pages' site was made where my boardgame may live.
 
-# March 22:
+# March 22: Dice Roll
 
 The 'Roll Dice' button has been hooked up, so the dice now are updated if a user clicks the button.
 
 I elimated the second white block in the available numbers block, because I noticed a mistake in how I understood the rules.
 
-# March 17:
+# March 17: Multiple JS Files
 
 I learnt out to split a project over multiple js files. In my index.html file, I called './main' which led to an error message. To resolve this issue, I changed the file address called in the html file to './main.js'. ![error message](https://github.com/ianturner88/vanilla-js-qwixx/blob/main/images/March%2017.png).
 
-# March 16:
+# March 16: Available Numbers
 
 The area displaying each players' options was built out. ![dice area](https://github.com/ianturner88/vanilla-js-qwixx/blob/main/images/March%2016.png).
 
-# March 8:
+# March 8: Dice Area
 
 The dice area html/css was built out. ![dice area](https://github.com/ianturner88/vanilla-js-qwixx/blob/main/images/March%208.png).
 
-# March 3:
+# March 3: The Start
 
 The border's coloured rows have been built. ![colored rows](https://github.com/ianturner88/vanilla-js-qwixx/blob/main/images/March%203.png).

@@ -110,8 +110,8 @@
 .lock {
   width: 38px;
   height: 36px;
-  /* transform: rotate(45deg); */
-  /* border-radius: 50%; */
+  transform: rotate(45deg);
+  border-radius: 50%;
 }
 
 /* BUTTONS */
