@@ -1,3 +1,4 @@
+/* Number x-class */
 .row-numbers {
   display: flex;
   justify-content: center;
@@ -19,6 +20,32 @@
 }
 
 .xClass::after {
+  background-color: black;
+  transform: rotate(-45deg);
+}
+
+/* Skipped Turn x-class */
+.penaltyBoxLittle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.xSkippedTurn::before,
+.xSkippedTurn::after {
+  content: '';
+  position: absolute;
+  width: 5px;
+  height: 28px;
+  background-color: black;
+}
+
+.xSkippedTurn::before {
+  background-color: black;
+  transform: rotate(45deg);
+}
+
+.xSkippedTurn::after {
   background-color: black;
   transform: rotate(-45deg);
 }
