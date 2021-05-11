@@ -113,7 +113,7 @@
 }
 
 .yellow-available-numbers {
-  color: black;
+  color: var(--dark-yellow);
 }
 
 .green-available-numbers {

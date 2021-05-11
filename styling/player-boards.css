@@ -238,7 +238,7 @@
   border: 4px solid var(--dark-yellow);
   color: var(--medium-yellow);
   background-color: var(--light-yellow);
-  color: black;
+  color: var(--dark-yellow);
 }
 
 .scoreboard-green-sum {
@@ -266,7 +266,7 @@
 
 .scoreboard-penalty-sum {
   border: 4px solid var(--dark-grey);
-  color: var(--medium-grey);
+  color: var(--dark-grey);
   background-color: var(--light-grey);
 }
 
