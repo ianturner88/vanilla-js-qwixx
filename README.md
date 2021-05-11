@@ -1,5 +1,9 @@
 In this file, I will keep a running, live journal of my [efforts](https://ianturner88.github.io/vanilla-js-qwixx/) to build a replica of the boardgame qwixx.
 
+# May 11: Skipped Turn X-Class
+
+The x-class for the skipped turn was built out. ![Skipped Turns](https://github.com/ianturner88/vanilla-js-qwixx/blob/main/images/May%204.3.png)
+
 # May 4: Colour Palette Overhaul
 
 The color palette has been updated to better reflect the board's true design. I used this [website](https://imagecolorpicker.com/en) to identify the colour codes used by qwixx. I did not know such a site existed until last week.

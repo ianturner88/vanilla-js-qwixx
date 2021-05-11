@@ -279,3 +279,19 @@
   color: black;
   background-color: white;
 }
+
+/* Player Board Button */
+.void-pick-button {
+  width: 60px;
+  height: 40px;
+  background-color: white;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+  font-weight: 500;
+  font-size: small;
+  border-radius: 5%;
+  border: 1px;
+  border: 1px solid #3498db;
+  color: #3498db;
+  margin: auto auto;
+}
