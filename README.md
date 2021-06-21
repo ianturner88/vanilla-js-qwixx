@@ -1,5 +1,17 @@
 In this file, I will keep a running, live journal of my [efforts](https://ianturner88.github.io/vanilla-js-qwixx/) to build a replica of the boardgame qwixx.
 
+# June 21: Initial Draft of the Checkbox
+
+To start, I worked through Web Dev Simplified's [tutorial](https://www.youtube.com/watch?v=YyLzwR-iXtI) on how to make a checkbox.
+
+Next, I implemented two checkboxes for my qwixx game. The checkboxes are needed because the player whose turn it is, is to only use the sum of a white die and a coloured die after the all players have been given the chance to use the public number.
+
+There are some remaining issues with the checkboxes, however. Both the boxes and their associated titles are left justified, and the bottom box is smaller than the bigger box. Also, the bottom box expands when clicked on. I am not sure why that is.
+
+|                                      First Draft                                      |                                      Final Draft                                      |
+| :-----------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------: |
+| ![](https://github.com/ianturner88/vanilla-js-qwixx/blob/main/images/June%2020.3.png) | ![](https://github.com/ianturner88/vanilla-js-qwixx/blob/main/images/June%2020.4.png) |
+
 # June 20: Writing the Rules
 
 Yesterday and today, I wrote the first draft of the rules. Writing a succinct synopsis of the rules was no easy task. In my first stab at laying out the rules, I used a title for the world "Rules". This created a misalignment of the text in the leftmost column with the other columns. Also, I had no spacing between the columns of text, which added confusion.
