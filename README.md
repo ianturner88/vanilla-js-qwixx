@@ -1,5 +1,13 @@
 In this file, I will keep a running, live journal of my [efforts](https://ianturner88.github.io/vanilla-js-qwixx/) to build a replica of the boardgame qwixx.
 
+# June 20: Writing the Rules
+
+Yesterday and today, I wrote the first draft of the rules. Writing a succinct synopsis of the rules was no easy task. In my first stab at laying out the rules, I used a title for the rules. This created a misalignment of the text in the leftmost column with the other columns. In my final version, I did away with the title. To fit all the rules in with a reasonable font size, I extended the two bottom boxes by 25px.
+
+|                                       Before                                        |                                        After                                        |
+| :---------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------: |
+| ![](https://github.com/ianturner88/vanilla-js-qwixx/blob/main/images/May%204.2.png) | ![](https://github.com/ianturner88/vanilla-js-qwixx/blob/main/images/May%204.1.png) |
+
 # May 11: Skipped Turn X-Class
 
 The x-class for the skipped turn was built out. ![Skipped Turns](https://github.com/ianturner88/vanilla-js-qwixx/blob/main/images/May%204.3.png)

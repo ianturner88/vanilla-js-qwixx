@@ -1,11 +1,37 @@
-.toggles-and-rules {
+.rules {
   width: 600px;
-  height: 200px;
+  height: 225px;
   grid-row-start: 4;
   grid-column-start: 4;
   background-color: wheat;
   border: 1px solid black;
   display: grid;
-  grid-template-columns: 30% 70%;
-  grid-template-rows: 1;
+  grid-template-columns: 10px repeat(5, 105.4px 12px) auto;
+  grid-template-rows: 5px 205px auto;
+  font-size: 16px;
+}
+
+.rule-column2 {
+  grid-row-start: 2;
+  grid-column-start: 2;
+}
+
+.rule-column4 {
+  grid-row-start: 2;
+  grid-column-start: 4;
+}
+
+.rule-column6 {
+  grid-row-start: 2;
+  grid-column-start: 6;
+}
+
+.rule-column8 {
+  grid-row-start: 2;
+  grid-column-start: 8;
+}
+
+.rule-column10 {
+  grid-row-start: 2;
+  grid-column-start: 10;
 }

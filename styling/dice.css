@@ -2,7 +2,7 @@
 
 .dice-sector {
   width: 600px;
-  height: 200px;
+  height: 225px;
   grid-row-start: 4;
   grid-column-start: 2;
   background-color: wheat;
