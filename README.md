@@ -2,7 +2,9 @@ In this file, I will keep a running, live journal of my [efforts](https://iantur
 
 # June 20: Writing the Rules
 
-Yesterday and today, I wrote the first draft of the rules. Writing a succinct synopsis of the rules was no easy task. In my first stab at laying out the rules, I used a title for the rules. This created a misalignment of the text in the leftmost column with the other columns. In my final version, I did away with the title. To fit all the rules in with a reasonable font size, I extended the two bottom boxes by 25px.
+Yesterday and today, I wrote the first draft of the rules. Writing a succinct synopsis of the rules was no easy task. In my first stab at laying out the rules, I used a title for the world "Rules". This created a misalignment of the text in the leftmost column with the other columns. Also, I had no spacing between the columns of text, which added confusion.
+
+In my final version, I did away with the title. To fit all the rules in with a reasonable font size, I extended the two bottom boxes by 25px. Invisible columns were added between the columns of text to ensure their was proper spacing between columns.
 
 |                                        Before                                         |                                         After                                         |
 | :-----------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------: |
