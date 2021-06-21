@@ -6,13 +6,13 @@ Yesterday and today, I wrote the first draft of the rules. Writing a succinct sy
 
 In my final version, I did away with the title. To fit all the rules in with a reasonable font size, I extended the two bottom boxes by 25px. Invisible columns were added between the columns of text to ensure their was proper spacing between columns.
 
-|                                        Before                                         |                                         After                                         |
+|                                      First Draft                                      |                                      Final Draft                                      |
 | :-----------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------: |
 | ![](https://github.com/ianturner88/vanilla-js-qwixx/blob/main/images/June%2020.1.png) | ![](https://github.com/ianturner88/vanilla-js-qwixx/blob/main/images/June%2020.2.png) |
 
 # May 11: Skipped Turn X-Class
 
-The x-class for the skipped turn was built out. ![Skipped Turns](https://github.com/ianturner88/vanilla-js-qwixx/blob/main/images/May%204.3.png)
+The x-class for the skipped turn was built out. ![Skipped Turns](https://github.com/ianturner88/vanilla-js-qwixx/blob/main/images/May%2011.1.png)
 
 # May 4: Colour Palette Overhaul
 
