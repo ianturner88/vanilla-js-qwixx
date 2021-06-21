@@ -4,9 +4,9 @@ In this file, I will keep a running, live journal of my [efforts](https://iantur
 
 Yesterday and today, I wrote the first draft of the rules. Writing a succinct synopsis of the rules was no easy task. In my first stab at laying out the rules, I used a title for the rules. This created a misalignment of the text in the leftmost column with the other columns. In my final version, I did away with the title. To fit all the rules in with a reasonable font size, I extended the two bottom boxes by 25px.
 
-|                                       Before                                        |                                        After                                        |
-| :---------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------: |
-| ![](https://github.com/ianturner88/vanilla-js-qwixx/blob/main/images/May%204.2.png) | ![](https://github.com/ianturner88/vanilla-js-qwixx/blob/main/images/May%204.1.png) |
+|                                        Before                                         |                                         After                                         |
+| :-----------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------: |
+| ![](https://github.com/ianturner88/vanilla-js-qwixx/blob/main/images/June%2020.1.png) | ![](https://github.com/ianturner88/vanilla-js-qwixx/blob/main/images/June%2020.2.png) |
 
 # May 11: Skipped Turn X-Class
 
