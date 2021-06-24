@@ -12,7 +12,7 @@ export default class Player {
     this.isTheirTurn = 0;
   }
 
-  mostRecentPick(playerPick) {
+  currentPick(playerPick) {
     console.log(playerPick);
   }
 }
