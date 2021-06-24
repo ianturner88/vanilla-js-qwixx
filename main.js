@@ -24,6 +24,8 @@ const player2 = new Player();
 let isPlayer1sTurn = 0;
 
 newRoll.addEventListener('click', (e) => {
+  // triggered by 'Roll Dice' button
+
   // toggle between player 1's & 2's turns
   isPlayer1sTurn =
     isPlayer1sTurn === 1 ? (isPlayer1sTurn = 0) : (isPlayer1sTurn = 1);
@@ -39,49 +41,60 @@ newRoll.addEventListener('click', (e) => {
   dice.enableValidButtons();
 });
 
+// all coloured the buttons on player 1's board
 p1RedNumberSelected.forEach((button) =>
+  // player 1's RED buttons
   button.addEventListener('click', () => {
-    console.log(button.innerText);
+    let playerPick = ['RED', button.innerText];
+    player1.mostRecentPick(playerPick);
   })
 );
 
 p1YellowNumberSelected.forEach((button) =>
+  // player 1's YELLOW buttons
   button.addEventListener('click', () => {
     console.log(button.innerText);
   })
 );
 
 p1GreenNumberSelected.forEach((button) =>
+  // player 1's GREEN buttons
   button.addEventListener('click', () => {
     console.log(button.innerText);
   })
 );
 
 p1BlueNumberSelected.forEach((button) =>
+  // player 1's BLUE buttons
   button.addEventListener('click', () => {
     console.log(button.innerText);
   })
 );
 
+// all coloured the buttons on player 2's board
 p2RedNumberSelected.forEach((button) =>
+  // player 2's RED buttons
   button.addEventListener('click', () => {
     console.log(button.innerText);
   })
 );
 
 p2YellowNumberSelected.forEach((button) =>
+  // player 2's YELLOW buttons
   button.addEventListener('click', () => {
     console.log(button.innerText);
   })
 );
 
 p2GreenNumberSelected.forEach((button) =>
+  // player 2's GREEN buttons
   button.addEventListener('click', () => {
     console.log(button.innerText);
   })
 );
 
 p2BlueNumberSelected.forEach((button) =>
+  // player 2's BLUE buttons
   button.addEventListener('click', () => {
     console.log(button.innerText);
   })
