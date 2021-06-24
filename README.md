@@ -1,5 +1,15 @@
 In this file, I will keep a running, live journal of my [efforts](https://ianturner88.github.io/vanilla-js-qwixx/) to build a replica of the boardgame qwixx.
 
+# June 24: Unit Testing
+
+I worked through Web Dev Simplified's [video](https://www.youtube.com/watch?v=FgnxcUQ5vho&ab_channel=WebDevSimplified) and watched Brad Traversy's [video](https://www.youtube.com/watch?v=7r4xVDI2vho&ab_channel=TraversyMedia) on unit testing.
+
+# June 22: Refactor Checkbox
+
+I refactored the css associated with the checkbox.
+
+Today, on Youtube, I researched unit testing. For a separate project, I used manual unit-testing. By that I mean, I had some tests written which I manually uploaded every time I wanted to check the code. Manual unit-testing is a kinda like how stage one of riding a bicycle is having training wheels. By tomorrow, I hope I can write some unit tests.
+
 # June 21: Initial Draft of the Checkbox
 
 To start, I worked through Web Dev Simplified's [tutorial](https://www.youtube.com/watch?v=YyLzwR-iXtI) on how to make a checkbox.

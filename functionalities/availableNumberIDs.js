@@ -1,3 +1,5 @@
+// this file deals exclusively with the dice
+
 // the 6 dice
 const publicNumber1 = document.querySelector('[data-public-dice-1]');
 const publicNumber2 = document.querySelector('[data-public-dice-2]');

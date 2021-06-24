@@ -1,7 +1,16 @@
 import Dice from './functionalities/dice.js';
 import Player from './functionalities/players.js';
 
-import { p1RedNumberSelected } from './functionalities/boardButtons.js';
+import {
+  p1RedNumberSelected,
+  p1YellowNumberSelected,
+  p1GreenNumberSelected,
+  p1BlueNumberSelected,
+  p2RedNumberSelected,
+  p2YellowNumberSelected,
+  p2GreenNumberSelected,
+  p2BlueNumberSelected,
+} from './functionalities/boardButtons.js';
 
 import { player1Buttons, player2Buttons } from './functionalities/buttonIDs.js';
 
@@ -30,4 +39,50 @@ newRoll.addEventListener('click', (e) => {
   dice.enableValidButtons();
 });
 
-p1RedNumberSelected.addEventListener('click', (e) => {});
+p1RedNumberSelected.forEach((button) =>
+  button.addEventListener('click', () => {
+    console.log(button.innerText);
+  })
+);
+
+p1YellowNumberSelected.forEach((button) =>
+  button.addEventListener('click', () => {
+    console.log(button.innerText);
+  })
+);
+
+p1GreenNumberSelected.forEach((button) =>
+  button.addEventListener('click', () => {
+    console.log(button.innerText);
+  })
+);
+
+p1BlueNumberSelected.forEach((button) =>
+  button.addEventListener('click', () => {
+    console.log(button.innerText);
+  })
+);
+
+p2RedNumberSelected.forEach((button) =>
+  button.addEventListener('click', () => {
+    console.log(button.innerText);
+  })
+);
+
+p2YellowNumberSelected.forEach((button) =>
+  button.addEventListener('click', () => {
+    console.log(button.innerText);
+  })
+);
+
+p2GreenNumberSelected.forEach((button) =>
+  button.addEventListener('click', () => {
+    console.log(button.innerText);
+  })
+);
+
+p2BlueNumberSelected.forEach((button) =>
+  button.addEventListener('click', () => {
+    console.log(button.innerText);
+  })
+);
