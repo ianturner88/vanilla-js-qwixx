@@ -34,7 +34,9 @@ newRoll.addEventListener('click', (e) => {
 
   // roll the dice & generate available numbers
   dice.rollDice();
-  dice.updateAvailableNumbers(isPlayer1sTurn);
+  // display the public number for both players
+  dice.displayPublicNumber();
+  dice.generatePublicIDTags();
   dice.setAllButtonsToUnavailable();
   dice.constructValidIDButtons(isPlayer1sTurn);
   dice.constructValidPublicIDButtons();

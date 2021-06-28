@@ -12,6 +12,7 @@ export default class Dice {
     this.availableNumbers = [];
     this.counter = 1;
     this.validButtonIDs = [];
+    this.publicButtonIDs = [];
   }
 
   rollDice() {
@@ -52,6 +53,41 @@ export default class Dice {
         this.availableNumbers[i] = '—';
       }
     }
+  }
+
+  displayPublicNumber() {
+    // display the public number for both players
+    player1AvailableNumbers[0].innerHTML = this.availableNumbers[0];
+    player2AvailableNumbers[0].innerHTML = this.availableNumbers[0];
+  }
+
+  generatePublicIDTags() {
+    // generate all the valid public id tags
+    let id = '';
+    // initialize to empty the public ID's array
+    this.publicButtonIDs = [];
+
+    // player 1
+    id = 'p1' + 'r' + this.availableNumbers[0];
+    this.publicButtonIDs.push(id);
+    id = 'p1' + 'y' + this.availableNumbers[0];
+    this.publicButtonIDs.push(id);
+    id = 'p1' + 'g' + this.availableNumbers[0];
+    this.publicButtonIDs.push(id);
+    id = 'p1' + 'b' + this.availableNumbers[0];
+    this.publicButtonIDs.push(id);
+
+    // player 2
+    id = 'p2' + 'r' + this.availableNumbers[0];
+    this.publicButtonIDs.push(id);
+    id = 'p2' + 'y' + this.availableNumbers[0];
+    this.publicButtonIDs.push(id);
+    id = 'p2' + 'g' + this.availableNumbers[0];
+    this.publicButtonIDs.push(id);
+    id = 'p2' + 'b' + this.availableNumbers[0];
+    this.publicButtonIDs.push(id);
+
+    console.log(this.publicButtonIDs);
   }
 
   updateAvailableNumbers(isPlayer1sTurn) {
