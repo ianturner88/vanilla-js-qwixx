@@ -4,6 +4,10 @@ In this file, I will keep a running, live journal of my [efforts](https://iantur
 
 I figured out how to disable the checkboxes, as required. This allows me to require a player to sequentially work their way from rolling the dice, to both players using the public number, to the player whose turn it is selecting at most one colour option.
 
+Many small bugs or oversights were remedied today. For example, when a user hits 'Roll Dice', first, the public number is displayed for both players. To proceed in the gameplay, the user must select the public checkbox. Now, the coloured numbers are displayed for the player whose turn it is. A check was implemented so that the 'Roll Dice' button may not be selected until the 'Colour checkbox' is selected. Once the 'colour' checkbox is selected, the middle row resets to '-'.
+
+Tomorrow, I will build out checks to ensure buttons selected by users do not violate the game's rules. Also, I will build the check to see when the game is over - if at least 2 rows have been locked or a player has 4 skipped turns.
+
 # June 28: Refactoring Dice
 
 I refactored the dice so that after the dice is rolled only the public numbers is displayed.
