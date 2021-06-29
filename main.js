@@ -32,15 +32,12 @@ newRoll.addEventListener('click', (e) => {
 
   playerTurnDisplay.innerHTML = isPlayer1sTurn == 1 ? '1' : '2';
 
-  // roll the dice & generate available numbers
+  // generate 6 random numbers, display dice numbers, and construct available numbers
   dice.rollDice();
-  // display the public number for both players
-  dice.displayPublicNumber();
-  dice.generatePublicIDTags();
+  // set all buttons to unavailable
   dice.setAllButtonsToUnavailable();
-  dice.constructValidIDButtons(isPlayer1sTurn);
-  dice.constructValidPublicIDButtons();
-  dice.enableValidButtons();
+  // public number displayed & id tags generated
+  dice.publicNumber();
 });
 
 // all coloured the buttons on player 1's board

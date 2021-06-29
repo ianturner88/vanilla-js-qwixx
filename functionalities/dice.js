@@ -55,19 +55,20 @@ export default class Dice {
     }
   }
 
-  displayPublicNumber() {
-    // display the public number for both players
-    player1AvailableNumbers[0].innerHTML = this.availableNumbers[0];
-    player2AvailableNumbers[0].innerHTML = this.availableNumbers[0];
-  }
+  publicNumber() {
+    /* the public number is displayed, all necessary html id tags 
+    are built & all 8 public numbers are set to available */
 
-  generatePublicIDTags() {
     // generate all the valid public id tags
     let id = '';
     // initialize to empty the public ID's array
     this.publicButtonIDs = [];
 
-    // player 1
+    // display the public number for both players
+    player1AvailableNumbers[0].innerHTML = this.availableNumbers[0];
+    player2AvailableNumbers[0].innerHTML = this.availableNumbers[0];
+
+    // player 1 ID tags
     id = 'p1' + 'r' + this.availableNumbers[0];
     this.publicButtonIDs.push(id);
     id = 'p1' + 'y' + this.availableNumbers[0];
@@ -77,7 +78,7 @@ export default class Dice {
     id = 'p1' + 'b' + this.availableNumbers[0];
     this.publicButtonIDs.push(id);
 
-    // player 2
+    // player 2 ID tags
     id = 'p2' + 'r' + this.availableNumbers[0];
     this.publicButtonIDs.push(id);
     id = 'p2' + 'y' + this.availableNumbers[0];
@@ -87,7 +88,13 @@ export default class Dice {
     id = 'p2' + 'b' + this.availableNumbers[0];
     this.publicButtonIDs.push(id);
 
-    console.log(this.publicButtonIDs);
+    // set all 8 public numbers to available
+    for (let i = 0; i < this.publicButtonIDs.length; i++) {
+      let elementID = this.publicButtonIDs[i];
+      let element = document.getElementById(elementID);
+      element.classList.remove('notAvailable');
+      element.classList.add('available');
+    }
   }
 
   updateAvailableNumbers(isPlayer1sTurn) {
@@ -215,36 +222,6 @@ export default class Dice {
           this.counter += 2;
           break;
       }
-    }
-  }
-
-  constructValidPublicIDButtons() {
-    // the public button IDs of the player who's turn it is not must be constructed
-    let publicID = '';
-    let publicIDStart = '';
-    let publicIDEnd = '';
-    // identify who's turn it is not
-    const playerIDNumber = this.validButtonIDs[0][1] === '2' ? '1' : '2';
-
-    for (let i = 0; i < 4; i++) {
-      //the first 4 ID codes are the public numbers for the player who's turn it is
-      // extract the 'p' from the ID
-      publicIDStart = this.validButtonIDs[i].substring(0, 1);
-      // extract the colour & button number
-      publicIDEnd = this.validButtonIDs[i].substring(2);
-      // reconstruct the button ID for 'other' player
-      publicID = publicIDStart + playerIDNumber + publicIDEnd;
-      this.validButtonIDs.push(publicID);
-    }
-  }
-
-  enableValidButtons() {
-    //turn on all buttons the user may access for the given turn
-    for (let i = 0; i < this.validButtonIDs.length; i++) {
-      let elementID = this.validButtonIDs[i];
-      let element = document.getElementById(elementID);
-      element.classList.remove('notAvailable');
-      element.classList.add('available');
     }
   }
 }
