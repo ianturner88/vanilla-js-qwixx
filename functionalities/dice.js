@@ -151,27 +151,12 @@ export default class Dice {
     // the ternary operator ensures the correct ID's are constructed
     playerID === 0 ? (playerID = 2) : (playerID = 1);
 
-    this.counter = 0;
+    this.counter = 1;
     let id = '';
     this.validButtonIDs = [];
 
     for (let i = 0; i < 9; i++) {
       switch (this.counter) {
-        case 0:
-          //the public number is available in all colours
-          id = 'p' + playerID + 'r' + this.availableNumbers[0];
-          this.validButtonIDs.push(id);
-          id = 'p' + playerID + 'y' + this.availableNumbers[0];
-          this.validButtonIDs.push(id);
-          id = 'p' + playerID + 'g' + this.availableNumbers[0];
-          this.validButtonIDs.push(id);
-          id = 'p' + playerID + 'b' + this.availableNumbers[0];
-          this.validButtonIDs.push(id);
-
-          //move to red
-          this.counter++;
-          break;
-
         case 1:
         case 2:
           // construct the RED id numbers
@@ -217,5 +202,7 @@ export default class Dice {
           break;
       }
     }
+
+    console.log(this.validButtonIDs);
   }
 }

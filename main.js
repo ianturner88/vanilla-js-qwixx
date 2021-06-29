@@ -106,6 +106,7 @@ p2BlueNumberSelected.forEach((button) =>
   })
 );
 
+// Checkboxs
 checkBox1.addEventListener('click', (e) => {
   // ensure the public checkbox is checked & disabled
   document.getElementById('cb1').disabled = true;
@@ -113,6 +114,9 @@ checkBox1.addEventListener('click', (e) => {
 
   // enable the colour checkbox
   document.getElementById('cb2').disabled = false;
+
+  // construct all valid coloured options
+  dice.constructValidIDButtons(isPlayer1sTurn);
 });
 
 checkBox2.addEventListener('click', (e) => {
