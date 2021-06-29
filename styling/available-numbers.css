@@ -156,3 +156,7 @@
 .blue-number2 {
   background-color: var(--light-blue);
 }
+
+button[disabled] {
+  cursor: not-allowed;
+}

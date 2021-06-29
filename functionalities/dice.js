@@ -92,8 +92,7 @@ export default class Dice {
     for (let i = 0; i < this.publicButtonIDs.length; i++) {
       let elementID = this.publicButtonIDs[i];
       let element = document.getElementById(elementID);
-      element.classList.remove('notAvailable');
-      element.classList.add('available');
+      document.getElementById(elementID).disabled = false;
     }
   }
 
@@ -137,16 +136,14 @@ export default class Dice {
       // player 1's buttons
       const elementID = player1Buttons[i];
       const element = document.getElementById(elementID);
-      element.classList.remove('available');
-      element.classList.add('notAvailable');
+      element.setAttribute('disabled', 'disabled');
     }
 
     for (let i = 0; i < player2Buttons.length; i++) {
       // player 2's buttons
       const elementID = player2Buttons[i];
       const element = document.getElementById(elementID);
-      element.classList.remove('available');
-      element.classList.add('notAvailable');
+      element.setAttribute('disabled', 'disabled');
     }
   }
 
