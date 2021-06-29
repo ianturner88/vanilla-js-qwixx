@@ -1,5 +1,9 @@
 In this file, I will keep a running, live journal of my [efforts](https://ianturner88.github.io/vanilla-js-qwixx/) to build a replica of the boardgame qwixx.
 
+# June 29: Implementing Checkbox Functionality
+
+I figured out how to disable the checkboxes, as required. This allows me to require a player to sequentially work their way from rolling the dice, to both players using the public number, to the player whose turn it is selecting at most one colour option.
+
 # June 28: Refactoring Dice
 
 I refactored the dice so that after the dice is rolled only the public numbers is displayed.

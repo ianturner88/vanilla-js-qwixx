@@ -38,6 +38,8 @@ newRoll.addEventListener('click', (e) => {
   dice.setAllButtonsToUnavailable();
   // public number displayed & id tags generated
   dice.publicNumber();
+  //disable the coloured checkbox
+  dice.colourCheckbox();
 });
 
 // all coloured the buttons on player 1's board
@@ -98,3 +100,5 @@ p2BlueNumberSelected.forEach((button) =>
     console.log(button.innerText);
   })
 );
+
+//

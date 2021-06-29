@@ -212,4 +212,12 @@ export default class Dice {
       }
     }
   }
+
+  publicCheckBox() {
+    document.getElementById('cb1').disabled = true;
+  }
+
+  colourCheckbox() {
+    document.getElementById('cb2').disabled = true;
+  }
 }
