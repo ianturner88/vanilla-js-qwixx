@@ -117,6 +117,11 @@ checkBox1.addEventListener('click', (e) => {
 
   // construct all valid coloured options
   dice.constructValidIDButtons(isPlayer1sTurn);
+
+  // disable all buttons
+  dice.setAllButtonsToUnavailable();
+  // display the numbers available to the player whose turn it's
+  dice.updateAvailableNumbers(isPlayer1sTurn);
 });
 
 checkBox2.addEventListener('click', (e) => {

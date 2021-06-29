@@ -202,7 +202,5 @@ export default class Dice {
           break;
       }
     }
-
-    console.log(this.validButtonIDs);
   }
 }
