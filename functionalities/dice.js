@@ -63,30 +63,21 @@ export default class Dice {
     let id = '';
     // initialize to empty the public ID's array
     this.publicButtonIDs = [];
+    let colours = ['r', 'y', 'g', 'b'];
+    let playerNumber = 0;
 
     // display the public number for both players
     player1AvailableNumbers[0].innerHTML = this.availableNumbers[0];
     player2AvailableNumbers[0].innerHTML = this.availableNumbers[0];
 
-    // player 1 ID tags
-    id = 'p1' + 'r' + this.availableNumbers[0];
-    this.publicButtonIDs.push(id);
-    id = 'p1' + 'y' + this.availableNumbers[0];
-    this.publicButtonIDs.push(id);
-    id = 'p1' + 'g' + this.availableNumbers[0];
-    this.publicButtonIDs.push(id);
-    id = 'p1' + 'b' + this.availableNumbers[0];
-    this.publicButtonIDs.push(id);
-
-    // player 2 ID tags
-    id = 'p2' + 'r' + this.availableNumbers[0];
-    this.publicButtonIDs.push(id);
-    id = 'p2' + 'y' + this.availableNumbers[0];
-    this.publicButtonIDs.push(id);
-    id = 'p2' + 'g' + this.availableNumbers[0];
-    this.publicButtonIDs.push(id);
-    id = 'p2' + 'b' + this.availableNumbers[0];
-    this.publicButtonIDs.push(id);
+    for (let i = 1; i < 3; i++) {
+      // construct the html id tags for all the public numbers
+      playerNumber = i;
+      for (let j = 0; j < colours.length; j++) {
+        id = 'p' + playerNumber + colours[j] + this.availableNumbers[0];
+        this.publicButtonIDs.push(id);
+      }
+    }
 
     // set all 8 public numbers to available
     for (let i = 0; i < this.publicButtonIDs.length; i++) {
