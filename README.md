@@ -1,8 +1,18 @@
 In this file, I will keep a running, live journal of my [efforts](https://ianturner88.github.io/vanilla-js-qwixx/) to build a replica of the boardgame qwixx.
 
+# June 28: Refactoring Dice
+
+I refactored the dice so that after the dice is rolled only the public numbers is displayed.
+
+Tomorrow, I will look into implementing checkboxes so that once both players have used the public number, the play whose turn it is may use at most one of the coloured options.
+
+Checkboxes, I think, are to be used with forms, so this may not be a good choice for Qwixx.
+
 # June 24: Unit Testing
 
 I worked through Web Dev Simplified's [video](https://www.youtube.com/watch?v=FgnxcUQ5vho&ab_channel=WebDevSimplified) and watched Brad Traversy's [video](https://www.youtube.com/watch?v=7r4xVDI2vho&ab_channel=TraversyMedia) on unit testing.
+
+I have not yet been able to figure out how to unit test a method by 'fixing' an object's parameters. For example, I would like to test that a user may not select the red 5 if they have already selected the red 6. The upperlimit (at least the red 6) would be stored in one of the dice's parameters. A method would test if the user selection conflicts with the current upperlimit.
 
 # June 22: Refactor Checkbox
 
