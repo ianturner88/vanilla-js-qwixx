@@ -132,5 +132,6 @@ checkBox2.addEventListener('click', (e) => {
 
   // disable all buttons to reset the board
   dice.setAllButtonsToUnavailable();
+  // the board is reset with all numbers reset to zero
   dice.cleanMiddleRow();
 });
