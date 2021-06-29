@@ -125,6 +125,15 @@ export default class Dice {
         this.availableNumbers[i] = this.availableNumbers[i + 1];
       }
     }
+
+    for (let i = 0; i < this.validButtonIDs.length; i++) {
+      // enable only the coloured number options
+
+      if (this.validButtonIDs[i] !== '-') {
+        let elementID = this.validButtonIDs[i];
+        document.getElementById(elementID).disabled = false;
+      }
+    }
   }
 
   setAllButtonsToUnavailable() {

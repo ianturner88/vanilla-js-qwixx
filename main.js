@@ -127,4 +127,7 @@ checkBox1.addEventListener('click', (e) => {
 checkBox2.addEventListener('click', (e) => {
   document.getElementById('cb2').disabled = true;
   document.getElementById('cb2').checked = true;
+
+  // disable all buttons to reset the board
+  dice.setAllButtonsToUnavailable();
 });
