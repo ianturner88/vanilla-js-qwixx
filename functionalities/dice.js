@@ -129,7 +129,8 @@ export default class Dice {
     for (let i = 0; i < this.validButtonIDs.length; i++) {
       // enable only the coloured number options
 
-      if (this.validButtonIDs[i] !== '-') {
+      if (this.validButtonIDs[i][3] !== '—') {
+        // if both white dice are the same, every second coloured id tag ends with '-'
         let elementID = this.validButtonIDs[i];
         document.getElementById(elementID).disabled = false;
       }
