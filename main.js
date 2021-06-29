@@ -28,18 +28,23 @@ let isPlayer1sTurn = 0;
 newRoll.addEventListener('click', (e) => {
   // triggered by 'Roll Dice' button
 
-  // toggle between player 1's & 2's turns
-  isPlayer1sTurn =
-    isPlayer1sTurn === 1 ? (isPlayer1sTurn = 0) : (isPlayer1sTurn = 1);
+  if (
+    document.getElementById('cb1').disabled === true &&
+    document.getElementById('cb2').disabled === true
+  ) {
+    // toggle between player 1's & 2's turns
+    isPlayer1sTurn =
+      isPlayer1sTurn === 1 ? (isPlayer1sTurn = 0) : (isPlayer1sTurn = 1);
 
-  playerTurnDisplay.innerHTML = isPlayer1sTurn == 1 ? '1' : '2';
+    playerTurnDisplay.innerHTML = isPlayer1sTurn == 1 ? '1' : '2';
 
-  // generate 6 random numbers, display dice numbers, and construct available numbers
-  dice.rollDice();
-  // set all buttons to unavailable
-  dice.setAllButtonsToUnavailable();
-  // public number displayed & id tags generated
-  dice.publicNumber();
+    // generate 6 random numbers, display dice numbers, and construct available numbers
+    dice.rollDice();
+    // set all buttons to unavailable
+    dice.setAllButtonsToUnavailable();
+    // public number displayed & id tags generated
+    dice.publicNumber();
+  }
 });
 
 // all coloured the buttons on player 1's board
