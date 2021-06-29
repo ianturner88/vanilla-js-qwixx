@@ -53,6 +53,12 @@ export default class Dice {
         this.availableNumbers[i] = '—';
       }
     }
+
+    // allow user only to select the public checkbox by disabling the colour checkbox
+    document.getElementById('cb1').disabled = false;
+    document.getElementById('cb1').checked = false;
+    document.getElementById('cb2').disabled = true;
+    document.getElementById('cb2').checked = false;
   }
 
   publicNumber() {

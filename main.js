@@ -16,6 +16,8 @@ import { player1Buttons, player2Buttons } from './functionalities/buttonIDs.js';
 
 const newRoll = document.querySelector('[data-roll-dice]');
 const playerTurnDisplay = document.querySelector('[data-turn-keeper-display]');
+const checkBox1 = document.querySelector('[data-cb1]');
+const checkBox2 = document.querySelector('[data-cb2]');
 
 const dice = new Dice();
 const player1 = new Player();
@@ -38,8 +40,6 @@ newRoll.addEventListener('click', (e) => {
   dice.setAllButtonsToUnavailable();
   // public number displayed & id tags generated
   dice.publicNumber();
-  //disable the coloured checkbox
-  dice.colourCheckbox();
 });
 
 // all coloured the buttons on player 1's board
@@ -101,4 +101,16 @@ p2BlueNumberSelected.forEach((button) =>
   })
 );
 
-//
+checkBox1.addEventListener('click', (e) => {
+  // ensure the public checkbox is checked & disabled
+  document.getElementById('cb1').disabled = true;
+  document.getElementById('cb1').checked = true;
+
+  // enable the colour checkbox
+  document.getElementById('cb2').disabled = false;
+});
+
+checkBox2.addEventListener('click', (e) => {
+  document.getElementById('cb2').disabled = true;
+  document.getElementById('cb2').checked = true;
+});
