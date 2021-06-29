@@ -212,4 +212,18 @@ export default class Dice {
       }
     }
   }
+
+  cleanMiddleRow() {
+    // wipe the middle row clean
+    for (let i = 0; i < 9; i++) {
+      player1AvailableNumbers[i].innerHTML = '—';
+      player2AvailableNumbers[i].innerHTML = '—';
+    }
+  }
+
+  erasePublicNumber(isPlayer1sTurn) {
+    // erase the public for both players
+    player1AvailableNumbers[0].innerHTML = '—';
+    player2AvailableNumbers[0].innerHTML = '—';
+  }
 }

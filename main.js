@@ -122,6 +122,8 @@ checkBox1.addEventListener('click', (e) => {
   dice.setAllButtonsToUnavailable();
   // display the numbers available to the player whose turn it's
   dice.updateAvailableNumbers(isPlayer1sTurn);
+  // erase the public number for the player whose turn it is not
+  dice.erasePublicNumber(isPlayer1sTurn);
 });
 
 checkBox2.addEventListener('click', (e) => {
@@ -130,4 +132,5 @@ checkBox2.addEventListener('click', (e) => {
 
   // disable all buttons to reset the board
   dice.setAllButtonsToUnavailable();
+  dice.cleanMiddleRow();
 });
