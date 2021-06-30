@@ -10,6 +10,8 @@ export default class Player {
     this.upperlimit = [1, 1, 13, 13];
     // indicates whose turn it is
     this.isTheirTurn = 0;
+    // number of skipped turns a player has had
+    this.skippedTurn = 0;
   }
 
   currentPick(playerPick) {
