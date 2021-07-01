@@ -45,7 +45,6 @@ export default class Player {
         if (this.mostRecentPick[1] > this.upperlimit[Colours.RED]) {
           this.upperlimit[Colours.RED] = parseInt(this.mostRecentPick[1]);
           this.totalNumberPicked[Colours.RED]++;
-          console.log(this.totalNumberPicked);
         }
         break;
 
