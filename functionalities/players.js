@@ -36,37 +36,40 @@ export default class Player {
 
   isValidPick() {
     // ensure the number selected is to the right of the previous row's pick
+    /* if yes --> update the row's new upperlimit / total number picked in 
+    that row / add the x-class to indicate a user's selection */
 
     switch (this.mostRecentPick[0]) {
       case 'RED':
         // RED numbers increase when moving rightward
         if (this.mostRecentPick[1] > this.upperlimit[Colours.RED]) {
-          // update the row's new upperlimit
           this.upperlimit[Colours.RED] = parseInt(this.mostRecentPick[1]);
+          this.totalNumberPicked[Colours.RED]++;
+          console.log(this.totalNumberPicked);
         }
         break;
 
       case 'YELLOW':
         // YELLOW numbers increase when moving rightward
         if (this.mostRecentPick[1] > this.upperlimit[Colours.YELLOW]) {
-          // update the row's new upperlimit
           this.upperlimit[Colours.YELLOW] = parseInt(this.mostRecentPick[1]);
+          this.totalNumberPicked[Colours.YELLOW]++;
         }
         break;
 
       case 'GREEN':
         // YELLOW numbers increase when moving rightward
         if (this.mostRecentPick[1] < this.upperlimit[Colours.GREEN]) {
-          // update the row's new upperlimit
           this.upperlimit[Colours.GREEN] = parseInt(this.mostRecentPick[1]);
+          this.totalNumberPicked[Colours.GREEN]++;
         }
         break;
 
       case 'BLUE':
         // YELLOW numbers increase when moving rightward
         if (this.mostRecentPick[1] < this.upperlimit[Colours.BLUE]) {
-          // update the row's new upperlimit
           this.upperlimit[Colours.BLUE] = parseInt(this.mostRecentPick[1]);
+          this.totalNumberPicked[Colours.BLUE]++;
         }
         break;
     }
