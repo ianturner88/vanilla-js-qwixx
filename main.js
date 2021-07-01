@@ -84,7 +84,7 @@ p1BlueNumberSelected.forEach((button) =>
 p2RedNumberSelected.forEach((button) =>
   // player 2's RED buttons
   button.addEventListener('click', () => {
-    let playerPick = ['RED', button.innerText];
+    let playerPick = ['RED', button.innerText, '2'];
     player2.currentPick(playerPick);
   })
 );
@@ -92,7 +92,7 @@ p2RedNumberSelected.forEach((button) =>
 p2YellowNumberSelected.forEach((button) =>
   // player 2's YELLOW buttons
   button.addEventListener('click', () => {
-    let playerPick = ['YELLOW', button.innerText];
+    let playerPick = ['YELLOW', button.innerText, '2'];
     player2.currentPick(playerPick);
   })
 );
@@ -100,7 +100,7 @@ p2YellowNumberSelected.forEach((button) =>
 p2GreenNumberSelected.forEach((button) =>
   // player 2's GREEN buttons
   button.addEventListener('click', () => {
-    let playerPick = ['GREEN', button.innerText];
+    let playerPick = ['GREEN', button.innerText, '2'];
     player2.currentPick(playerPick);
   })
 );
@@ -108,7 +108,7 @@ p2GreenNumberSelected.forEach((button) =>
 p2BlueNumberSelected.forEach((button) =>
   // player 2's BLUE buttons
   button.addEventListener('click', () => {
-    let playerPick = ['BLUE', button.innerText];
+    let playerPick = ['BLUE', button.innerText, '2'];
     player2.currentPick(playerPick);
   })
 );
