@@ -41,7 +41,7 @@ export default class Player {
 
     switch (this.mostRecentPick[0]) {
       case 'RED':
-        // RED numbers increase when moving rightward
+        // RED numbers INcrease when moving rightward
         if (this.mostRecentPick[1] > this.upperlimit[Colours.RED]) {
           this.upperlimit[Colours.RED] = parseInt(this.mostRecentPick[1]);
           this.totalNumberPicked[Colours.RED]++;
@@ -50,7 +50,7 @@ export default class Player {
         break;
 
       case 'YELLOW':
-        // YELLOW numbers increase when moving rightward
+        // YELLOW numbers INcrease when moving rightward
         if (this.mostRecentPick[1] > this.upperlimit[Colours.YELLOW]) {
           this.upperlimit[Colours.YELLOW] = parseInt(this.mostRecentPick[1]);
           this.totalNumberPicked[Colours.YELLOW]++;
@@ -58,7 +58,7 @@ export default class Player {
         break;
 
       case 'GREEN':
-        // YELLOW numbers increase when moving rightward
+        // GREEN numbers DEcrease when moving rightward
         if (this.mostRecentPick[1] < this.upperlimit[Colours.GREEN]) {
           this.upperlimit[Colours.GREEN] = parseInt(this.mostRecentPick[1]);
           this.totalNumberPicked[Colours.GREEN]++;
@@ -66,7 +66,7 @@ export default class Player {
         break;
 
       case 'BLUE':
-        // YELLOW numbers increase when moving rightward
+        // BLUE numbers DEcrease when moving rightward
         if (this.mostRecentPick[1] < this.upperlimit[Colours.BLUE]) {
           this.upperlimit[Colours.BLUE] = parseInt(this.mostRecentPick[1]);
           this.totalNumberPicked[Colours.BLUE]++;
