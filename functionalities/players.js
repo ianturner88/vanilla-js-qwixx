@@ -39,12 +39,19 @@ export default class Player {
     /* if yes --> update the row's new upperlimit / total number picked in 
     that row / add the x-class to indicate a user's selection */
 
+    let element = '';
+    let elementHTMLTag = '';
+
     switch (this.mostRecentPick[0]) {
       case 'RED':
         // RED numbers INcrease when moving rightward
         if (this.mostRecentPick[1] > this.upperlimit[Colours.RED]) {
           this.upperlimit[Colours.RED] = parseInt(this.mostRecentPick[1]);
           this.totalNumberPicked[Colours.RED]++;
+          // construct HTML element tag
+          element = 'p' + this.mostRecentPick[2] + 'r' + this.mostRecentPick[1];
+          elementHTMLTag = document.getElementById(element);
+          elementHTMLTag.classList.add('xClass');
         }
         break;
 

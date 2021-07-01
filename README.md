@@ -2,7 +2,7 @@ In this file, I will keep a running, live journal of my [efforts](https://iantur
 
 # July 1: Upperlimit Checks
 
-I instituted a system to ensure each colour's upperlimit is updated if a user makes a valid selection.
+I instituted the isValidPick() method found in the player object. The method checks if the user's selection is valid. Specifically, if the number selected is to the right of the previous right-most selected number. If so, the row's upperlimit is updated, the parameter totalNumberPicked is incremented by 1, and the x-class is added to the player's selection to visually indicate a selection has been made.
 
 # June 29: Implementing Checkbox Functionality
 

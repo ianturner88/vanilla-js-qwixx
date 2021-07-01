@@ -51,7 +51,7 @@ newRoll.addEventListener('click', (e) => {
 p1RedNumberSelected.forEach((button) =>
   // player 1's RED buttons
   button.addEventListener('click', () => {
-    let playerPick = ['RED', button.innerText];
+    let playerPick = ['RED', button.innerText, '1'];
     player1.currentPick(playerPick);
   })
 );
