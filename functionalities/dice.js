@@ -16,6 +16,8 @@ export default class Dice {
   }
 
   rollDice() {
+    // method is called when user clicks 'Roll Dice'
+
     // reset numbers
     this.diceNumbers = [];
     this.availableNumbers = [];

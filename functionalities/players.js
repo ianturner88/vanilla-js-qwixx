@@ -1,3 +1,13 @@
+// const Colours = Object.freeze({
+//   // enums for the math operations
+//   RED: 0,
+//   YELLOW: 1,
+//   GREEN: 2,
+//   BLUE: 3,
+// });
+
+const Colours = { RED: 0, YELLOW: 1, GREEN: 2, BLUE: 3 };
+
 export default class Player {
   constructor() {
     // [Colour, Numerical Value]
@@ -15,6 +25,33 @@ export default class Player {
   }
 
   currentPick(playerPick) {
-    console.log(playerPick);
+    // store the player's most recent pick
+    // needed to check if a player should be assessed a 'skipped turn' strike
+
+    this.mostRecentPick = [];
+    this.mostRecentPick = playerPick;
+
+    this.isValidPick();
+  }
+
+  isValidPick() {
+    // ensure the number selected is to the right of the previous row's pick
+    // If pick is valid, update the row's new upperlimit
+
+    switch (this.mostRecentPick[0]) {
+      case 'RED':
+        // RED numbers increase when moving rightward
+        if (this.mostRecentPick[1] > this.upperlimit[Colours.RED]) {
+          this.upperlimit[Colours.RED] = parseInt(this.mostRecentPick[1]);
+        }
+        break;
+
+      case 'YELLOW':
+        // YELLOW numbers increase when moving rightward
+        if (this.mostRecentPick[1] > this.upperlimit[Colours.YELLOW]) {
+          this.upperlimit[Colours.YELLOW] = parseInt(this.mostRecentPick[1]);
+        }
+        break;
+    }
   }
 }
