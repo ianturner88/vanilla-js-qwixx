@@ -60,6 +60,10 @@ export default class Player {
         if (this.mostRecentPick[1] > this.upperlimit[Colours.YELLOW]) {
           this.upperlimit[Colours.YELLOW] = parseInt(this.mostRecentPick[1]);
           this.totalNumberPicked[Colours.YELLOW]++;
+          // construct HTML element tag
+          element = 'p' + this.mostRecentPick[2] + 'y' + this.mostRecentPick[1];
+          elementHTMLTag = document.getElementById(element);
+          elementHTMLTag.classList.add('xClass');
         }
         break;
 
@@ -68,6 +72,10 @@ export default class Player {
         if (this.mostRecentPick[1] < this.upperlimit[Colours.GREEN]) {
           this.upperlimit[Colours.GREEN] = parseInt(this.mostRecentPick[1]);
           this.totalNumberPicked[Colours.GREEN]++;
+          // construct HTML element tag
+          element = 'p' + this.mostRecentPick[2] + 'g' + this.mostRecentPick[1];
+          elementHTMLTag = document.getElementById(element);
+          elementHTMLTag.classList.add('xClass');
         }
         break;
 
@@ -76,6 +84,10 @@ export default class Player {
         if (this.mostRecentPick[1] < this.upperlimit[Colours.BLUE]) {
           this.upperlimit[Colours.BLUE] = parseInt(this.mostRecentPick[1]);
           this.totalNumberPicked[Colours.BLUE]++;
+          // construct HTML element tag
+          element = 'p' + this.mostRecentPick[2] + 'b' + this.mostRecentPick[1];
+          elementHTMLTag = document.getElementById(element);
+          elementHTMLTag.classList.add('xClass');
         }
         break;
     }
