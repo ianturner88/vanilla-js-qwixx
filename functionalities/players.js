@@ -36,12 +36,12 @@ export default class Player {
 
   isValidPick() {
     // ensure the number selected is to the right of the previous row's pick
-    // If pick is valid, update the row's new upperlimit
 
     switch (this.mostRecentPick[0]) {
       case 'RED':
         // RED numbers increase when moving rightward
         if (this.mostRecentPick[1] > this.upperlimit[Colours.RED]) {
+          // update the row's new upperlimit
           this.upperlimit[Colours.RED] = parseInt(this.mostRecentPick[1]);
         }
         break;
@@ -49,7 +49,24 @@ export default class Player {
       case 'YELLOW':
         // YELLOW numbers increase when moving rightward
         if (this.mostRecentPick[1] > this.upperlimit[Colours.YELLOW]) {
+          // update the row's new upperlimit
           this.upperlimit[Colours.YELLOW] = parseInt(this.mostRecentPick[1]);
+        }
+        break;
+
+      case 'GREEN':
+        // YELLOW numbers increase when moving rightward
+        if (this.mostRecentPick[1] < this.upperlimit[Colours.GREEN]) {
+          // update the row's new upperlimit
+          this.upperlimit[Colours.GREEN] = parseInt(this.mostRecentPick[1]);
+        }
+        break;
+
+      case 'BLUE':
+        // YELLOW numbers increase when moving rightward
+        if (this.mostRecentPick[1] < this.upperlimit[Colours.BLUE]) {
+          // update the row's new upperlimit
+          this.upperlimit[Colours.BLUE] = parseInt(this.mostRecentPick[1]);
         }
         break;
     }
