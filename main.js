@@ -152,7 +152,7 @@ checkBox2.addEventListener('click', (e) => {
   dice.cleanMiddleRow();
 
   if (isPlayer1sTurn === 1 && player1.isSkippedTurn === 0) {
-    // assess player 1 a skipped turn b/c no selection was made on their turn
+    // assess player 1 a SKIPPED TURN b/c no selection was made on their turn
     // construct HTML element tag
     let element = 'p1pbl' + (player1.numberOfSkippedTurns + 1);
     let elementHTMLTag = document.getElementById(element);
@@ -163,7 +163,7 @@ checkBox2.addEventListener('click', (e) => {
   }
 
   if (isPlayer1sTurn === 0 && player2.isSkippedTurn === 0) {
-    // assess player 2 a skipped turn b/c no selection was made on their turn
+    // assess player 2 a SKIPPED TURN b/c no selection was made on their turn
     // construct HTML element tag
     let element = 'p2pbl' + (player2.numberOfSkippedTurns + 1);
     let elementHTMLTag = document.getElementById(element);
