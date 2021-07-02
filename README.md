@@ -1,5 +1,18 @@
 In this file, I will keep a running, live journal of my [efforts](https://ianturner88.github.io/vanilla-js-qwixx/) to build a replica of the boardgame qwixx.
 
+# July 2: Skipped Turns
+
+Last night, I built out the logic for evaluating if a player should be assessed a skipped turn.
+
+| Public | Colour |           Action           |
+| :----: | :----: | :------------------------: |
+|  Yes   |  Yes   | Do NOT assess skipped turn |
+|  Yes   |   No   | Do NOT assess skipped turn |
+|   No   |  Yes   | Do NOT assess skipped turn |
+|   No   |   No   |    Assess skipped turn     |
+
+To implement the above logic table, I added a new parameter to the player object, this.isSkippedTurn. The parameter is used as a counter and is reset to 0 at the start of a new 'roll dice' call. When a player selects a button, the counter is incremented by 1. When the colour checkbox is selected, a player is assessed a skipped turn penalty if the parameter has a value of 0 AND it was their turn.
+
 # July 1: Upperlimit Checks
 
 I instituted the isValidPick() method found in the player object. The method checks if the user's selection is valid. Specifically, if the number selected is to the right of the previous right-most selected number. If so, the row's upperlimit is updated, the parameter totalNumberPicked is incremented by 1, and the x-class is added to the player's selection to visually indicate a selection has been made.

@@ -1,11 +1,3 @@
-// const Colours = Object.freeze({
-//   // enums for the math operations
-//   RED: 0,
-//   YELLOW: 1,
-//   GREEN: 2,
-//   BLUE: 3,
-// });
-
 const Colours = { RED: 0, YELLOW: 1, GREEN: 2, BLUE: 3 };
 
 export default class Player {
@@ -22,6 +14,8 @@ export default class Player {
     this.isTheirTurn = 0;
     // number of skipped turns a player has had
     this.skippedTurn = 0;
+    // a counter to see if a player should be assessed a skipped turn
+    this.isSkippedTurn = 0;
   }
 
   currentPick(playerPick) {
