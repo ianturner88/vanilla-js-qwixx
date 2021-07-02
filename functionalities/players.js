@@ -13,7 +13,7 @@ export default class Player {
     // indicates whose turn it is
     this.isTheirTurn = 0;
     // number of skipped turns a player has had
-    this.skippedTurn = 0;
+    this.numberOfSkippedTurns = 0;
     // a counter to see if a player should be assessed a skipped turn
     this.isSkippedTurn = 0;
   }

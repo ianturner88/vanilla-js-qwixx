@@ -13,6 +13,8 @@ Last night, I built out the logic for evaluating if a player should be assessed 
 
 To implement the above logic table, I added a new parameter to the player object, this.isSkippedTurn. The parameter is used as a counter and is reset to 0 at the start of a new 'roll dice' call. When a player selects a button, the counter is incremented by 1. When the colour checkbox is selected, a player is assessed a skipped turn penalty if the parameter has a value of 0 AND it was their turn.
 
+Also, all the buttons on both players boards have been initialized to 0, so neither player can select numbers prior to the start of the first dice roll.
+
 # July 1: Upperlimit Checks
 
 I instituted the isValidPick() method found in the player object. The method checks if the user's selection is valid. Specifically, if the number selected is to the right of the previous right-most selected number. If so, the row's upperlimit is updated, the parameter totalNumberPicked is incremented by 1, and the x-class is added to the player's selection to visually indicate a selection has been made.

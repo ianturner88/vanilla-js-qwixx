@@ -25,9 +25,9 @@ const player2 = new Player();
 
 let isPlayer1sTurn = 0;
 
+// ROLL DICE
 newRoll.addEventListener('click', (e) => {
   // triggered by 'Roll Dice' button
-
   if (
     document.getElementById('cb1').disabled === true &&
     document.getElementById('cb2').disabled === true
@@ -38,6 +38,10 @@ newRoll.addEventListener('click', (e) => {
 
     playerTurnDisplay.innerHTML = isPlayer1sTurn == 1 ? '1' : '2';
 
+    // set the number of user selections for the turn to 0
+    player1.isSkippedTurn = 0;
+    player2.isSkippedTurn = 0;
+
     // generate 6 random numbers, display dice numbers, and construct available numbers
     dice.rollDice();
     // set all buttons to unavailable
@@ -47,12 +51,14 @@ newRoll.addEventListener('click', (e) => {
   }
 });
 
-// all coloured the buttons on player 1's board
+// PLAYER 1'S COLOURED BUTTONS
 p1RedNumberSelected.forEach((button) =>
   // player 1's RED buttons
   button.addEventListener('click', () => {
     let playerPick = ['RED', button.innerText, '1'];
     player1.currentPick(playerPick);
+    // increment to note a player made a selection
+    player1.isSkippedTurn++;
   })
 );
 
@@ -61,6 +67,7 @@ p1YellowNumberSelected.forEach((button) =>
   button.addEventListener('click', () => {
     let playerPick = ['YELLOW', button.innerText, '1'];
     player1.currentPick(playerPick);
+    player1.isSkippedTurn++;
   })
 );
 
@@ -69,6 +76,7 @@ p1GreenNumberSelected.forEach((button) =>
   button.addEventListener('click', () => {
     let playerPick = ['GREEN', button.innerText, '1'];
     player1.currentPick(playerPick);
+    player1.isSkippedTurn++;
   })
 );
 
@@ -77,10 +85,11 @@ p1BlueNumberSelected.forEach((button) =>
   button.addEventListener('click', () => {
     let playerPick = ['BLUE', button.innerText, '1'];
     player1.currentPick(playerPick);
+    player1.isSkippedTurn++;
   })
 );
 
-// all coloured the buttons on player 2's board
+// PLAYER 2'S COLOURED BUTTONS
 p2RedNumberSelected.forEach((button) =>
   // player 2's RED buttons
   button.addEventListener('click', () => {
@@ -113,7 +122,7 @@ p2BlueNumberSelected.forEach((button) =>
   })
 );
 
-// Checkboxs
+// CHECKBOXES
 checkBox1.addEventListener('click', (e) => {
   // ensure the public checkbox is checked & disabled
   document.getElementById('cb1').disabled = true;
@@ -141,4 +150,26 @@ checkBox2.addEventListener('click', (e) => {
   dice.setAllButtonsToUnavailable();
   // the board is reset with all numbers reset to zero
   dice.cleanMiddleRow();
+
+  if (isPlayer1sTurn === 1 && player1.isSkippedTurn === 0) {
+    // assess player 1 a skipped turn b/c no selection was made on their turn
+    // construct HTML element tag
+    let element = 'p1pbl' + (player1.numberOfSkippedTurns + 1);
+    let elementHTMLTag = document.getElementById(element);
+    elementHTMLTag.classList.add('xSkippedTurn');
+
+    // increment the number of skipped turn penalties a player has
+    player1.numberOfSkippedTurns++;
+  }
+
+  if (isPlayer1sTurn === 0 && player2.isSkippedTurn === 0) {
+    // assess player 2 a skipped turn b/c no selection was made on their turn
+    // construct HTML element tag
+    let element = 'p2pbl' + (player2.numberOfSkippedTurns + 1);
+    let elementHTMLTag = document.getElementById(element);
+    elementHTMLTag.classList.add('xSkippedTurn');
+
+    // increment the number of skipped turn penalties a player has
+    player2.numberOfSkippedTurns++;
+  }
 });
