@@ -29,6 +29,12 @@ Many small bugs or oversights were remedied today. For example, when a user hits
 
 Tomorrow, I will build out checks to ensure buttons selected by users do not violate the game's rules. Also, I will build the check to see when the game is over - if at least 2 rows have been locked or a player has 4 skipped turns.
 
+| Current \ Next | Dice  | Public | Colour |
+| :------------: | :---: | :----: | :----: |
+|      Dice      | False |  True  | False  |
+|     Public     | False | False  |  True  |
+|     Colour     | True  | False  | False  |
+
 # June 28: Refactoring Dice
 
 I refactored the dice so that after the dice is rolled only the public numbers is displayed.
@@ -73,7 +79,8 @@ In my final version, I did away with the title. To fit all the rules in with a r
 
 # May 11: Skipped Turn X-Class
 
-The x-class for the skipped turn was built out. ![Skipped Turns](https://github.com/ianturner88/vanilla-js-qwixx/blob/main/images/May%2011.1.png)
+The x-class for the skipped turn was built out.
+![Skipped Turns](https://github.com/ianturner88/vanilla-js-qwixx/blob/main/images/May%2011.1.png)
 
 # May 4: Colour Palette Overhaul
 
