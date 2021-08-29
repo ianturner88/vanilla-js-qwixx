@@ -176,6 +176,18 @@ export default class Dice {
     }
   }
 
+  disableAlreadySelectedButtons(playerNumber, colour, numbersSelected) {
+    // disable buttons that users have already selected
+    for (let i = 0; i < numbersSelected.length; i++) {
+      // construct the player's buttons' IDs to be disabled
+      const elementID = 'p' + playerNumber + colour + numbersSelected[i];
+      const element = document.getElementById(elementID);
+      element.setAttribute('disabled', 'disabled');
+
+      console.log(elementID);
+    }
+  }
+
   constructValidIDButtons(playerID) {
     // construct all the appropriate valid button ids
 

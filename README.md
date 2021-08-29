@@ -6,9 +6,13 @@ Last night, while playing a round, I noticed that numbers that had already been 
 
 To solve this problem, a new property needs to be added to the player object to store all selections the user made during the game.
 
+- this.numbersAlreadyTaken = [[], [], [], []]
+
+Additionally,
+
 # August 28: Checks
 
-Today, I implemented a few small checks. I wrote code to disable each users' side of the board after the user made a selection, and I implemented a feature to administer a strike if player 2 does not make a selection on their turn.
+Today, I implemented a few small checks. I wrote code to disable each users' side of the board after the user made a selection (player property: disablePlayer#Buttons()), and I implemented a feature to administer a strike if player 2 does not make a selection on their turn.
 
 # July 2: Skipped Turns
 

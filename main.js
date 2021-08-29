@@ -48,6 +48,18 @@ newRoll.addEventListener('click', (e) => {
     dice.setAllButtonsToUnavailable();
     // public number displayed & id tags generated
     dice.publicNumber();
+
+    // disable all buttons player 1 has already selected
+    dice.disableAlreadySelectedButtons(1, 'r', player1.numbersAlreadyTaken[0]);
+    dice.disableAlreadySelectedButtons(1, 'y', player1.numbersAlreadyTaken[1]);
+    dice.disableAlreadySelectedButtons(1, 'g', player1.numbersAlreadyTaken[2]);
+    dice.disableAlreadySelectedButtons(1, 'b', player1.numbersAlreadyTaken[3]);
+
+    // disable all buttons player 2 has already selected
+    dice.disableAlreadySelectedButtons(2, 'r', player2.numbersAlreadyTaken[0]);
+    dice.disableAlreadySelectedButtons(2, 'y', player2.numbersAlreadyTaken[1]);
+    dice.disableAlreadySelectedButtons(2, 'g', player2.numbersAlreadyTaken[2]);
+    dice.disableAlreadySelectedButtons(2, 'b', player2.numbersAlreadyTaken[3]);
   }
 });
 
