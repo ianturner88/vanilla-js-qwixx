@@ -1,5 +1,15 @@
 In this file, I will keep a running, live journal of my [efforts](https://ianturner88.github.io/vanilla-js-qwixx/) to build a replica of the boardgame qwixx.
 
+# August 29: Checks
+
+Last night, while playing a round, I noticed that numbers that had already been selected BUT the dice had rolled for that turn where available. This should not happen. A number that has already been selected must be disabled regardless of the current dice roll. If this does not occur, a user may 'game' the system on their turn by selecting an already selected number and thus avoid being assessed a strikeout.
+
+To solve this problem, a new property needs to be added to the player object to store all selections the user made during the game.
+
+# August 28: Checks
+
+Today, I implemented a few small checks. I wrote code to disable each users' side of the board after the user made a selection, and I implemented a feature to administer a strike if player 2 does not make a selection on their turn.
+
 # July 2: Skipped Turns
 
 Last night, I built out the logic for evaluating if a player should be assessed a skipped turn.

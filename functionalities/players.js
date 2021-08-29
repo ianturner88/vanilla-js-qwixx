@@ -16,6 +16,8 @@ export default class Player {
     this.numberOfSkippedTurns = 0;
     // a counter to see if a player should be assessed a skipped turn
     this.isSkippedTurn = 0;
+    // the numbers already selected by the player
+    this.numbersAlreadyTaken = [[], [], [], []];
   }
 
   currentPick(playerPick) {

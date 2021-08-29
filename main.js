@@ -61,6 +61,8 @@ p1RedNumberSelected.forEach((button) =>
     player1.isSkippedTurn++;
     // disable player 1's board
     dice.disablePlayer1Buttons();
+    // store the numbers selected by the player
+    player1.numbersAlreadyTaken[0].push(playerPick[1]);
   })
 );
 
@@ -73,6 +75,8 @@ p1YellowNumberSelected.forEach((button) =>
     player1.isSkippedTurn++;
     // disable player 1's board
     dice.disablePlayer1Buttons();
+    // store the numbers selected by the player
+    player1.numbersAlreadyTaken[1].push(playerPick[1]);
   })
 );
 
@@ -85,6 +89,8 @@ p1GreenNumberSelected.forEach((button) =>
     player1.isSkippedTurn++;
     // disable player 1's board
     dice.disablePlayer1Buttons();
+    // store the numbers selected by the player
+    player1.numbersAlreadyTaken[2].push(playerPick[1]);
   })
 );
 
@@ -97,6 +103,8 @@ p1BlueNumberSelected.forEach((button) =>
     player1.isSkippedTurn++;
     // disable player 1's board
     dice.disablePlayer1Buttons();
+    // store the numbers selected by the player
+    player1.numbersAlreadyTaken[3].push(playerPick[1]);
   })
 );
 
@@ -110,6 +118,8 @@ p2RedNumberSelected.forEach((button) =>
     player2.isSkippedTurn++;
     // disable player 2's board
     dice.disablePlayer2Buttons();
+    // store the numbers selected by the player
+    player2.numbersAlreadyTaken[0].push(playerPick[1]);
   })
 );
 
@@ -122,6 +132,8 @@ p2YellowNumberSelected.forEach((button) =>
     player2.isSkippedTurn++;
     // disable player 2's board
     dice.disablePlayer2Buttons();
+    // store the numbers selected by the player
+    player2.numbersAlreadyTaken[1].push(playerPick[1]);
   })
 );
 
@@ -134,6 +146,8 @@ p2GreenNumberSelected.forEach((button) =>
     player2.isSkippedTurn++;
     // disable player 2's board
     dice.disablePlayer2Buttons();
+    // store the numbers selected by the player
+    player2.numbersAlreadyTaken[2].push(playerPick[1]);
   })
 );
 
@@ -146,6 +160,8 @@ p2BlueNumberSelected.forEach((button) =>
     player2.isSkippedTurn++;
     // disable player 2's board
     dice.disablePlayer2Buttons();
+    // store the numbers selected by the player
+    player2.numbersAlreadyTaken[3].push(playerPick[1]);
   })
 );
 
