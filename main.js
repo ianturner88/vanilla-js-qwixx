@@ -59,6 +59,8 @@ p1RedNumberSelected.forEach((button) =>
     player1.currentPick(playerPick);
     // increment to note a player made a selection
     player1.isSkippedTurn++;
+    // disable player 1's board
+    dice.disablePlayer1Buttons();
   })
 );
 
@@ -67,7 +69,10 @@ p1YellowNumberSelected.forEach((button) =>
   button.addEventListener('click', () => {
     let playerPick = ['YELLOW', button.innerText, '1'];
     player1.currentPick(playerPick);
+    // increment to note a player made a selection
     player1.isSkippedTurn++;
+    // disable player 1's board
+    dice.disablePlayer1Buttons();
   })
 );
 
@@ -76,7 +81,10 @@ p1GreenNumberSelected.forEach((button) =>
   button.addEventListener('click', () => {
     let playerPick = ['GREEN', button.innerText, '1'];
     player1.currentPick(playerPick);
+    // increment to note a player made a selection
     player1.isSkippedTurn++;
+    // disable player 1's board
+    dice.disablePlayer1Buttons();
   })
 );
 
@@ -85,7 +93,10 @@ p1BlueNumberSelected.forEach((button) =>
   button.addEventListener('click', () => {
     let playerPick = ['BLUE', button.innerText, '1'];
     player1.currentPick(playerPick);
+    // increment to note a player made a selection
     player1.isSkippedTurn++;
+    // disable player 1's board
+    dice.disablePlayer1Buttons();
   })
 );
 

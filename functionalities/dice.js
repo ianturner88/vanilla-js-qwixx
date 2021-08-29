@@ -156,6 +156,26 @@ export default class Dice {
     }
   }
 
+  disablePlayer1Buttons() {
+    // initialize all the buttons on the board to unavailable
+    for (let i = 0; i < player1Buttons.length; i++) {
+      // player 1's buttons
+      const elementID = player1Buttons[i];
+      const element = document.getElementById(elementID);
+      element.setAttribute('disabled', 'disabled');
+    }
+  }
+
+  disablePlayer2Buttons() {
+    // initialize all the buttons on the board to unavailable
+    for (let i = 0; i < player2Buttons.length; i++) {
+      // player 2's buttons
+      const elementID = player2Buttons[i];
+      const element = document.getElementById(elementID);
+      element.setAttribute('disabled', 'disabled');
+    }
+  }
+
   constructValidIDButtons(playerID) {
     // construct all the appropriate valid button ids
 
