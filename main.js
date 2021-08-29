@@ -95,6 +95,7 @@ p2RedNumberSelected.forEach((button) =>
   button.addEventListener('click', () => {
     let playerPick = ['RED', button.innerText, '2'];
     player2.currentPick(playerPick);
+    player2.isSkippedTurn++;
   })
 );
 
@@ -103,6 +104,7 @@ p2YellowNumberSelected.forEach((button) =>
   button.addEventListener('click', () => {
     let playerPick = ['YELLOW', button.innerText, '2'];
     player2.currentPick(playerPick);
+    player2.isSkippedTurn++;
   })
 );
 
@@ -111,6 +113,7 @@ p2GreenNumberSelected.forEach((button) =>
   button.addEventListener('click', () => {
     let playerPick = ['GREEN', button.innerText, '2'];
     player2.currentPick(playerPick);
+    player2.isSkippedTurn++;
   })
 );
 
@@ -119,6 +122,7 @@ p2BlueNumberSelected.forEach((button) =>
   button.addEventListener('click', () => {
     let playerPick = ['BLUE', button.innerText, '2'];
     player2.currentPick(playerPick);
+    player2.isSkippedTurn++;
   })
 );
 
