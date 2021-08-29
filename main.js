@@ -106,7 +106,10 @@ p2RedNumberSelected.forEach((button) =>
   button.addEventListener('click', () => {
     let playerPick = ['RED', button.innerText, '2'];
     player2.currentPick(playerPick);
+    // increment to note a player made a selection
     player2.isSkippedTurn++;
+    // disable player 2's board
+    dice.disablePlayer2Buttons();
   })
 );
 
@@ -115,7 +118,10 @@ p2YellowNumberSelected.forEach((button) =>
   button.addEventListener('click', () => {
     let playerPick = ['YELLOW', button.innerText, '2'];
     player2.currentPick(playerPick);
+    // increment to note a player made a selection
     player2.isSkippedTurn++;
+    // disable player 2's board
+    dice.disablePlayer2Buttons();
   })
 );
 
@@ -124,7 +130,10 @@ p2GreenNumberSelected.forEach((button) =>
   button.addEventListener('click', () => {
     let playerPick = ['GREEN', button.innerText, '2'];
     player2.currentPick(playerPick);
+    // increment to note a player made a selection
     player2.isSkippedTurn++;
+    // disable player 2's board
+    dice.disablePlayer2Buttons();
   })
 );
 
@@ -133,7 +142,10 @@ p2BlueNumberSelected.forEach((button) =>
   button.addEventListener('click', () => {
     let playerPick = ['BLUE', button.innerText, '2'];
     player2.currentPick(playerPick);
+    // increment to note a player made a selection
     player2.isSkippedTurn++;
+    // disable player 2's board
+    dice.disablePlayer2Buttons();
   })
 );
 
