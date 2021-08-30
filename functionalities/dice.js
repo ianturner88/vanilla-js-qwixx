@@ -183,8 +183,6 @@ export default class Dice {
       const elementID = 'p' + playerNumber + colour + numbersSelected[i];
       const element = document.getElementById(elementID);
       element.setAttribute('disabled', 'disabled');
-
-      console.log(elementID);
     }
   }
 
