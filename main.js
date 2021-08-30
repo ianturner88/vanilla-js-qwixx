@@ -195,6 +195,16 @@ checkBox1.addEventListener('click', (e) => {
   dice.updateAvailableNumbers(isPlayer1sTurn);
   // erase the public number for the player whose turn it is not
   dice.erasePublicNumber(isPlayer1sTurn);
+
+  dice.lockrow(0, 'r', player1.numbersAlreadyTaken[0]);
+  dice.lockrow(1, 'y', player1.numbersAlreadyTaken[1]);
+  dice.lockrow(2, 'g', player1.numbersAlreadyTaken[2]);
+  dice.lockrow(3, 'b', player1.numbersAlreadyTaken[3]);
+
+  dice.lockrow(0, 'r', player2.numbersAlreadyTaken[0]);
+  dice.lockrow(1, 'y', player2.numbersAlreadyTaken[1]);
+  dice.lockrow(2, 'g', player2.numbersAlreadyTaken[2]);
+  dice.lockrow(3, 'b', player2.numbersAlreadyTaken[3]);
 });
 
 checkBox2.addEventListener('click', (e) => {
@@ -227,4 +237,14 @@ checkBox2.addEventListener('click', (e) => {
     // increment the number of skipped turn penalties a player has
     player2.numberOfSkippedTurns++;
   }
+
+  dice.lockrow(0, 'r', player1.numbersAlreadyTaken[0]);
+  dice.lockrow(1, 'y', player1.numbersAlreadyTaken[1]);
+  dice.lockrow(2, 'g', player1.numbersAlreadyTaken[2]);
+  dice.lockrow(3, 'b', player1.numbersAlreadyTaken[3]);
+
+  dice.lockrow(0, 'r', player2.numbersAlreadyTaken[0]);
+  dice.lockrow(1, 'y', player2.numbersAlreadyTaken[1]);
+  dice.lockrow(2, 'g', player2.numbersAlreadyTaken[2]);
+  dice.lockrow(3, 'b', player2.numbersAlreadyTaken[3]);
 });

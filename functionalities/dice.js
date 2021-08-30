@@ -13,6 +13,7 @@ export default class Dice {
     this.counter = 1;
     this.validButtonIDs = [];
     this.publicButtonIDs = [];
+    this.lockedRows = [0, 0, 0, 0];
   }
 
   rollDice() {
@@ -258,5 +259,32 @@ export default class Dice {
     // erase the public for both players
     player1AvailableNumbers[0].innerHTML = '—';
     player2AvailableNumbers[0].innerHTML = '—';
+  }
+
+  lockrow(colourNumber, colour, numbersAlreadyTaken) {
+    // determine if a row should be locked
+
+    // the furtherest right number of red & yellow
+    let furthestRightNumber = 12;
+
+    if (colour === 'g' || colour === 'b') {
+      // the furtherest right number of green & blue
+      furthestRightNumber === 2;
+    }
+
+    let arraySize = numbersAlreadyTaken.length;
+
+    if (
+      numbersAlreadyTaken.length >= 6 ||
+      numbersAlreadyTaken[arraySize] === furthestRightNumber
+    ) {
+      this.lockrow[colourNumber] = 1;
+
+      // lock the row
+      return true;
+    }
+
+    // do NOT lock the row
+    return false;
   }
 }

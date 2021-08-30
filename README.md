@@ -1,5 +1,9 @@
 In this file, I will keep a running, live journal of my [efforts](https://ianturner88.github.io/vanilla-js-qwixx/) to build a replica of the boardgame qwixx.
 
+# August 30: Lock Rows
+
+A dice object property was written that checked if a row should be locked. Tomorrow, another dice property will be written that updates a locked rows image to one with a locked lock.
+
 # August 29: Checks
 
 Last night, while playing a round, I noticed that numbers that had already been selected BUT the dice had rolled for that turn where available. This should not happen. A number that has already been selected must be disabled regardless of the current dice roll. If this does not occur, a user may 'game' the system on their turn by selecting an already selected number and thus avoid being assessed a strikeout.
@@ -7,8 +11,6 @@ Last night, while playing a round, I noticed that numbers that had already been 
 To solve this problem, a new property needs to be added to the player object to store all selections the user made during the game.
 
 - this.numbersAlreadyTaken = [[], [], [], []]
-
-Additionally,
 
 # August 28: Checks
 
