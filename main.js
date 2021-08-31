@@ -205,6 +205,8 @@ checkBox1.addEventListener('click', (e) => {
   dice.lockrow(1, 'y', player2.numbersAlreadyTaken[1]);
   dice.lockrow(2, 'g', player2.numbersAlreadyTaken[2]);
   dice.lockrow(3, 'b', player2.numbersAlreadyTaken[3]);
+
+  dice.disableLockedRowButtons();
 });
 
 checkBox2.addEventListener('click', (e) => {
@@ -247,4 +249,6 @@ checkBox2.addEventListener('click', (e) => {
   dice.lockrow(1, 'y', player2.numbersAlreadyTaken[1]);
   dice.lockrow(2, 'g', player2.numbersAlreadyTaken[2]);
   dice.lockrow(3, 'b', player2.numbersAlreadyTaken[3]);
+
+  dice.disableLockedRowButtons();
 });

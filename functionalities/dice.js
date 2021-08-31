@@ -265,26 +265,57 @@ export default class Dice {
     // determine if a row should be locked
 
     // the furtherest right number of red & yellow
-    let furthestRightNumber = 12;
+    let furthestRightNumber = '12';
 
     if (colour === 'g' || colour === 'b') {
       // the furtherest right number of green & blue
-      furthestRightNumber === 2;
+      furthestRightNumber = '2';
     }
 
-    let arraySize = numbersAlreadyTaken.length;
+    let arraySize = numbersAlreadyTaken.length - 1;
 
     if (
-      numbersAlreadyTaken.length >= 6 ||
+      numbersAlreadyTaken.length >= 6 &&
       numbersAlreadyTaken[arraySize] === furthestRightNumber
     ) {
-      this.lockrow[colourNumber] = 1;
-
       // lock the row
-      return true;
+      this.lockedRows[colourNumber] = 1;
     }
+  }
 
-    // do NOT lock the row
-    return false;
+  disableLockedRowButtons() {
+    // disable all locked row buttons
+
+    let colours = ['r', 'y', 'g', 'b'];
+
+    for (let i = 0; i < this.lockedRows.length; i++) {
+      if (this.lockedRows[i] === 1) {
+        // used to generate all numbers in the row
+
+        for (let number = 2; number < 12; number++) {
+          // generate all numbers 2 through 12
+
+          for (let j = 0; j < colours.length + 1; j++) {
+            // construct all colours
+
+            // construct the player 1's html element tag
+            let element1ID = 'p1' + colours[j] + number;
+            let disableElement = document.getElementById(element1ID);
+            disableElement.setAttribute('disabled', 'disabled');
+
+            // test
+            console.log(element1ID);
+
+            // construct the player 2's html element tag
+            let element2ID = 'p2' + colours[j] + number;
+            disableElement = document.getElementById(element2ID);
+            disableElement.setAttribute('disabled', 'disabled');
+
+            // test
+            console.log(element2ID);
+          }
+        }
+      }
+    }
   }
 }
