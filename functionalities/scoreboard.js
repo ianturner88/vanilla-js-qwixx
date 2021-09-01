@@ -1,16 +1,18 @@
-const player1REDSum = document.querySelector('[p1rSUM]');
-const player1YELLOWSum = document.querySelector('[p1ySUM]');
-const player1GREENSum = document.querySelector('[p1gSUM]');
-const player1BLUESum = document.querySelector('[p1bSUM]');
-const player1PenaltySum = document.querySelector('[p1penaltySUM]');
-const player1FinalSum = document.querySelector('[p1SUM]');
+const publicNumber1 = document.querySelector('[data-public-dice-1]');
 
-const player2REDSum = document.querySelector('[p2rSUM]');
-const player2YELLOWSum = document.querySelector('[p2ySUM]');
-const player2GREENSum = document.querySelector('[p2gSUM]');
-const player2BLUESum = document.querySelector('[p2bSUM]');
-const player2PenaltySum = document.querySelector('[p2penaltySUM]');
-const player2FinalSum = document.querySelector('[p2SUM]');
+const player1REDSum = document.querySelector('[data-p1rSUM]');
+const player1YELLOWSum = document.querySelector('[data-p1ySUM]');
+const player1GREENSum = document.querySelector('[data-p1gSUM]');
+const player1BLUESum = document.querySelector('[data-p1bSUM]');
+const player1PenaltySum = document.querySelector('[data-p1penaltySUM]');
+const player1FinalSum = document.querySelector('[data-p1SUM]');
+
+const player2REDSum = document.querySelector('[data-p2rSUM]');
+const player2YELLOWSum = document.querySelector('[data-p2ySUM]');
+const player2GREENSum = document.querySelector('[data-p2gSUM]');
+const player2BLUESum = document.querySelector('[data-p2bSUM]');
+const player2PenaltySum = document.querySelector('[data-p2penaltySUM]');
+const player2FinalSum = document.querySelector('[data-p2SUM]');
 
 export {
   player1REDSum,

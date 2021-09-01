@@ -357,6 +357,11 @@ export default class Dice {
       player1YELLOWSum.innerHTML = 'B';
       player1GREENSum.innerHTML = 'C';
       player1BLUESum.innerHTML = 'D';
+
+      player2REDSum.innerHTML = 'E';
+      player2YELLOWSum.innerHTML = 'F';
+      player2GREENSum.innerHTML = 'G';
+      player2BLUESum.innerHTML = 'H';
     }
   }
 }
