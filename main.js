@@ -210,6 +210,10 @@ checkBox1.addEventListener('click', (e) => {
 
   dice.gameOverCheck(
     player1.numberOfSkippedTurns,
+    player2.numberOfSkippedTurns,
+    player1.numbersAlreadyTaken,
+    player2.numbersAlreadyTaken,
+    player1.numberOfSkippedTurns,
     player2.numberOfSkippedTurns
   );
 });
@@ -256,4 +260,13 @@ checkBox2.addEventListener('click', (e) => {
   dice.lockrow(3, 'b', player2.numbersAlreadyTaken[3]);
 
   dice.disableLockedRowButtons();
+
+  dice.gameOverCheck(
+    player1.numberOfSkippedTurns,
+    player2.numberOfSkippedTurns,
+    player1.numbersAlreadyTaken,
+    player2.numbersAlreadyTaken,
+    player1.numberOfSkippedTurns,
+    player2.numberOfSkippedTurns
+  );
 });

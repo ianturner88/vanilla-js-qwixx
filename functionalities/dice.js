@@ -342,26 +342,73 @@ export default class Dice {
     }
   }
 
-  gameOverCheck(player1SkippedTurns, player2SkippedTurns) {
+  gameOverCheck(
+    player1SkippedTurns,
+    player2SkippedTurns,
+    player1NumbersTaken,
+    player2NumbersTaken,
+    player1NumberofSkipedTurns,
+    player2NumberofSkipedTurns
+  ) {
     // determine if the game is over
+
+    let scoringSystem = [0, 1, 3, 6, 10, 15, 21, 28, 36, 45, 55, 66, 78];
 
     if (
       player1SkippedTurns > 3 ||
       player2SkippedTurns > 3 ||
       this.lockedRows.reduce((a, b) => a + b, 0) > 1
     ) {
+      // the game is over
+
       // disable all buttons to unavailable
       this.setAllButtonsToUnavailable();
 
-      player1REDSum.innerHTML = 'A';
-      player1YELLOWSum.innerHTML = 'B';
-      player1GREENSum.innerHTML = 'C';
-      player1BLUESum.innerHTML = 'D';
+      let finalScores = [0, 0, 0, 0, 0, 0, 0, 0];
 
-      player2REDSum.innerHTML = 'E';
-      player2YELLOWSum.innerHTML = 'F';
-      player2GREENSum.innerHTML = 'G';
-      player2BLUESum.innerHTML = 'H';
+      for (let i = 0; i < 4; i++) {
+        let player1 = player1NumbersTaken[i];
+        let player2 = player2NumbersTaken[i];
+
+        finalScores[i] = player1.length;
+        finalScores[i + 4] = player2.length;
+
+        if (finalScores[i] < 0) {
+          finalScores[i] = 0;
+        }
+
+        if (finalScores[i + 4] < 0) {
+          finalScores[i + 4] = 0;
+        }
+      }
+
+      //numbersAlreadyTaken
+      player1REDSum.innerHTML = scoringSystem[finalScores[0]];
+      player1YELLOWSum.innerHTML = scoringSystem[finalScores[1]];
+      player1GREENSum.innerHTML = scoringSystem[finalScores[2]];
+      player1BLUESum.innerHTML = scoringSystem[finalScores[3]];
+
+      player2REDSum.innerHTML = scoringSystem[finalScores[4]];
+      player2YELLOWSum.innerHTML = scoringSystem[finalScores[5]];
+      player2GREENSum.innerHTML = scoringSystem[finalScores[6]];
+      player2BLUESum.innerHTML = scoringSystem[finalScores[7]];
+
+      player1PenaltySum.innerHTML = player1NumberofSkipedTurns * 5;
+      player2PenaltySum.innerHTML = player2NumberofSkipedTurns * 5;
+
+      player1FinalSum.innerHTML =
+        finalScores[0] +
+        finalScores[1] +
+        finalScores[2] +
+        finalScores[3] -
+        player1NumberofSkipedTurns * 5;
+
+      player2FinalSum.innerHTML =
+        finalScores[4] +
+        finalScores[5] +
+        finalScores[6] +
+        finalScores[7] -
+        player2NumberofSkipedTurns * 5;
     }
   }
 }
