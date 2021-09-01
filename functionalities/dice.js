@@ -287,15 +287,23 @@ export default class Dice {
     // disable all locked row buttons
 
     let colours = ['r', 'y', 'g', 'b'];
+    let capitalizedColours = ['RED', 'YELLOW', 'GREEN', 'BLUE'];
+    let colourPictures = [
+      './images/red-closed.PNG',
+      './images/yellow-closed.PNG',
+      './images/green-closed.PNG',
+      './images/blue-closed.PNG',
+    ];
+    let number = 2;
 
     for (let i = 0; i < this.lockedRows.length; i++) {
       if (this.lockedRows[i] === 1) {
         // used to generate all numbers in the row
 
-        for (let number = 2; number < 12; number++) {
+        for (number = 2; number < 12; number++) {
           // generate all numbers 2 through 12
 
-          for (let j = 0; j < colours.length + 1; j++) {
+          for (let j = 0; j < colours.length; j++) {
             // construct all colours
 
             // construct the player 1's html element tag
@@ -303,18 +311,18 @@ export default class Dice {
             let disableElement = document.getElementById(element1ID);
             disableElement.setAttribute('disabled', 'disabled');
 
-            // test
-            console.log(element1ID);
-
             // construct the player 2's html element tag
             let element2ID = 'p2' + colours[j] + number;
             disableElement = document.getElementById(element2ID);
             disableElement.setAttribute('disabled', 'disabled');
-
-            // test
-            console.log(element2ID);
           }
         }
+
+        // generate the ID tags of the images to be changed
+        let element1IDPicture = 'p1lock' + capitalizedColours[i];
+        let element2IDPicture = 'p2lock' + capitalizedColours[i];
+        document.getElementById(element1IDPicture).src = colourPictures[i];
+        document.getElementById(element2IDPicture).src = colourPictures[i];
       }
     }
   }

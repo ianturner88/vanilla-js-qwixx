@@ -96,6 +96,7 @@ In my final version, I did away with the title. To fit all the rules in with a r
 # May 11: Skipped Turn X-Class
 
 The x-class for the skipped turn was built out.
+
 ![Skipped Turns](https://github.com/ianturner88/vanilla-js-qwixx/blob/main/images/May%2011.1.png)
 
 # May 4: Colour Palette Overhaul
