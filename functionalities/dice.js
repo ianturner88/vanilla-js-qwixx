@@ -6,6 +6,21 @@ import {
 
 import { player1Buttons, player2Buttons } from './buttonIDs.js';
 
+import {
+  player1REDSum,
+  player1YELLOWSum,
+  player1GREENSum,
+  player1BLUESum,
+  player1PenaltySum,
+  player1FinalSum,
+  player2REDSum,
+  player2YELLOWSum,
+  player2GREENSum,
+  player2BLUESum,
+  player2PenaltySum,
+  player2FinalSum,
+} from './scoreboard.js';
+
 export default class Dice {
   constructor() {
     this.diceNumbers = [];
@@ -335,7 +350,13 @@ export default class Dice {
       player2SkippedTurns > 3 ||
       this.lockedRows.reduce((a, b) => a + b, 0) > 1
     ) {
+      // disable all buttons to unavailable
       this.setAllButtonsToUnavailable();
+
+      player1REDSum.innerHTML = 'A';
+      player1YELLOWSum.innerHTML = 'B';
+      player1GREENSum.innerHTML = 'C';
+      player1BLUESum.innerHTML = 'D';
     }
   }
 }
