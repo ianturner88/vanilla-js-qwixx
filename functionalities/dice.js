@@ -326,4 +326,16 @@ export default class Dice {
       }
     }
   }
+
+  gameOverCheck(player1SkippedTurns, player2SkippedTurns) {
+    // determine if the game is over
+
+    if (
+      player1SkippedTurns > 3 ||
+      player2SkippedTurns > 3 ||
+      this.lockedRows.reduce((a, b) => a + b, 0) > 1
+    ) {
+      this.setAllButtonsToUnavailable();
+    }
+  }
 }
