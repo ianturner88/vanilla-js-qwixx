@@ -409,6 +409,16 @@ export default class Dice {
         finalScores[6] +
         finalScores[7] -
         player2NumberofSkipedTurns * 5;
+
+      dice.setAllButtonsToUnavailable();
+
+      document.getElementById('cb1').disabled = true;
+      document.getElementById('cb1').checked = true;
+
+      document.getElementById('cb2').disabled = true;
+      document.getElementById('cb2').checked = true;
+
+      document.getElementById('roll-dice-button').disabled = true;
     }
   }
 }

@@ -1,5 +1,9 @@
 In this file, I will keep a running, live journal of my [efforts](https://ianturner88.github.io/vanilla-js-qwixx/) to build a replica of the boardgame qwixx.
 
+# September 1: Lock Rows
+
+The scoreboard display functionalities were implemented. I am unable to disable the 'Roll Dice' button when the score displays. I'm unsure why this is.
+
 # August 30: Lock Rows
 
 A dice object property was written that checked if a row should be locked. Tomorrow, another dice property will be written that updates a locked rows image to one with a locked lock.
